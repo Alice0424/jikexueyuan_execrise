@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="style/BaiduStyle.css">
+    <script type="text/javascript" src="JS/baidu.js"></script>
+    <script type="text/javascript" src="JS/baiduB.js"></script>
+    <title>百度一下，你就知道</title>
+</head>
+<body>
+<div class="outer">
+    <!--百度首页的头部，主要是一些链接比如”糯米“”新闻“等等-->
+    <div class="header">
+        <div id="weather">
+            <div class="cloud"></div>
+            <div class="user">
+                <a href="#"><img src="images/user.png"></a>
+            </div>
+        </div>
+        <div class="headerMenu">
+            <div class="menuLink"><a href="http://www.nuomi.com/?cid=002540"><b>糯米</b></a></div>
+            <div class="menuLink"><a href="http://news.baidu.com/"><b>新闻</b></a></div>
+            <div class="menuLink"><a href="https://www.hao123.com/"><b>hao123</b></a></div>
+            <div class="menuLink"><a href="http://map.baidu.com/"><b>地图</b></a></div>
+            <div class="menuLink"><a href="http://v.baidu.com/"><b>视频</b></a></div>
+            <div class="menuLink"><a href="http://tieba.baidu.com/"><b>贴吧</b></a></div>
+            <div class="menuLink"><a href="#">登录</a></div>
+            <div class="menuLink menuSetting" onmousemove="onMouseMoveSetting('setting')"
+                 onmouseout="onMouseOutSetting('setting')">
+                <a href="#">设置</a>
+                <ul id="setting">
+                    <li>搜索设置</li>
+                    <li>高级搜索</li>
+                    <li>关闭预测</li>
+                    <li>搜索历史</li>
+                </ul>
+            </div>
+            <div class="moreSetting" onmousemove="displayMore()" onmouseout="noDisplayMore()">
+                <a href="https://www.baidu.com/more/" id="aMore">更多产品</a>
+            </div>
+            <div class="moreSetting-dropdown" id="moreSetting-dropdown">
+                <a href="javascript:void(0)" onmousemove="displayMore()" onmouseout="noDisplayMore()">
+                    更多产品
+                </a>
+                <a href="javascript:void(0)" onmousemove="displayMore()" onmouseout="noDisplayMore()">
+                    <span></span>
+                    音乐
+                </a>
+                <a href="javascript:void(0)" onmousemove="displayMore()" onmouseout="noDisplayMore()">
+                    <span></span>
+                    图片
+                </a>
+                <a href="javascript:void(0)" onmousemove="displayMore()" onmouseout="noDisplayMore()">
+                    <span></span>
+                    知道
+                </a>
+                <a href="javascript:void(0)" onmousemove="displayMore()" onmouseout="noDisplayMore()">
+                    <span></span>
+                    文库
+                </a>
+                <a href="javascript:void(0)" onmousemove="displayMore()" onmouseout="noDisplayMore()">
+                    <span></span>
+                    风云榜
+                </a>
+                <a href="javascript:void(0)" onmousemove="displayMore()" onmouseout="noDisplayMore()">
+                    <span></span>
+                    百度推广
+                </a>
+                <a href="javascript:void(0)" onmousemove="displayMore()" onmouseout="noDisplayMore()">
+                    全部产品&gt&gt
+                </a>
+
+                <div style="clear: both"></div>
+            </div>
+        </div>
+        <!--&lt;!&ndash;布局图片和输入框等&ndash;&gt;-->
+    </div>
+    <div class="content">
+        <!--布局百度的logo图片-->
+        <div class="baiduPic">
+            <img src="images/bd_logo1.png" class="imgBaidu" alt="百度图片">
+            <img src="images/baidu.png" class="imgBaiduSmall" width="130px" height="55px" alt="百度图片">
+        </div>
+        <!--form一个输入框和一个提交按钮--table-->
+        <div class="input-submit">
+            <form>
+                <input type="text" class="input" id="input" autofocus="autofocus">
+                <input type="submit" value="百度一下" class="submit" id="submit">
+            </form>
+            <div style="clear:both"></div>
+        </div>
+        <!--移动端中的导航条布局-->
+        <div class="navs">
+            <a href="http://m.baidu.com/news?fr=mohome&ssid=0&from=&uid=&pu=sz%40224_220%2Cta%40iphone___3_537&bd_page_type=1">
+                <img src="images/news.png">
+                <span>新闻</span>
+            </a>
+            <a href="http://dushu.baidu.com/">
+                <img src="images/novel.png">
+                <span>小说</span>
+            </a>
+            <a href="http://video.m.baidu.com/?from=wise_nav">
+                <img src="images/video.png">
+                <span>视频</span>
+            </a>
+            <a href="http://life.m.baidu.com/?sfrom=wise_nav">
+                <img src="images/life.png">
+                <span>生活</span>
+            </a>
+            <a href="http://map.baidu.com/mobile/webapp">
+                <img src="images/mappng.png">
+                <span>地图</span>
+            </a>
+            <a href="javascript:void(0);" onclick="clickMore()" id="more">
+                <img src="images/more.png" id="more-img">
+                <!--<img>-->
+                <span>更多</span>
+            </a>
+
+            <div style="clear: both;"></div>
+        </div>
+        <!--点击导航条中“更多后显示的导航条”-->
+        <div class="navs-more" id="navs-more">
+            <a href="http://m.baidu.com/news?fr=mohome&ssid=0&from=&uid=&pu=sz%40224_220%2Cta%40iphone___3_537&bd_page_type=1">
+                <img src="images/post-bar.png">
+                <span>贴吧</span>
+            </a>
+            <a href="http://dushu.baidu.com/">
+                <img src="images/pic.png">
+                <span>图片</span>
+            </a>
+            <a href="http://video.m.baidu.com/?from=wise_nav">
+                <img src="images/web.png">
+                <span>网址</span>
+            </a>
+            <a href="http://life.m.baidu.com/?sfrom=wise_nav">
+                <img src="images/pop.png">
+                <span>推广</span>
+            </a>
+
+            <div style="clear: both;"></div>
+        </div>
+        <!--常用网址，其中布局为两列，第一行title信息，第二行为网址信息布局-->
+        <div class="common-webs">
+            <div class="common-webs-up">
+                常用网址
+                <div class="common-webs-up-nav">
+                    <img src="images/nav.png">
+                </div>
+            </div>
+            <div class="common-webs-down">
+                <a href="http://tieba.baidu.com/?mo_device=1&itj=43" class="post-bar">贴吧</a>
+                <a href="http://tieba.baidu.com/?mo_device=1&itj=43">hao123</a>
+                <a href="http://tieba.baidu.com/?mo_device=1&itj=43">地图</a>
+                <a href="http://tieba.baidu.com/?mo_device=1&itj=43">百度VIP</a>
+                <a href="http://tieba.baidu.com/?mo_device=1&itj=43">图片</a>
+                <a href="http://tieba.baidu.com/?mo_device=1&itj=43">音乐</a>
+                <a href="http://tieba.baidu.com/?mo_device=1&itj=43">糯米</a>
+                <a href="http://m.baidu.com/#|iview=nav"><b>+</b></a>
+            </div>
+        </div>
+        <!--事实热点-->
+        <div class="hot-news">
+            <div class="hot-news-up">
+                时事热点
+                <div class="hot-news-up-nav">
+                    <img src="images/rotate.png" class="rotateAnimate" id="rotateAnimate"
+                         onclick="startAnimation()">
+                    <span>换一批</span>
+                    <img src="images/nav.png" class="nav">
+                </div>
+            </div>
+            <div class="hot-new-center">
+                <a href="#" class="hot-1">日照海边上演婚闹</a>
+                <a href="#">不写作业实力啃爹</a>
+                <a href="#">驯龙记票房过亿</a>
+                <a href="#" class="hot-1">女特警退伍当教师</a>
+                <a href="#" class="hot-1">云南发现马鹿洞人</a>
+                <a href="#">赵丽颖丸子头自拍</a>
+
+                <div style="clear:both;"></div>
+            </div>
+            <div class="hot-news-down">
+                <a href="http://top.baidu.com/m?csrc=fyb_wiserdcard_auto" class="tips">百度风云榜
+                </a>
+            </div>
+        </div>
+        <!--百度推荐-->
+        <div class="hot-recommand">
+            <div class="hot-recommand-up">
+                百度推荐
+                <div class="hot-recommand-up-nav">
+                    <img src="images/rotate.png" class="rotateAnimate" id="rotateAnimate"
+                         onclick="startAnimation()">
+                    <span>换一批</span>
+                    <img src="images/nav.png" class="nav">
+                </div>
+            </div>
+            <div class="hot-recommand-center">
+                <ul>
+                    <li><a href="">男生摆蜡烛向女生表白 被大妈用灭火器浇灭</a><span>11:28</span></li>
+                    <li><a href="">大陆学生纳保要修法 马英九酸蔡英文没诚意扭捏</a><span>11:28</span></li>
+                    <li><a href="">一纪委书记绑架丈夫囚禁50小时 回应：家庭纠纷一纪委书记绑架丈夫囚禁50小时 回应：家庭纠纷</a><span>11:28</span></li>
+                    <li><a href="">比邹正骨折更邪门 建业四大队长连续断腿</a><span>11:28</span></li>
+                </ul>
+            </div>
+            <div class="hot-recommand-down">
+                <a href="http://top.baidu.com/m?csrc=fyb_wiserdcard_auto" class="tips">
+                    查看更过推荐
+                </a>
+            </div>
+        </div>
+
+        <!--常用的app-->
+        <div class="apps">
+            <div class="apps-row1">
+                <img src="images/appheader.png" class="rotateAnimate">
+                <img src="images/nav.png" class="nav">
+            </div>
+            <div class="apps-row2">
+                <div class="look">点击定位，查看附近位置信息</div>
+                <div class="app-row2-fixPos">
+                    <div class="img"></div>
+                    <div class="info">定位</div>
+                </div>
+            </div>
+            <div class="apps-row3">
+                <a href="#"><img src="images/train.png" alt="火车票">火车票</a>
+                <a href="#"><img src="images/airplane.png" alt="飞机票">飞机票</a>
+                <a href="#"><img src="images/bus.png" alt="汽车票">汽车票</a>
+                <a href="#"><img src="images/card.png" alt="打卡"><span>打卡</span></a>
+                <a href="#"><img src="images/travel.png" alt="旅行"><span>旅行</span></a>
+                <a href="#"><img src="images/movie.png" alt="电影"><span>电影</span></a>
+                <a href="#"><img src="images/buy.png" alt="团购"><span>团购</span></a>
+                <a href="#"><img src="images/buy1.png" alt="外卖"><span>外卖</span></a>
+            </div>
+            <div class="apps-row4" id="apps-row4">
+                <a href="#"><img src="images/hotel.png" alt="酒店"><span>酒店</span></a>
+                <a href="#"><img src="images/food.png" alt="美食"><span>美食</span></a>
+                <a href="#"><img src="images/ktv.png" alt="KTV">KTV</a>
+                <a href="#"><img src="images/buses.png" alt="公交站">公交站</a>
+                <a href="#"><img src="images/bank.png" alt="银行"><span>银行</span></a>
+                <a href="#"><img src="images/register.png" alt="挂号"><span>挂号</span></a>
+
+                <div style="clear:both"></div>
+            </div>
+            <hr/>
+            <div class="apps-row5">
+                <a id="apps-extend" href="javascript:void(0)" onclick="displayApps()">展示全部</a>
+                <a id="apps-small" href="javascript:void(0)" onclick="smallApps()">收缩</a>
+            </div>
+        </div>
+        <!--管理我的卡片-->
+        <div class="controlCard">
+            管理我的卡片
+        </div>
+    </div>
+    <!--PC端中footer的布局-->
+    <div class="footer">
+        <!--<div class="outer">-->
+        <div class="qrcode-image"></div>
+        <div class="qrcode-text">
+            <p><b>手机百度</b></p>
+
+            <p><span style="color:#9b9b9b">快人一步</span></p>
+        </div>
+        <div class="qrcode-image1"></div>
+        <div class="qrcode-text">
+            <p>百度糯米</p>
+
+            <p><span style="color:#9b9b9b">一毛大餐</span></p>
+        </div>
+
+        <div class="ftConw">
+            <p class="lh">
+                <a href="https://www.baidu.com/cache/sethelp/help.html" target="_blank">把百度设为首页</a>
+                <a href="http://home.baidu.com/">关于百度</a>
+                <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-homeprofile">About Baidu</a>
+            </p>
+
+            <p class="cp">
+                ©2015 Baidu
+                <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/">意见反馈</a>
+                京ICP证030173号
+            </p>
+        </div>
+        <div class="icon"></div>
+    </div>
+    <!--移动端中footer的布局-->
+    <div class="footer-phone">
+        <div class="footer-phone-up">
+            <ul>
+                <li><a href="#">百度浏览器，上网提速200%</a></li>
+                <li><a href="#">手机百度，最省流量的极速搜素APP</a></li>
+                <li><a href="#">百度推广，让有需求的客户找到你</a></li>
+            </ul>
+        </div>
+        <div class="footer-phone-center">
+            <ul>
+                <li><a href="#">极速版</a></li>
+                <li><a href="#">用户反馈</a></li>
+            </ul>
+        </div>
+        <div class="footer-phone-down">
+            使用百度前必读 Baidu 京ICP证030173号
+        </div>
+    </div>
+</div>
+</body>
+</html>
