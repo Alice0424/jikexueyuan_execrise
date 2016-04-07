@@ -1,0 +1,40 @@
+body{
+    background-image: url("images/beijing.gif");
+}
+
+.titleInfo{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+td { font-size: 12px; line-height: 150%; text-decoration: none; color: #333333;}
+
+.infoCaption{
+    color: #003399;
+}
+
+.inputBox{
+    width:243px;
+    height:21px;
+}
+
+.contentTable span{
+    color: #1448ee;
+}
+
+input,select,textarea{
+    background-color: #f5f5dc;
+    border:solid 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+}
+
+table tr td{
+    margin: 0px;
+    padding: 0px;
+}
+
+table{
+    border-collapse: collapse;
+}
