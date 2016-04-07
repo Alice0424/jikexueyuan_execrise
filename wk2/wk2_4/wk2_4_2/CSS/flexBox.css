@@ -1,0 +1,153 @@
+.con,.con2{
+    float: left;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.con{
+    display: -webkit-flex;
+    width: 400px;
+    background-color: #cecece;
+    /*-webkit-flex-direction: column;*/
+    /*-moz-flex-direction:column;*/
+}
+
+.first{
+     -webkit-flex: 1;
+     height: 200px;
+     background-color: #c1dc5d;
+ }
+
+.second{
+    -webkit-flex: 1;
+    height: 200px;
+    background-color: #52dcd9;
+}
+
+.three{
+    -webkit-flex: 1;
+    height: 200px;
+    background-color: #1d90dc;
+}
+
+.first11{
+    -webkit-flex: 1;
+    height: 200px;
+    background-color: #c1dc5d;
+    -webkit-order:2;
+}
+
+.second11{
+    -webkit-flex: 1;
+    height: 200px;
+    background-color: #52dcd9;
+    -webkit-order:3;
+}
+
+.three11{
+    -webkit-flex: 1;
+    height: 200px;
+    background-color: #1d90dc;
+    -webkit-order:1;
+}
+
+.first12{
+    -webkit-flex: 1;
+    height: 200px;
+    background-color: #c1dc5d;
+    -webkit-order:3;
+}
+
+.second12{
+    -webkit-flex: 1;
+    height: 200px;
+    background-color: #52dcd9;
+    -webkit-order:2;
+}
+
+.three12{
+    -webkit-flex: 1;
+    height: 200px;
+    background-color: #1d90dc;
+    -webkit-order:1;
+}
+
+table{
+    width: 100%;
+    height: 800px;
+    background-color: #cecece;
+    border-collapse: collapse;
+}
+
+table tr{
+    height: 200px;
+}
+
+.con2{
+    display: -webkit-flex;
+    width: 400px;
+    background-color: #cecece;
+    -webkit-flex-direction: column;
+    -moz-flex-direction:column;
+}
+
+.first2{
+    -webkit-flex: 1;
+    height: 50px;
+    background-color: #c1dc5d;
+}
+
+.second2{
+    -webkit-flex: 1;
+    height: 50px;
+    background-color: #52dcd9;
+}
+
+.three2{
+    -webkit-flex: 1;
+    height: 50px;
+    background-color: #1d90dc;
+}
+
+.first21{
+    -webkit-flex: 1;
+    height: 50px;
+    background-color: #c1dc5d;
+    -webkit-order: 3;
+}
+
+.second21{
+    -webkit-flex: 1;
+    height: 50px;
+    background-color: #52dcd9;
+    -webkit-order: 1;
+}
+
+.three21{
+    -webkit-flex: 1;
+    height: 50px;
+    background-color: #1d90dc;
+    -webkit-order: 2;
+}
+
+.first22{
+    -webkit-flex: 1;
+    height: 50px;
+    background-color: #c1dc5d;
+    -webkit-order: 3;
+}
+
+.second22{
+    -webkit-flex: 1;
+    height: 50px;
+    background-color: #52dcd9;
+    -webkit-order: 2;
+}
+
+.three22{
+    -webkit-flex: 1;
+    height: 50px;
+    background-color: #1d90dc;
+    -webkit-order:1;
+}
+
