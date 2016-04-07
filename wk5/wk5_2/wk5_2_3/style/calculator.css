@@ -1,0 +1,91 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+.outer .calucatorOuter{
+    width: 380px;
+    height: 380px;
+    margin: 150px auto;
+    padding:10px 30px 30px  30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:3px dashed #000000;
+}
+
+.outer .calucatorOuter .calucator{
+    width: 320px;
+    height: 270px;
+    /*border-top:10px solid #ebe7db;*/
+    /*border-left: 10px solid #ede9dc;*/
+    /*border-bottom: 10px solid #aaa69a;*/
+    /*border-right: 10px solid #aaa799;*/
+    border-top:10px solid #434343;
+    border-left: 10px solid #6b6b6b;
+    border-bottom: 10px solid #343434;
+    border-right: 10px solid #494949;
+    /*margin: 150px auto;*/
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+.outer .calucatorOuter .calucator table{
+    width: 300px;
+    height: 250px;
+    border-collapse: collapse;
+    /*border:1px solid #7c7c7c;*/
+    /*background-color: #000000;*/
+}
+
+
+.outer .calucatorOuter .calucator table tr:nth-child(1) td{
+    width: 300px;
+    height: 50px;
+    padding-left: 8px;
+}
+
+.outer .calucatorOuter .calucator table tr td input{
+    width: 280px;
+    height: 40px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 4px;
+    font-size: 20px;
+}
+
+.outer .calucatorOuter .calucator table tr:nth-child(2) td,
+.outer .calucatorOuter .calucator table tr:nth-child(3) td,
+.outer .calucatorOuter .calucator table tr:nth-child(4) td,
+.outer .calucatorOuter .calucator table tr:nth-child(5) td{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 51px;
+    height: 40px;
+}
+
+.outer .calucatorOuter .calucator table tr:nth-child(2) td:nth-child(5) button,
+.outer .calucatorOuter .calucator table tr:nth-child(4) td:nth-child(5) button{
+    width: 48px;
+    height: 80px;
+    margin:0 auto;
+    display: block;
+    background-color: #e3e3e3;
+    font-weight: bold;
+}
+
+.outer .calucatorOuter .calucator table tr:nth-child(2) td button,
+.outer .calucatorOuter .calucator table tr:nth-child(3) td button,
+.outer .calucatorOuter .calucator table tr:nth-child(4) td button,
+.outer .calucatorOuter .calucator table tr:nth-child(5) td button
+{
+    width: 48px;
+    height: 38px;
+    margin:0 auto;
+    display: block;
+    background-color: #e3e3e3;
+    font-size: 20px;
+    cursor:pointer;
+}

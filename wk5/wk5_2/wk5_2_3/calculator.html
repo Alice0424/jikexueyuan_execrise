@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="style/calculator.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="calucatorOuter">
+            <h3>简易计算器</h3>
+            <div class="calucator">
+                <!--用table对计算器进行布局分为五行五列-->
+                <!--第一列中对五个单元格进行合并，放入输入框（input）显示数据的数据-->
+                <table>
+                    <tr>
+                        <td colspan="5"><input type="text" value="0" id="showData" readonly></td>
+                    </tr>
+                    <!--onclick="inputData(this)"-->
+                    <tr>
+                        <td><button type="button" value="7" >7</button></td>
+                        <td><button type="button" value="8">8</button></td>
+                        <td><button type="button" value="9">9</button></td>
+                        <td><button type="button" value="+">+</button></td>
+                        <td rowspan="2"><button type="button" value="c">清零</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" value="4">4</button></td>
+                        <td><button type="button" value="5">5</button></td>
+                        <td><button type="button" value="6">6</button></td>
+                        <td><button type="button" value="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" value="1">1</button></td>
+                        <td><button type="button" value="2">2</button></td>
+                        <td><button type="button" value="3">3</button></td>
+                        <td><button type="button" value="*">*</button></td>
+                        <td rowspan="2"><button type="button" value="=">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" value="0">0</button></td>
+                        <td><button type="button" value=".">.</button></td>
+                        <td><button type="button" value="%">%</button></td>
+                        <td><button type="button" value="/">/</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="JS/calculator.js"></script>
+</body>
+</html>
