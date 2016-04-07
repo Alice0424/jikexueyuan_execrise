@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 600px;
+    height: 50px;
+}
+
+.aLabel{
+    height: 42px;
+    width: 600px;
+    /*background-color: antiquewhite;*/
+    position: absolute;
+    right: 0px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.content{
+    height: 400px;
+}
+
+a{
+    margin-left: 5px;
+    margin-right:5px;
+}
+
+#aLabel a:link,a:visited{
+    color:#000;
+
+}
+/*''显示更多''标签设置*/
+.aMore{
+    background-color: #38f;
+    text-decoration: none;
+    display:inline-block;
+    width: 70px;
+    height: 20px;
+    padding: 2px 2px 2px 5px;
+}
+
+span a:hover{
+    color:#38f;
+}
+
+.baiduPic{
+    height: 250px;
+    text-align: center;
+}
+
+.imgBaidu
+{
+    width: 270px;
+    height: 129px;
+    margin-top: 100px;
+}
+
+form{
+    border: 10px;
+}
+form tr td{
+    border-collapse: collapse;
+    border: 1px;
+}
+
+.footer{
+    height: 340px;
+}
+
+.qrcode-image{
+    background-image: url("images/shoujibaidu.png");
+}
+
+.qrcode-image1{
+    background-image: url("images/baidunuomi.png");
+    margin-left: 33px;
+}
+
+/*文字里旁边二维码的距离*/
+.qrcode-text{
+    margin-left: 12px;
+}
+
+.qrcode-text p {
+    color: #000000;
+    font-weight: bold;
+    font-size: 5px;
+}
+
+.qrcode-text span{
+    color: #0000FF;
+    font-size: 5px;
+}
+
+.ftConw{
+    width:320px;
+    margin-left: 33px;
+}
+
+.ftConw a{
+    color:#272727;
+    font-size: 10px;
+}
+
+.cp{
+    color:#272727;
+    font-size: 10px;
+}
+
+.lh{
+    margin: 10px 0 5px 0;
+}
+
+table tr td div{
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 1px;
+}
+.icon{
+    width: 20px;
+    height: 22px;
+    margin-top: 31px;
+    background-image: url("images/icon.png");
+}
+
+.cp a{
+    margin-left: 0px;
+}
+
+
