@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" type="text/css" href="css/baidulogin.css">
+</head>
+<body>
+<div class="header" id="header">
+    <!--地理位置、天气情况等-->
+    <div class="nav-left clearFloat">
+        <div class="pos-temp">
+            <a href="" class="no-decoration" id="a-temp">
+                <span>西安：</span>
+                <span class="temp-icon"></span>
+                <span>-4℃</span>
+                <span class="excellent">优</span>
+                <span>38</span>
+                <span>|</span>
+            </a>
+
+            <div class="temp-dropDownList" id="temp-dropDownList">
+                <div class="date">
+                    <span>01月25日</span>
+                    <span>农历 十二月十六</span>
+                    <a href="#"><span class="seven-temp">未来七天天气</span></a>
+                    <a href="#" class="setting"><span class="icon">设置</span></a>
+                </div>
+                <div class="line"></div>
+                <div class="every-mod clearFloat" id="every-mod">
+                    <div class="day monday">
+                        <p>今天(周一)</p>
+                        <img src="images/moon.jpg">
+
+                        <p>-4℃</p>
+
+                        <p>晴</p>
+
+                        <p>东北风微风</p>
+                    </div>
+                    <div class="day">
+                        <p>明天(周二)</p>
+                        <img src="images/sun.jpg">
+
+                        <p>1 ~ -7℃</p>
+
+                        <p>晴</p>
+
+                        <p>东北风微风</p>
+                    </div>
+                    <div class="day">
+                        <p>后天(周三)</p>
+                        <img src="images/yin.jpg">
+
+                        <p>1 ~ -7℃</p>
+
+                        <p>晴</p>
+
+                        <p>东北风微风</p>
+                    </div>
+                    <div class="day">
+                        <p>周四</p>
+                        <img src="images/yin.jpg">
+
+                        <p>1 ~ -7℃</p>
+
+                        <p>晴</p>
+
+                        <p>东北风微风</p>
+                    </div>
+                    <div class="day">
+                        <p>周五</p>
+                        <img src="images/cloud.jpg">
+
+                        <p>1 ~ -7℃</p>
+
+                        <p>晴</p>
+
+                        <p>东北风微风</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="ul-noType nav-left-others clearFloat">
+            <li><a href="#">宝箱</a></li>
+            <li id="li-changeskine"><a href="#">换肤</a></li>
+            <li><a href="#">消息</a></li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <ul class="ul-noType nav-right-detail">
+            <li><a href="#">糯米</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">hao123</a></li>
+            <li><a href="#">地图</a></li>
+            <li><a href="#">视频</a></li>
+            <li><a href="#">贴吧</a></li>
+            <li class="li-myProfile"><a href="#">131******187</a>
+                <ul class="ul-noType setting-droplist myProfile clearFloat">
+                    <li><a href="#">我的vip</a></li>
+                    <li><a href="#">个人中心</a></li>
+                    <li><a href="#">账号设置</a></li>
+                    <li><a href="#">意见反馈</a></li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+            </li>
+            <li class="setting"><a href="#">设置</a>
+                <ul class="ul-noType setting-droplist clearFloat">
+                    <li><a href="#">搜索设置</a></li>
+                    <li><a href="#">高级搜索</a></li>
+                    <li><a href="#">关闭预测</a></li>
+                    <li><a href="#">搜索历史</a></li>
+                </ul>
+            </li>
+            <li class="more-product" id="more-product"><a href="#">更多产品</a></li>
+        </ul>
+    </div>
+</div>
+<div id="more-dropdownList">
+    <ul class="ul-noType">
+        <li><a href="#"><span>更过产品</span></a></li>
+        <li><a href="#"><img src="images/music.png"><span>音乐</span></a></li>
+        <li><a href="#"><img src="images/image.png"><span>图片</span></a></li>
+        <li><a href="#"><img src="images/zhidao.png"><span>知道</span></a></li>
+        <li><a href="#"><img src="images/wenku.png"><span>文库</span></a></li>
+        <li><a href="#"><img src="images/bang.png"><span>风云榜</span></a></li>
+        <li><a href="#"><img src="images/tuiguang.png"><span>百度推广</span></a></li>
+        <li><a href="#"><span>全部产品</span></a></li>
+    </ul>
+</div>
+<div class="line"></div>
+<div id="changeSkin-outer" class="clearFloat">
+    <div class="skin-nav clearFloat">
+        <ul class="ul-noType clearFloat">
+            <li>热门</li>
+            <li>游戏</li>
+            <li>卡通</li>
+            <li>女神降临</li>
+            <li>明星</li>
+            <li>风景</li>
+            <li>简约</li>
+            <li>小清新</li>
+        </ul>
+        <div class="removeChange" id="removeChange">
+            <span class="bgImg"></span>
+            <span class="info">不使用换肤</span>
+        </div>
+        <div class="packUp">
+            <span class="bgImg"></span>
+            <span class="info">收起</span>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div id="changeSkin">
+        <div class="hot-skin-outer">
+            <div class="hot-skin clearFloat">
+                <ul class="ul-noType row1">
+                    <li><a href="#"><img src="images/hot-1.jpg"></a></li>
+                    <li><a href="#"><img src="images/hot-2.jpg"></a></li>
+                    <li><a href="#"><img src="images/hot-3.jpg"></a></li>
+                </ul>
+                <ul class="ul-noType row2">
+                    <li><a href="#"><img src="images/hot-4.jpg"></a></li>
+                    <li><a href="#"><img src="images/hot-5.jpg"></a></li>
+                    <li><a href="#"><img src="images/hot-6.jpg"></a></li>
+                </ul>
+                <ul class="ul-noType row3">
+                    <li><a href="#"><img src="images/hot-7.jpg"></a></li>
+                    <li><a href="#"><img src="images/hot-8.jpg"></a></li>
+                    <li><a href="#"><img src="images/hot-9.jpg"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="pre-overview">
+            <div id="pre-overview-img"></div>
+        </div>
+    </div>
+
+</div>
+
+<!--百度logo和输入框，按钮-->
+<div class="main-body clearFloat" id="main-body">
+    <div class="logo-input">
+        <div class="logo"></div>
+        <div class="input-btn clearFloat">
+            <form>
+                <input type="text" class="input-text" autofocus="" id="input-text">
+                <input type="submit" class="input-sub" value="百度一下">
+            </form>
+        </div>
+    </div>
+    <!--"我的关注"、"推荐"、"导航"、"视频"、"购物"-->
+    <div class="content" id="content">
+        <div class="content-nav clearFloat">
+            <ul class="ul-noType clearFloat" id="mainNav">
+                <li class="icon">我的关注</li>
+                <li>推荐</li>
+                <li>导航</li>
+                <li>视频</li>
+                <li>购物</li>
+            </ul>
+            <div class="card"></div>
+        </div>
+        <!--我的关注-->
+        <div class="myConcern clearFloat mainNavDetail">
+            <div class="myNav" id="myNav">
+                <span class="arrow"></span>
+                <span class="info">我的导航(0)</span>
+
+                <div class="others">
+                    <a href="#">添加</a>
+                    <a href="#"><span class="icon"></span>返利模式</a>
+                    <span class="top">置顶</span>
+                </div>
+            </div>
+            <div class="myNav-unfold" id="myNav-unfold">
+                <p>您还没有关注任何网站，赶紧<a href="#">添加</a>吧!</p>
+            </div>
+            <div class="myDefine">
+                <span class="icon"></span>
+                <span>自定义</span>
+            </div>
+        </div>
+        <!--我的关注-->
+        <!--推荐-->
+        <div class="recommend clearFloat mainNavDetail" id="recommend">
+            <div class="left" id="recommendLeft">
+                <div class="new clearFloat">
+                    <div class="info">
+                        <h2><a href=""> 男童开迷你推土机帮邻居铲雪 可爱模样萌翻网友</a></h2>
+
+                        <p><a href="">中关村在线</a><span>01-26 13:29</span></p>
+                    </div>
+                    <div class="img">
+                        <a href="#"><img src="images/reco-1.jpg"></a>
+                    </div>
+                </div>
+                <div class="new clearFloat">
+                    <div class="info">
+                        <h2><a href=""> 名校女生当外围女 揭秘外围女生存现状</a></h2>
+
+                        <p><a href="">中关村在线</a><span>01-26 13:29</span></p>
+                    </div>
+                    <div class="img">
+                        <a href="#"><img src="images/recom-2.jpg"></a>
+                    </div>
+                </div>
+                <div class="new clearFloat">
+                    <div class="info">
+                        <h2><a href=""> 高能预警 今晚八点前别看朋友圈了</a></h2>
+
+                        <p><a href="">中关村在线</a><span>01-26 13:29</span></p>
+                    </div>
+                    <div class="img">
+                        <a href="#"><img src="images/reco-3.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="title clearFloat">
+                    <h2>实时热点</h2>
+                    <ul class="ul-noType">
+                        <li><span></span><a href="#">打针整容瞬间失明</a></li>
+                        <li><span></span><a href="#">打针整容瞬间失明</a></li>
+                        <li><span></span><a href="#">打针整容瞬间失明</a></li>
+                        <li><span></span><a href="#">打针整容瞬间失明</a></li>
+                        <li><span></span><a href="#">打针整容瞬间失明</a></li>
+                        <li><span></span><a href="#">打针整容瞬间失明</a></li>
+                        <li><span></span><a href="#">打针整容瞬间失明</a></li>
+                        <li><span></span><a href="#">打针整容瞬间失明</a></li>
+                    </ul>
+                    <ul class="ul-noType">
+                        <li><span></span><a href="#">葛天与周润发合影</a></li>
+                        <li><span></span><a href="#">葛天与周润发合影</a></li>
+                        <li><span></span><a href="#">葛天与周润发合影</a></li>
+                        <li><span></span><a href="#">葛天与周润发合影</a></li>
+                        <li><span></span><a href="#">葛天与周润发合影</a></li>
+                        <li><span></span><a href="#">葛天与周润发合影</a></li>
+                        <li><span></span><a href="#">葛天与周润发合影</a></li>
+                        <li><span></span><a href="#">葛天与周润发合影</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--推荐-->
+        <!--导航-->
+        <div class="navigation mainNavDetail" id="navigation">
+            <div class="youLike">
+                <h2>猜你喜欢</h2>
+                <ul class="ul-noType clearFloat">
+                    <li class="after">
+                        <a href="#">
+                            <img src="images/nuomi.png"><span>百度糯米</span>
+                        </a>
+                        <a class="rebate" href="#">最高返利3.54%</a>
+                    </li>
+                    <li class="after">
+                        <a href="#">
+                            <img src="images/nuomi.png"><span>百度糯米</span>
+                        </a>
+                        <a class="rebate" href="#">最高返利3.54%</a>
+                    </li>
+                    <li class="after">
+                        <a href="#">
+                            <img src="images/nuomi.png"><span>百度糯米</span>
+                        </a>
+                        <a class="rebate" href="#">最高返利3.54%</a>
+                    </li>
+                    <li class="after">
+                        <a href="#">
+                            <img src="images/nuomi.png"><span>百度糯米</span>
+                        </a>
+                        <a class="rebate" href="#">最高返利3.54%</a>
+                    </li>
+                    <li class="after">
+                        <a href="#">
+                            <img src="images/nuomi.png"><span>百度糯米</span>
+                        </a>
+                        <a class="rebate" href="#">最高返利3.54%</a>
+                    </li>
+                    <li class="after">
+                        <a href="#">
+                            <img src="images/nuomi.png"><span>百度糯米</span>
+                        </a>
+                        <a class="rebate" href="#">最高返利3.54%</a>
+                    </li>
+                    <!--第二行-->
+                    <li>
+                        <a href="#">
+                            <img src="images/jikexueyuan.png"><span>极客学院</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/jikexueyuan.png"><span>极客学院</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/jikexueyuan.png"><span>极客学院</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/jikexueyuan.png"><span>极客学院</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/jikexueyuan.png"><span>极客学院</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/jikexueyuan.png"><span>极客学院</span>
+                        </a>
+                    </li>
+                    <!--第三行-->
+                    <li>
+                        <a href="#">
+                            <img src="images/qiyi.png"><span>特种兵霹雳火</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/qiyi.png"><span>特种兵霹雳火</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/qiyi.png"><span>特种兵霹雳火</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/qiyi.png"><span>特种兵霹雳火</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/qiyi.png"><span>特种兵霹雳火</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/qiyi.png"><span>特种兵霹雳火</span>
+                        </a>
+                    </li>
+                    <!--第四行-->
+                    <li>
+                        <a href="#">
+                            <img src="images/163.png"><span>163邮箱</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/163.png"><span>163邮箱</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/163.png"><span>163邮箱</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/163.png"><span>163邮箱</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/163.png"><span>163邮箱</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/163.png"><span>163邮箱</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="youLike consultInfomation">
+                <h2>咨询信息</h2>
+                <ul class="ul-noType clearFloat">
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <!--第二行-->
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <!--第三行-->
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tengxun.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--导航-->
+    </div>
+    <!--"我的关注"、"推荐"、"导航"、"视频"、"购物"-->
+    <div id="backToTop">
+        <span class="info">回到顶部</span>
+        <span class="icon"></span>
+    </div>
+</div>
+<!--百度logo和输入框，按钮-->
+<div class="footer" id="footer">
+    <div class="info">
+        <a href="#"> 设为首页 </a>
+        <span>©2016 Baidu </span>
+        <a href="#">使用百度前必读</a>
+        <a href="#">意见反馈</a>
+        <a href="#">京ICP证030173号 </a>
+        <img src="images/footer.png">
+    </div>
+</div>
+<script type="text/javascript" src="./js/three/sea.js/2.2.0/sea.js"></script>
+<script>
+    seajs.config({
+        base: "./js/three",
+        alias: {
+            "jquery": "jquery/jquery/1.10.1/jquery.js"
+        }
+    })
+    //    seajs.config({
+    //        base: "./js",
+    //        alias: {
+    //            "jquery": "three/jquery/jquery/1.10.1/jquery.js"
+    //        }
+    //    })
+    seajs.use("./js/main");
+</script>
+</body>
+</html>
