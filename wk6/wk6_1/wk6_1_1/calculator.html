@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="style/calculator.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="calucatorOuter">
+            <div class="title">
+                <h3>简易计算器</h3>
+            </div>
+            <div class="calucator">
+                <!--用table对计算器进行布局分为五行五列-->
+                <!--第一列中对五个单元格进行合并，放入输入框（input）显示数据的数据-->
+                <table>
+                    <tr>
+                        <td colspan="6"><input type="text" id="showData" readonly></td>
+                    </tr>
+                    <!--onclick="inputData(this)"-->
+                    <tr>
+                        <td><button type="button" name="number" value="6">6</button></td>
+                        <td><button type="button" name="number" value="7">7</button></td>
+                        <td><button type="button" name="number" value="8">8</button></td>
+                        <td><button type="button" name="number" value="9">9</button></td>
+                        <td><button type="button" name="operation" value="+">+</button></td>
+                        <td><button type="button" id="clear" value="c">C</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" name="number" value="2">2</button></td>
+                        <td><button type="button" name="number" value="3">3</button></td>
+                        <td><button type="button" name="number" value="4">4</button></td>
+                        <td><button type="button" name="number" value="5">5</button></td>
+                        <td><button type="button" name="operation" value="-">-</button></td>
+                        <td><button type="button" name="cancelInputData" value="<-"><-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" name="number" value="0">0</button></td>
+                        <td><button type="button" name="number" value="1">1</button></td>
+                        <td><button type="button" name="number" value="(">(</button></td>
+                        <td><button type="button" name="number" value=")">)</button></td>
+                        <td><button type="button" name="operation" value="*">*</button></td>
+                        <td><button type="button" name="number" value=".">.</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" name="number" value="cos(">cos</button></td>
+                        <td><button type="button" name="number" value="sin(">sin</button></td>
+                        <td><button type="button" name="number" value="tan(">tan</button></td>
+                        <td><button type="button" name="factorial" value="X!">!</button></td>
+                        <td><button type="button" name="operation" value="/">/</button></td>
+                        <td><button type="button" id="equal" value="=">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="JS/calculator.js"></script>
+</body>
+</html>
