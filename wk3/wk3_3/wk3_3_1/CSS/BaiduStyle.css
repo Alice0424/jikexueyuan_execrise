@@ -1,0 +1,225 @@
+﻿body{
+    margin: 0;
+    padding: 0;
+}
+
+/*body{*/
+    /*behavior:url("csshover3.htc");*/
+/*}*/
+
+.header{
+    height: 50px;
+    width: 100%;
+}
+
+.headerMenu{
+    height: 50px;
+    width: 540px;
+    /*background-color: #01ffda;*/
+    position: absolute;
+    right: 0px;
+    top:20px;
+}
+
+.menuLink{
+    float: left;
+    width: 50px;
+    /*background-color: #bc8f8f;*/
+    margin-right: 5px;
+    text-align: center;
+}
+
+.menuLink a{
+    font-size: 13px;
+    color:#000;
+    font-family: simsun;
+}
+
+ .menuLink a:hover{
+    color: #0f10ff;
+}
+
+.menuLink ul{
+    /*style="border: 1px solid #000000;width: 70px;margin: 0;padding: 0; height: 120px;list-style-type: none"*/
+    border:1px solid #000000;
+    width: 70px;
+    height: 100px;
+    list-style-type: none;
+    margin:5px 0 0 0;
+    padding: 0;
+    /*margin-top: 5px;*/
+    display: none;
+}
+
+.menuLink ul li{
+    line-height: 24px;
+    font-size: 13px;
+}
+
+.menuLink:hover>ul{
+    display: block;
+    /*background-color: #CC0000;*/
+}
+
+.menuLink ul li:hover{
+    background-color: #38f;
+}
+
+.content{
+    height: 400px;
+}
+
+#aMore{
+    background-color: #3385ff;
+    text-decoration: none;
+    display:inline-block;
+    width: 70px;
+    height: 20px;
+    padding-top: 2px;
+    text-align: center;
+    color: #ffffff;
+    /*margin-right: 20px;*/
+}
+
+.baiduPic{
+    height: 250px;
+    text-align: center;
+}
+
+.imgBaidu
+{
+    width: 270px;
+    height: 129px;
+    margin-top: 100px;
+}
+
+.center{
+    width: 660px;
+    position: relative;
+    left: 50%;
+    margin-left: -330px;
+}
+
+/*form{*/
+    /*border: 10px;*/
+/*}*/
+
+.input-submit{
+    width: 605px;
+    height: 33px;
+    /*background-color: #6aff51;*/
+}
+
+form .input,.submit{
+    float: left;
+}
+
+form .input{
+    width:500px;
+    height: 33px;
+    outline: none;
+    vertical-align: middle;
+    *padding-top: 3px;
+}
+
+form .submit{
+    height: 33px;
+    width: 100px;
+    margin-left: 0px;
+    background-color: #3385ff;
+    border: 1px;
+    _margin-right；-3px;
+    *border:0px;
+    cursor:pointer;
+}
+
+/*input[type=submit]:hover{*/
+    /*background-color: #3338ff;*/
+/*}*/
+
+/*input[type=text]:hover{*/
+     /*border-color: #c6c5b4;*/
+ /*}*/
+
+/*input[type=text]:focus{*/
+    /*border-color: #3385ff;*/
+    /*border:1px solid #3385ff;*/
+/*}*/
+
+.footer{
+    height: 340px;
+    width: 660px;
+    position: relative;
+    left: 50%;
+    margin-left: -330px;
+    margin-top:170px;
+}
+
+.qrcode-image,.qrcode-text,.qrcode-image1,.qrcode-text{
+    width: 60px;
+    height: 60px;
+    float:left;
+}
+
+.qrcode-image{
+    background-image: url("../images/shoujibaidu.png");
+}
+
+.qrcode-image1{
+    background: url("../images/baidunuomi.png") 0 0 no-repeat;
+    margin-left: 33px;
+}
+
+.qrcode-text{
+    margin-left: 12px;
+}
+
+.qrcode-text p {
+    /*color: #000000;*/
+    /*font-weight: bold;*/
+    /*font-size: 5px;*/
+    color:#4c4c4c;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.qrcode-text span{
+    color: #0000FF;
+    font-size: 12px;
+}
+
+.ftConw{
+    width:320px;
+    margin-left: 33px;
+    /*background-color: darkolivegreen;*/
+    height: 60px;
+    float: left;
+}
+
+.ftConw a{
+    color:#272727;
+    font-size: 12px;
+}
+
+.cp{
+    color:#272727;
+    font-size: 12px;
+}
+
+.lh{
+    margin: 10px 0 5px 0;
+}
+
+.icon{
+    width: 20px;
+    height: 22px;
+    margin-top: 31px;
+    background-image: url("images/icon.png");
+    _background-image:url("images/icon.png");
+}
+
+.cp a{
+    margin-left: 0px;
+}
+
+

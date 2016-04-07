@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <link type="text/css" rel="stylesheet" href="CSS/BaiduStyle.css">
+    <script type="text/javascript" src="JS/baidu.js"></script>
+    <title>百度一下，你就知道</title>
+</head>
+<body onload="onLoad('input')">
+<!--百度首页的头部，主要是一些链接比如”糯米“”新闻“等等-->
+<header class="header">
+    <div class="headerMenu">
+        <div class="menuLink"><a href="http://www.nuomi.com/?cid=002540"><b>糯米</b></a></div>
+        <div class="menuLink"><a href="http://news.baidu.com/"><b>新闻</b></a></div>
+        <div class="menuLink"><a href="https://www.hao123.com/"><b>hao123</b></a></div>
+        <div class="menuLink"><a href="http://map.baidu.com/"><b>地图</b></a></div>
+        <div class="menuLink"><a href="http://v.baidu.com/"><b>视频</b></a></div>
+        <div class="menuLink"><a href="http://tieba.baidu.com/"><b>贴吧</b></a></div>
+        <div class="menuLink"><a href="#">登录</a></div>
+        <div class="menuLink" onmousemove="onMouseMoveSetting('setting')" onmouseout="onMouseOutSetting('setting')"><a href="#">设置</a>
+            <ul id="setting">
+                <li>搜索设置</li>
+                <li>高级搜索</li>
+                <li>关闭预测</li>
+                <li>搜索历史</li>
+            </ul>
+        </div>
+
+        <div><a href="https://www.baidu.com/more/" id="aMore">更多产品</a></div>
+    </div>
+</header>
+<!--布局图片和输入框等-->
+<div class="content">
+    <!--布局图片-->
+    <div class="baiduPic">
+        <img src="images/bd_logo1.png" class="imgBaidu" alt="百度图片">
+    </div>
+    <!--布局输入框--table-->
+    <div class="center">
+        <form>
+            <div class="input-submit">
+                <input type="text" class="input" id="input"  autofocus="autofocus" onfocus="onFocuse('input')"
+                       onmousemove="onMouseOverInput('input')" onmouseout="onMouseOutInput('input')">
+                <input type="submit" value="百度一下" class="submit" id="submit" onmousemove="onMouseOverSubmit('submit')"
+                       onmouseout="onMouseOutSubmit('submit')">
+            </div>
+        </form>
+    </div>
+</div>
+<!--布局最下方-->
+<div class="footer">
+    <!--<div class="outer">-->
+    <div class="qrcode-image"></div>
+    <div class="qrcode-text">
+        <p><b>手机百度</b></p>
+
+        <p><span style="color:#9b9b9b">快人一步</span></p>
+    </div>
+    <div class="qrcode-image1"></div>
+    <div class="qrcode-text">
+        <p>百度糯米</p>
+
+        <p><span style="color:#9b9b9b">一毛大餐</span></p>
+    </div>
+
+    <div class="ftConw">
+        <p class="lh">
+            <a href="https://www.baidu.com/cache/sethelp/help.html" target="_blank">把百度设为首页</a>
+            <a href="http://home.baidu.com/">关于百度</a>
+            <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-homeprofile">About Baidu</a>
+        </p>
+
+        <p class="cp">
+            ©2015 Baidu
+            <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+            <a href="http://jianyi.baidu.com/">意见反馈</a>
+            京ICP证030173号
+        </p>
+    </div>
+</div>
+</body>
+</html>
