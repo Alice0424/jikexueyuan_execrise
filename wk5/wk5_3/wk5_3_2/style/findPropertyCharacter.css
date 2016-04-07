@@ -1,0 +1,25 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+.outer .resultOuter{
+    width: 400px;
+    /*height: 220px;*/
+    margin:250px auto;
+    border:3px dashed #000000;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.outer .resultOuter p span{
+    color:#008000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.outer .resultOuter span{
+    color: #a0a0a0;
+    font-size: 12px;
+}
