@@ -1,0 +1,355 @@
+body, ol {
+    padding: 0;
+    margin: 0;
+    /*width: 640px;*/
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 640px;
+    }
+}
+
+/*@media (min-width: 768px) and (max-width: 992px) {*/
+/*.container {*/
+/*width: 640px;*/
+/*}*/
+/*}*/
+
+/*@media (min-width: 993px) and (max-width:2000px ){*/
+/*.container {*/
+/*width: 640px;*/
+/*}*/
+/*}*/
+
+.container {
+    background-color: #000000;
+    position: relative;
+    min-width: 400px;
+}
+
+.container .header {
+    width: 100%;
+    height: 230px;
+    /*background-color: red;*/
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-position: center center;
+    background-image: url("../images/fur5.jpg");
+    position: relative;
+
+}
+
+.container .header .olOuter {
+    width: 100px;
+    height: 20px;
+    /*background-color: #15fff2;*/
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.container .header .olOuter button {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.container .header .olOuter #button1 {
+    background-color: #1dffdc;
+}
+
+/*内容中共有的信息*/
+.bodyCon .row1 .rowLeft .info,
+.bodyCon .row1 .rowRight .info,
+.bodyCon .row2 .rowLeft .info,
+.bodyCon .row2 .rowRight .rowRightUp .info,
+.bodyCon .row2 .rowRight .rowRightDown .info,
+.bodyCon .row3 .rowLeft .info,
+.bodyCon .row3 .rowRight .info {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.bodyCon .row1 .rowLeft,
+.bodyCon .row1 .rowRight,
+.bodyCon .row2 .rowLeft,
+.bodyCon .row2 .rowRight,
+.bodyCon .row3 .rowLeft,
+.bodyCon .row3 .rowRight {
+    width: 48%;
+    height: 200px;
+    float: left;
+}
+
+.bodyCon .row1 .rowLeft .info,
+.bodyCon .row1 .rowLeft .img,
+.bodyCon .row1 .rowRight .info,
+.bodyCon .row1 .rowRight .img,
+.bodyCon .row2 .rowLeft .info,
+.bodyCon .row2 .rowLeft .img,
+.bodyCon .row3 .rowLeft .info,
+.bodyCon .row3 .rowLeft .img,
+.bodyCon .row3 .rowRight .info,
+.bodyCon .row3 .rowRight .img {
+    float: left;
+}
+
+.bodyCon .row1 .rowLeft .img,
+.bodyCon .row1 .rowRight .img,
+.bodyCon .row3 .rowLeft .img,
+.bodyCon .row3 .rowRight .img {
+    /*width:150px;*/
+    width: 48%;
+    height: 150px;
+}
+
+/*第一行*/
+.bodyCon .row1,
+.bodyCon .row2 {
+    width: 100%;
+}
+
+.bodyCon .row1 .rowLeft,
+.bodyCon .row2 .rowLeft,
+.bodyCon .row3 .rowLeft {
+    position: relative;
+    left: 2%;
+    margin-top: 10px;
+}
+
+.bodyCon .row1 .rowRight,
+.bodyCon .row2 .rowRight,
+.bodyCon .row3 .rowRight {
+    position: relative;
+    left: 3%;
+    top: 10px;
+}
+
+.bodyCon .row1 .rowLeft a:hover,
+.bodyCon .row1 .rowRight a:hover,
+.bodyCon .row2 .rowLeft a:hover,
+.bodyCon .row2 .rowRight .rowRightUp a:hover,
+.bodyCon .row2 .rowRight .rowRightDown a:hover,
+.bodyCon .row3 .rowLeft a:hover,
+.bodyCon .row3 .rowRight a:hover {
+    color: #a2a2a2;
+    cursor: pointer;
+}
+
+/*信息info的设置*/
+.bodyCon .row1 .rowLeft .info,
+.bodyCon .row2 .rowLeft .info,
+.bodyCon .row3 .rowLeft .info {
+    position: absolute;
+    left: 12%;
+    top: 19%;
+    width: 35%;
+}
+
+.bodyCon .row1 .rowLeft .img {
+    background-image: url("../images/mobile_12.png");
+}
+
+.bodyCon .row1 .rowLeft .img,
+.bodyCon .row2 .rowLeft .img {
+    position: absolute;
+    left: 52%;
+    top: 25%;
+}
+
+.bodyCon .row1 .rowLeft {
+    background-color: #ef6d6d;
+}
+
+.bodyCon .row1 .rowRight {
+    background-color: #8c22e5;
+    position: relative;
+    left: 3%;
+}
+
+.bodyCon .row1 .rowRight .info,
+.bodyCon .row3 .rowRight .info {
+    position: absolute;
+    left: 59%;
+    top: 25%;
+    width: 35%;
+}
+
+.bodyCon .row1 .rowRight .img {
+    background-image: url("../images/mobile_07.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 14%;
+    top: 36%
+}
+
+/*第二列*/
+.bodyCon .row2 .rowLeft .img {
+    width: 48%;
+    height: 150px;
+}
+
+.bodyCon .row2 .rowLeft {
+    background-color: #284a9f;
+}
+
+.bodyCon .row2 .rowLeft .img {
+    background-image: url("../images/mobile_19.png");
+    background-repeat: no-repeat;
+}
+
+/*第二行的右边边*/
+.bodyCon .row2 .rowRight .rowRightUp,
+.bodyCon .row2 .rowRight .rowRightDown {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.bodyCon .row2 .rowRight .rowRightUp {
+    background-color: #24ab87;
+}
+
+.bodyCon .row2 .rowRight .rowRightDown {
+    background-color: #3cb3f1;
+}
+
+.bodyCon .row2 .rowRight .rowRightUp .img,
+.bodyCon .row2 .rowRight .rowRightUp .info,
+.bodyCon .row2 .rowRight .rowRightDown .img,
+.bodyCon .row2 .rowRight .rowRightDown .info {
+    float: left;
+}
+
+.bodyCon .row2 .rowRight .rowRightUp .img,
+.bodyCon .row2 .rowRight .rowRightDown .img {
+    width: 80px;
+    height: 80px;
+}
+
+.bodyCon .row2 .rowRight .rowRightUp .info,
+.bodyCon .row2 .rowRight .rowRightDown .info {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+}
+
+.bodyCon .row2 .rowRight .rowRightUp .img,
+.bodyCon .row2 .rowRight .rowRightDown .img {
+    background-image: url("../images/mobile_13.png");
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 75px;
+    position: absolute;
+    top: 17%;
+    left: 65%;
+}
+
+.bodyCon .row2 .rowRight .rowRightDown .img {
+    background-image: url("../images/mobile_25.png");
+    background-repeat: no-repeat;
+}
+
+/*第三列的设置*/
+.bodyCon .row3 .rowLeft {
+    background-color: #1bc25a;
+}
+
+.bodyCon .row3 .rowRight {
+    background-color: #efa413;
+}
+
+.bodyCon .row3 .rowLeft .info {
+    /*margin-top: 40px;*/
+    /*margin-left: 37px;*/
+}
+
+.bodyCon .row3 .rowLeft .img {
+    position: relative;
+    top: 5%;
+    left: 20%;
+}
+
+.bodyCon .row3 .rowRight .img {
+    top: 5%;
+    left: 20%;
+}
+
+.bodyCon .row3 .rowLeft .img {
+    background-image: url("../images/mobile_34.png");
+    background-repeat: no-repeat;
+    position: relative;
+    top: 25%;
+    left: 52%;
+}
+
+.bodyCon .row3 .rowRight .img {
+    background-image: url("../images/mobile_38.png");
+    background-repeat: no-repeat;
+    position: relative;
+    top: 49%;
+    left: 20%;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+    margin-left: -56px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.footer ul > li {
+    float: left;
+    position: relative;
+    display: block;
+    /*width: 164px;*/
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.footer ul > li > img {
+    display: block;
+    position: absolute;
+    left: 20%;
+}
+
+.footer img {
+    margin-top: 10px;
+}
+
+.footer ul > li > a {
+    position: relative;
+    display: block;
+    /*padding: 10px 15px;*/
+    /*background: #094e79;*/
+    background: -webkit-gradient(linear, center top, center bottom, from(#075991), to(#0d3545));
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.footer ul > li > a:hover {
+    text-decoration: none;
+    /*background-color: #eeeeee;*/
+    background: -webkit-gradient(linear, center top, center bottom, from(#0d3545), to(#075991));
+}
+
+.footer ul li span {
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
