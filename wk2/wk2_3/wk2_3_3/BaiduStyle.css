@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 600px;
+    height: 50px;
+}
+
+.header div{
+    height: 42px;
+    width: 800px;
+    position: absolute;
+    right: 0px;
+    margin-top: 20px;
+    text-align: right;
+    /*background-color: #f9f9f9;*/
+}
+
+.header div ul li a{
+    display: block;
+    font-size: 13px;
+    color:#333;
+    font-family: simsun;
+    font-size: 13px;
+}
+
+.header div ul li{
+    display: block;
+    font-size: 13px;
+    color:#333;
+    width: 70px;
+    /*margin-left: 10px;*/
+    /*margin-right: 20px;*/
+    font-family: simsun;
+    font-size: 13px;
+    /*background-color: #BBBB00;*/
+}
+
+
+.header div ul{
+    list-style:none;
+    display:inline-block;
+    position: relative;
+    /*background-color: #9b9b9b;*/
+}
+
+.header div ul li{
+    float: left;
+    text-align: center;
+}
+
+.header div ul ul li{
+    float: none;
+    line-height: 30px;
+    width: 70px;
+    /*margin-left: -4px;*/
+}
+
+.header div ul ul li{
+    font-size: 13px;
+    text-align: center;
+}
+
+.header div ul ul li:hover{
+    background-color: #38f;
+}
+
+.header div ul li ul{
+    display: none;
+    /*margin-left: -36px;*/
+    height: 100px;
+}
+
+.header div ul li:hover>ul{
+    display: block;
+}
+
+.header div ul li a:hover{
+    color: #0f10ff;
+}
+
+
+.content{
+    height: 400px;
+}
+
+/*''显示更多''标签设置*/
+#aMore{
+    background-color: #3385ff;
+    text-decoration: none;
+    display:inline-block;
+    width: 70px;
+    height: 20px;
+    padding-top: 2px;
+    text-align: center;
+    color: #ffffff;
+    /*margin-right: 20px;*/
+}
+
+.baiduPic{
+    height: 250px;
+    text-align: center;
+}
+
+.imgBaidu
+{
+    width: 270px;
+    height: 129px;
+    margin-top: 100px;
+}
+
+.center{
+    width: 660px;
+    position: relative;
+    left: 50%;
+    margin-left: -330px;
+}
+
+form .input,.submit{
+    float: left;
+}
+
+form .input{
+    width:500px;
+    height: 26px;
+    outline: none;
+}
+
+input[type=submit]:hover{
+    background-color: #3338ff;
+}
+
+input[type=text]:hover{
+    border-color: #c6c5b4;
+}
+
+input[type=text]:focus{
+    border-color: #c6c5b4;
+}
+
+
+form .submit{
+    height: 32px;
+    width: 100px;
+    margin-left: 0px;
+    background-color: #3385ff;
+    border: 10px;
+    cursor:pointer;
+}
+form{
+    border: 10px;
+}
+
+.footer{
+    height: 340px;
+    width: 660px;
+    position: relative;
+    left: 50%;
+    margin-left: -330px;
+    margin-top:170px;
+}
+
+.qrcode-image,.qrcode-text,.qrcode-image1,.qrcode-text{
+    width: 60px;
+    height: 60px;
+    float:left;
+}
+
+.qrcode-image{
+    background-image: url("images/shoujibaidu.png");
+}
+
+.qrcode-image1{
+    background-image: url("images/baidunuomi.png");
+    margin-left: 33px;
+}
+
+/*文字里旁边二维码的距离*/
+.qrcode-text{
+    margin-left: 12px;
+}
+
+.qrcode-text p {
+    color: #000000;
+    font-weight: bold;
+    font-size: 5px;
+}
+
+.qrcode-text span{
+    color: #0000FF;
+    font-size: 5px;
+}
+
+.ftConw{
+    width:320px;
+    margin-left: 33px;
+    /*background-color: darkolivegreen;*/
+    height: 60px;
+    float: left;
+}
+
+.ftConw a{
+    color:#272727;
+    font-size: 10px;
+}
+
+.cp{
+    color:#272727;
+    font-size: 10px;
+}
+
+.lh{
+    margin: 10px 0 5px 0;
+}
+
+.icon{
+    width: 20px;
+    height: 22px;
+    margin-top: 31px;
+    background-image: url("images/icon.png");
+}
+
+.cp a{
+    margin-left: 0px;
+}
+
+
