@@ -1,0 +1,56 @@
+.outer{
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin:-150px 0 0 -150px;
+}
+
+.outer>div{
+    border: 1px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.top{
+    /*blue*/
+    background-color: #0000FF;
+    box-shadow: 2px 2px 10px 2px #0000AA;
+    margin: 0px 100px;
+}
+
+.right{
+    /*red*/
+    background-color: #FF0000;
+    box-shadow: 2px 2px 10px 2px #AA0000;
+}
+
+.center{
+    /*yellow*/
+    background-color: #FFFF00;
+    box-shadow: 2px 2px 10px 2px #BBBB00;
+}
+
+img{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.left{
+    /*red*/
+    background-color: #FF0000;
+    box-shadow: 2px 2px 10px 2px #AA0000;
+}
+
+.bottom{
+    /*blue*/
+    background-color: #0000FF;
+    box-shadow: 2px 2px 10px 2px #0000AA;
+    margin-left: 100px;
+}
