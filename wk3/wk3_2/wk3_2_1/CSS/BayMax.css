@@ -1,0 +1,345 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+.bayMax{
+    width: 300px;
+    height: 600px;
+    /*background-color: #3affd1;*/
+    position: absolute;
+    left: 50%;
+    margin-top: 100px;
+    margin-left: -150px;
+}
+
+/*头部的设置，包括眼睛和嘴*/
+.bayMax .header{
+    width: 100px;
+    height: 75px;
+    background-color: #FFFFFF;
+    margin-left: 100px;
+    box-shadow: 0px 6px 6px #888888, 6px 6px 6px #ccc inset;
+    /*box-shadow: 0px 6px 6px #88888888;*/
+    /*box-shadow: 6px 6px 6px #CCC inset;*/
+    border-radius: 50%;
+    position:absolute;
+    z-index: 100;
+}
+
+.bayMax .header .eyeLeft,.eyeRight{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: absolute;
+}
+
+.bayMax .header .eyeLeft{
+    top:35px;
+    left: 20px;
+}
+
+.bayMax .header .eyeRight{
+    top:35px;
+    right: 20px;
+}
+
+.bayMax .header .mouth{
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top:42px;
+    left: 35px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 1px #000;
+}
+
+/*身体的一些布局*/
+.bayMax .body{
+    width: 214px;
+    height: 320px;
+    background-color: #FFFFFF;
+    position:absolute;
+    left: 50%;
+    margin-left: -107px;
+    z-index: 99;
+    top:60px;
+    border-radius: 45% 45% 50% 50%;
+    box-shadow: 6px 0px 6px #CCC inset,-6px 0px 6px #ccc inset;
+}
+
+.bayMax .body .heart {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 2px 2px 2px #ccc inset;
+    right: 55px;
+    top: 60px;
+    z-index: 111;
+    border: 1px solid #ccc;
+}
+
+.bayMax .body .belly{
+    width: 224px;
+    height: 264px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -112px;
+    border-radius: 42% 42% 50% 50%;
+    box-shadow: 0px 3px 2px #888888,0px -6px 6px #ccc inset;
+}
+
+.bayMax .body .belly:before,.belly:after{
+    width: 20px;
+    height: 120px;
+    position: absolute;
+
+    content: " ";
+    top: 50px;
+}
+
+.bayMax .body .belly:before{
+    border-radius: 50% 20% 20% 50%;
+    box-shadow: 4px 0px 6px #ccc inset;
+    left: -2px;
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+}
+
+.belly:after {
+    border-radius: 20% 50% 50% 20%;
+    box-shadow: -4px 0px 6px #ccc inset;
+    right: -2px;
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+}
+
+.bayMax .legLeft,.legRight{
+    width: 80px;
+    height: 145px;
+    position: absolute;
+    top: 290px;
+    background: #fff;
+}
+
+.bayMax .legLeft {
+    left: 68px;
+    border-radius: 40% 30% 10px 45%;
+    box-shadow: -2px 0px 2px #999 inset, 4px 0px 4px #CCC inset, -4px 0px 4px #CCC inset;
+}
+
+.bayMax .legRight {
+    right: 68px;
+    border-radius: 30% 40% 45% 10px;
+    box-shadow: 2px 0px 2px #999 inset, 4px 0px 4px #CCC inset, -4px 0px 4px #CCC inset;
+}
+
+.handLeft {
+    width: 78px;
+    height: 224px;
+    position: absolute;
+    left: 20px;
+    top: 75px;
+    background: #fff;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    box-shadow: 6px 6px 6px #ccc inset;
+    z-index: 91;
+}
+
+.handRight {
+    width: 78px;
+    height: 224px;
+    position: absolute;
+    right: 20px;
+    top: 75px;
+    background: #fff;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    box-shadow: -6px -6px 6px #ccc inset;
+    z-index: 91;
+}
+
+.coverLeft {
+    width: 64px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    top: 19px;
+    z-index: 101;
+    /*background-color: #CC0000;*/
+}
+
+.coverRight {
+    width: 64px;
+    height: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    bottom: 12px;
+    z-index: 101;
+    overflow: hidden;
+    /*background-color: #CC0000;*/
+}
+
+.Animation-coverLeft {
+    animation: eyeclose1 3s infinite 2s;
+    -moz-animation: eyeclose1 3s infinite 2s;
+    /* Firefox */
+    -webkit-animation: eyeclose1 3s infinite 2s;
+    /* Safari 和 Chrome */
+}
+
+.Animation-coverRight {
+    animation: eyeclose2 3s infinite 2s;
+    -moz-animation: eyeclose2 3s infinite 2s;
+    /* Firefox */
+    -webkit-animation: eyeclose2 3s infinite 2s;
+    /* Safari 和 Chrome */
+}
+
+.left {
+    width: 17px;
+    height: 15px;
+    float: left;
+    background: #ffffff;
+}
+
+.right {
+    width: 17px;
+    height: 15px;
+    float: right;
+    background: #ffffff;
+}
+
+@keyframes eyeclose1 {
+    0% {
+        top: 19px;
+    }
+    10% {
+        top: 28px;
+    }
+    20% {
+        top: 19px;
+    }
+    20% {
+        top: 28px;
+    }
+    40% {
+        top: 19px;
+    }
+}
+
+@-moz-keyframes eyeclose1
+    /* Firefox */
+
+{
+    0% {
+        top: 19px;
+    }
+    10% {
+        top: 28px;
+    }
+    20% {
+        top: 19px;
+    }
+    20% {
+        top: 27px;
+    }
+    40% {
+        top: 19px;
+    }
+}
+
+@-webkit-keyframes eyeclose1
+    /* Safari 和 Chrome */
+
+{
+    0% {
+        top: 19px;
+    }
+    5% {
+        top: 27px;
+    }
+    10% {
+        top: 19px;
+    }
+    15% {
+        top: 27px;
+    }
+    20% {
+        top: 19px;
+    }
+}
+
+@keyframes eyeclose2 {
+    0% {
+        bottom: 12px;
+    }
+    10% {
+        bottom: 20px;
+    }
+    20% {
+        bottom: 12px;
+    }
+    20% {
+        bottom: 20px;
+    }
+    40% {
+        bottom: 12px;
+    }
+}
+
+@-moz-keyframes eyeclose2
+    /* Firefox */
+
+{
+    0% {
+        bottom: 12px;
+    }
+    10% {
+        bottom: 20px;
+    }
+    20% {
+        bottom: 12px;
+    }
+    20% {
+        bottom: 20px;
+    }
+    40% {
+        bottom: 12px;
+    }
+}
+
+@-webkit-keyframes eyeclose2
+    /* Safari 和 Chrome */
+
+{
+    0% {
+        bottom: 12px;
+    }
+    5% {
+        bottom: 20px;
+    }
+    10% {
+        bottom: 12px;
+    }
+    15% {
+        bottom: 20px;
+    }
+    20% {
+        bottom: 12px;
+    }
+}
+
+
+
