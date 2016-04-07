@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>计算书生分数等级</title>
+    <link rel="stylesheet" type="text/css" href="style/ComputeGrade.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="stuInfo">
+            <h2>学生分数等级查询</h2>
+            <!--输入信息部分，“输入框--输入学生的分数”-->
+            <div class="inputInfo">
+                <label for="stuScore">分数：</label>
+                <input id="stuScore" type="text" placeholder="请输入学生分数" autofocus="">
+                <!--计算部分，获取输入框中输入的成绩，计算结果，需要校验输入信息的合法性，如数的信息比如为数字，且必须大于0-->
+                <input type="button" value="计算" onclick="calculateGrade('stuScore','result')" class="calculate">
+            </div>
+            <!--计算后的结果显示到下面的input中-->
+            <div class="outputInfo">
+                <label for="result">结果：</label>
+                <label id="result">此处显示查询结果</label>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="JS/ComputeGrade.js"></script>
+</body>
+</html>
