@@ -1,0 +1,128 @@
+.frame{
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -120px;
+    margin-top: -120px;
+    -webkit-perspective: 800px;
+}
+
+.frame .cube{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;/*firefox*/
+    -webkit-transform-style: preserve-3d;
+    /*设置动画效果*/
+    animation: 6s spin linear infinite;/*firefox*/
+    -webkit-animation: 6s spin linear infinite;
+    perspective-origin: 120px 120px;/*firefox*/
+    -webkit-perspective-origin: 120px 120px;
+}
+
+@keyframes spin {
+    from { transform:rotateX(0) rotateY(0) rotateZ(0);
+        -webkit-transform:rotateX(0) rotateY(0) rotateZ(0);}
+    to { transform:rotateX(-360deg) rotateY(360deg) rotateZ(360deg);
+        -webkit-transform:rotateX(-360deg) rotateY(360deg) rotateZ(360deg);}
+}
+
+.frame .cube .front,.back,.left,.right,.top,.bottom
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*设置六个面的旋转角度，从而组成正方体*/
+.frame .cube .front
+{
+    border: 2px solid rgba(0, 0, 0, 0.50);
+    /*background-color: rgba(214, 20, 255, 0.50);*/
+    -webkit-transform: translateZ(120px);
+    transform: translateZ(120px);
+}
+
+.frame .cube .back
+{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(58, 255, 209, 0.50);*/
+    -webkit-transform: rotateX(180deg) translateZ(120px);
+    transform: rotateX(180deg) translateZ(120px);
+}
+
+.frame .cube .left
+{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(255, 237, 51, 0.50);*/
+    -webkit-transform: rotateY(-90deg) translateZ(120px);
+    transform: rotateY(-90deg) translateZ(120px);
+}
+
+.frame .cube .right
+{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(15, 16, 255, 0.50);*/
+    -webkit-transform: rotateY(90deg) translateZ(120px);
+    transform: rotateY(90deg) translateZ(120px);
+}
+
+.frame .cube .top
+{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(255, 12, 39, 0.71);*/
+    -webkit-transform:rotateX(90deg) translateZ(120px);
+    transform:rotateX(90deg) translateZ(120px);
+}
+
+.frame .cube .bottom
+{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(20, 255, 35, 0.50);*/
+    -webkit-transform: rotateX(90deg) translateZ(-120px);
+    transform: rotateX(90deg) translateZ(-120px);
+}
+
+/*实现魔方每个面上有九个格*/
+.frame .cube .front *
+{
+    background-color: #0000FF;
+}
+
+.frame .cube .front *, .back *,.left *,.right *,.top *,.bottom *
+{
+    float:left;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    border: 5px solid #c6c6c6;
+    opacity:0.9;
+}
+
+.frame .cube .back *
+{
+    background-color: #ff000f;
+}
+
+.frame .cube .left *
+ {
+     background-color: #15ff0f;
+ }
+
+.frame .cube .right *
+{
+    background-color: #fffe0f;
+}
+
+.frame .cube .top *
+{
+    background-color: #FFFFFF;
+}
+
+.frame .cube .bottom *
+{
+    background-color: #ff0ffb;
+}
+
