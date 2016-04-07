@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Box</title>
+    <link rel="stylesheet" type="text/css" href="CSS/BoxModel.css">
+</head>
+<body>
+    <!--正常盒子模型-->
+    <div class="outer1">
+        <!--鞋袋--鞋袋与鞋盒的距离为10px-->
+        鞋袋与鞋盒相距10px,鞋盒宽10px,<br/>鞋盒与鞋子相距40px
+        <div class="shoesBag">
+            <!--鞋盒--鞋盒与鞋子的距离为40px-->
+            <div class="shoesBox">
+                <div class="shoes">正常盒子模型</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!--怪异盒子模型-->
+    <div class="outer2">
+        鞋袋与鞋盒相距10px,鞋盒宽10px,<br/>鞋盒与鞋子相距40px
+        <div class="shoesBag2">
+            <div class="shoesBox2">
+                <div class="shoes2">怪异鞋子模型</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

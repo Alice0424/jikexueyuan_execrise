@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.shoes{
+    width: 100px;
+    height: 100px;
+    background-color: #ff2121;
+    text-align: center;
+    line-height: 100px;
+}
+
+.shoesBox{
+    padding: 40px;
+    width: 100px;
+    height: 100px;
+    background-color: #ff2497;
+    border:10px dashed #bc8f8f;
+}
+
+/*鞋袋与鞋盒的内边距为10px*/
+.shoesBag{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: #b590ff;
+    box-shadow:5px 5px 10px #000000;/*设置盒子的阴影*/
+}
+
+.outer1{
+    /*margin-left: 100px;*/
+    margin-top: 100px;
+    position: relative;
+    left:50%;
+    margin-left: -100px;
+}
+
+b{
+    font-size: 18px;
+}
+
+.outer2{
+    width: 300px;
+    height: 300px;
+    /*background-color: #48ff70;*/
+    position: relative;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.shoesBag2{
+    width: 220px;
+    height: 220px;
+    padding: 10px;
+    -moz-box-sizing:border-box;/*火狐仅支持此属性*/
+    box-sizing: border-box;
+    background-color: #b590ff;
+    box-shadow:5px 5px 10px #000000;
+}
+
+.shoesBox2{
+    width:200px;
+    height: 200px;
+    padding: 40px;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;/*火狐仅支持此属性*/
+    border: 10px dashed #bc8f8f;
+    background-color: #ff2497;
+}
+
+.shoes2{
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    text-align: center;
+    line-height: 100px;
+}
