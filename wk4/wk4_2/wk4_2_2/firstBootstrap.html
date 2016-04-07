@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap首页</title>
+    <link href="style/third/bootstrap.min.css" rel="stylesheet">
+    <!--你自己的样式文件 -->
+    <link href="style/firstBootstrap.css" rel="stylesheet">
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="containerSelf">
+    <!--页面title部分的布局，包括标题“某某医院信息” “退步链接” 和头像信息-->
+    <div id="header" class="container">
+        <div class="headerInfo">
+            <div class="img"><img src="images/hospital.png"></div>
+            <div class="hos-title">某某医院信息</div>
+        </div>
+        <div class="loginOut">
+            <a href="loginBootstrap.html">[退出]</a>
+            <img src="images/head32.png" alt="学生头像" title="学生头像">
+        </div>
+    </div>
+   <!--中间内容区域的布局，整体布局为一行两列，左侧为一个导航栏（占两个栅格），右侧为主体信息部分（占是个栅格）-->
+    <div id="content" class="container">
+        <!--中间内容的左边菜单栏-部分-->
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <button class="btnSelf" data-toggle="dropdown" type="button"
+                        onclick="clickGerneral()">
+                    医院概况
+                </button>
+                <button class="btnSelf" data-toggle="dropdown" type="button"
+                        onclick="clickOffice()">
+                    课室信息
+                </button>
+                <button class="btnSelf" data-toggle="dropdown" type="button"
+                        onclick="clickExport()">
+                    专家介绍
+                </button>
+                <button class="btnSelf" data-toggle="dropdown" type="button"
+                        onclick="clickTime()">
+                    出诊信息
+                </button>
+            </div>
+            <!--中间内容区域右边的部分，主要包含“医院概况” “课室信息” “专家介绍” “出诊信息”等内容-->
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                <!--医院概况，布局为一幅关于医院的图片和关于医院的描述信息-->
+                <div class="contentRight" id="contentGeneralInfo">
+                    <img src="images/buiding.png" class="img-responsive">
+                    <br>
+
+                    <P>某某中心医院，创建于1952年，其前身为西北军政委员会卫生部直属医院，1954年更名为西安市中心医院.
+                        经过60年的建设与发展，西安市中心医院已成为一所设备先进，学科齐全，技术力量雄厚，集医疗、教学、科研、
+                        预防保健等为一体的大型综合性现代化医院。
+                        医院地处西安市繁华地段，编制床位1000张，
+                        拥有重症监护病床40余张和现代化层流手术室16间。医院年门（急）诊量约64万人次；年收治病人3.3万余人次。
+                        医院现有正式职工1197人，其中医、护、技人员1024人，具有高级职称专业技术人员338人，享受国务院特殊津贴和荣获省、
+                        市突出贡献称号专家17人，博士、硕士研究生285人。医院设置行政职能科室21个，临床、医技科室51个，其中省级优势学科和
+                        市级重点学科、专科10个（呼吸内科、消化内科、神经内科、神经外科、血液病科、职业病科、烧伤整形科、医学影像中心。
+                    </p>
+                </div>
+
+                <!--课室信息-->
+                <div class="contentRight" id="contentOfficeInfo">
+                    <!--重点科室信息，其中布局为一列四行每行为三个栅格-->
+                    <div class="ks-tile">重点科室</div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-3 ks21">
+                            <a><img src="images/ks21.jpg" class="img-responsive"></a>
+                            <a href="#"><span>眼科</span></a>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3 ks31">
+                            <img src="images/ks161.jpg" class="img-responsive">
+                            <a href="#"><span>耳鼻喉科</span></a>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3 ks41">
+                            <img src="images/ks41.jpg" class="img-responsive">
+                            <a href="#"><span>肾内科</span></a>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3 ks51">
+                            <img src="images/ks31.jpg" class="img-responsive">
+                            <a href="#"><span>生殖医学科</span></a>
+                        </div>
+                    </div>
+                    <!--医疗课室，其中布局为一列四行每行为三个栅格-->
+                    <div class="ks-tile">医疗课室</div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-3 ks41">
+                            <img src="images/ks162.jpg" class="img-responsive">
+                            <a href="#"><span>内科</span></a>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3 ks71">
+                            <img src="images/ks41.jpg" class="img-responsive">
+                            <a href="#"><span>外科</span></a>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3 ks81">
+                            <img src="images/ks31.jpg" class="img-responsive">
+                            <a href="#"><span>口腔科</span></a>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3 ks91">
+                            <img src="images/ks51.jpg" class="img-responsive">
+                            <a href="#"><span>麻醉科</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--专家介绍-->
+                <div class="contentRight" id="contentOfficeExpert">
+                    <!--其中布局为一行三列，每列中包含医生图像和医生介绍信息-->
+                    <!--内科-->
+                    <div class="ks-tile">内科</div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4 divExpert">
+                            <img src="images/doc-128.png" class="img-responsive">
+
+                            <div class="docInfo">
+                                <b>某某</b><br/><br/>
+                                职称:主任医师<br/>
+                                科室:内一科<br/>
+                                出诊时间:<br/>
+                                出诊信息<br/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 divExpert">
+                            <img src="images/doc-128.png" class="img-responsive">
+
+                            <div class="docInfo">
+                                <b>某某</b><br/><br/>
+                                职称:主任医师<br/>
+                                科室:内一科<br/>
+                                出诊时间:<br/>
+                                出诊信息<br/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 divExpert">
+                            <img src="images/doc-128.png" class="img-responsive">
+
+                            <div class="docInfo">
+                                <b>某某</b><br/><br/>
+                                职称:主任医师<br/>
+                                科室:内一科<br/>
+                                出诊时间:<br/>
+                                出诊信息<br/>
+                            </div>
+                        </div>
+                    </div>
+                    <!--外科-->
+                    <div class="ks-tile">外科</div>
+                    <div class="row">
+                        <!--delete-->
+                        <div class="col-md-4 divExpert">
+                            <img src="images/doc-128.png" class="img-responsive">
+
+                            <div class="docInfo">
+                                <b>某某</b><br/><br/>
+                                职称:主任医师<br/>
+                                科室:内一科<br/>
+                                出诊时间:<br/>
+                                出诊信息<br/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 divExpert">
+                            <img src="images/doc-128.png" class="img-responsive">
+
+                            <div class="docInfo">
+                                <b>某某</b><br/><br/>
+                                职称:主任医师<br/>
+                                科室:内一科<br/>
+                                出诊时间:<br/>
+                                出诊信息<br/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 divExpert">
+                            <img src="images/doc-128.png" class="img-responsive">
+
+                            <div class="docInfo">
+                                <b>某某</b><br/><br/>
+                                职称:主任医师<br/>
+                                科室:内一科<br/>
+                                出诊时间:<br/>
+                                出诊信息<br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--出诊信息-->
+                <div class="contentRight" id="contentTime">
+                    <div class="container timeContainer">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <td rowspan="2" class="tb-title">姓名</td>
+                                <td rowspan="2" class="tb-title">职称</td>
+                                <td rowspan="2" class="tb-title">专业</td>
+                                <td colspan="5" class="tb-week">星期</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #387038">一</td>
+                                <td style="background-color: #387030">二</td>
+                                <td style="background-color: #387038">三</td>
+                                <td style="background-color: #387038">四</td>
+                                <td style="background-color: #387038">五</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>某某</td>
+                                <td>主任医师</td>
+                                <td>心血管内科</td>
+                                <td class="tb-day">全天</td>
+                                <td></td>
+                                <td></td>
+                                <td class="tb-day">全天</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>某某</td>
+                                <td>主任医师</td>
+                                <td>心血管内科</td>
+                                <td class="tb-day">全天</td>
+                                <td></td>
+                                <td></td>
+                                <td class="tb-day">全天</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>某某</td>
+                                <td>主任医师</td>
+                                <td>心血管内科</td>
+                                <td class="tb-day">全天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>某某</td>
+                                <td>主任医师</td>
+                                <td>心血管内科</td>
+                                <td></td>
+                                <td class="tb-day">全天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>某某</td>
+                                <td>主任医师</td>
+                                <td>心血管内科</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="tb-day">全天</td>
+                            </tr>
+                            <tr>
+                                <td>某某</td>
+                                <td>主任医师</td>
+                                <td>心血管内科</td>
+                                <td class="tb-day">全天</td>
+                                <td></td>
+                                <td></td>
+                                <td class="tb-day">全天</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>某某</td>
+                                <td>主任医师</td>
+                                <td>心血管内科</td>
+                                <td class="tb-day">全天</td>
+                                <td></td>
+                                <td></td>
+                                <td class="tb-day">全天</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>某某</td>
+                                <td>主任医师</td>
+                                <td>心血管内科</td>
+                                <td class="tb-day">全天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>某某</td>
+                                <td>主任医师</td>
+                                <td>心血管内科</td>
+                                <td></td>
+                                <td class="tb-day">全天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>某某</td>
+                                <td>主任医师</td>
+                                <td>心血管内科</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="tb-day">全天</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div id="footer" class="container">
+        <div class="footerInfo">
+            <a href="#">法律声明</a>
+            |
+            <a href="#">联系我们</a>
+            |
+            <a href="#">友情链接</a>
+            |
+            <a href="#">网站地图</a>
+        </div>
+    </div>
+</div>
+
+<script src="JS/firstBootStrap.js" type="text/javascript"></script>
+<script src="JS/third/jquery-2.1.4.min.js"></script>
+</body>
+</html>
