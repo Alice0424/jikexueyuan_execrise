@@ -1,0 +1,193 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    min-width: 1100px;
+}
+
+.outer .header{
+    width: 98%;
+    margin: 0 auto;
+    /*padding-left: 30%;*/
+    /*//*/
+    height: 200px;
+    position: relative;
+}
+.outer .header .headerLeft{
+    width: 60%;
+    height: 130px;
+    float: left;
+    position: absolute;
+    left: 25%;
+}
+
+.outer .header .headerRight{
+    width: 100px;
+    height: 130px;
+    background-image: url("../images/html51.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    float: right;
+}
+
+.outer .header .headerLeft span{
+    font-size: 4px;
+    color: #999;
+}
+
+/*导航栏的设置*/
+#bodyCon{
+    margin: 0 auto;
+    width: 98%;
+}
+
+/*body内容区域中导航栏和问题区域的布局*/
+#bodyCon .navCon
+{
+    background-color: #eee;
+    margin-left: 10px;
+    width: 20%;
+}
+
+#bodyCon .content{
+    width: 76%;
+    margin-left: 40px;
+}
+
+#bodyCon .navCon,.content{
+    float: left;
+    margin-top: 20px;
+}
+
+/*导航栏中列表设置*/
+#bodyCon .navCon .navStyle>li>a{
+    width: 300px;
+    width: 100%;
+    border: 2px solid #5e5e5e;
+    color: #000000;
+}
+
+#bodyCon .navCon .navStyle>li>a:hover{
+    background-color: #5ac8ff;
+}
+
+#bodyCon .navCon .navStyle li:first-child>a{
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px ;
+}
+
+#bodyCon .navCon .navStyle li:last-child>a{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+
+/*对于所有答案通用的设置*/
+#bodyCon .content .question1,.question2,.question3,
+.question4,.question5,.question6,.question7,.question8,
+.question9,.question10,.question11,
+.question12,.question13,.question14,.question15
+{
+    background-color: #eee;
+}
+#bodyCon .content .question1 .answer,
+#bodyCon .content .question2 .answer,
+#bodyCon .content .question3 .answer,
+#bodyCon .content .question4 .answer,
+#bodyCon .content .question5 .answer,
+#bodyCon .content .question6 .answer,
+#bodyCon .content .question7 .answer,
+#bodyCon .content .question8 .answer,
+#bodyCon .content .question9 .answer,
+#bodyCon .content .question10 .answer,
+#bodyCon .content .question11 .answer,
+#bodyCon .content .question12 .answer,
+#bodyCon .content .question13 .answer,
+#bodyCon .content .question14 .answer,
+#bodyCon .content .question15 .answer
+{
+    display: none;
+    padding: 5px 0 0 40px;
+}
+
+#bodyCon .content .question4 .answer ol li,
+#bodyCon .content .question5 .answer ol li,
+#bodyCon .content .question6 .answer ol li,
+#bodyCon .content .question8 .answer ol li,
+#bodyCon .content .question9.answer ol li,
+#bodyCon .content .question11 .answer ol li,
+#bodyCon .content .question15 .answer ol li{
+    line-height: 34px;
+}
+
+#bodyCon .content .question1 div:hover>div,
+#bodyCon .content .question2 div:hover>div,
+#bodyCon .content .question3 div:hover>div,
+#bodyCon .content .question4 div:hover>div,
+#bodyCon .content .question5 div:hover>div,
+#bodyCon .content .question6 div:hover>div,
+#bodyCon .content .question7 div:hover>div,
+#bodyCon .content .question8 div:hover>div,
+#bodyCon .content .question9 div:hover>div,
+#bodyCon .content .question10 div:hover>div,
+#bodyCon .content .question11 div:hover>div,
+#bodyCon .content .question12 div:hover>div,
+#bodyCon .content .question13 div:hover>div,
+#bodyCon .content .question14 div:hover>div,
+#bodyCon .content .question15 div:hover>div{
+    display: block;
+    background-color: #5ac8ff;
+}
+
+#bodyCon .content .question2,
+#bodyCon .content .question3,
+#bodyCon .content .question4,
+#bodyCon .content .question5,
+#bodyCon .content .question6,
+#bodyCon .content .question7,
+#bodyCon .content .question8,
+#bodyCon .content .question9,
+#bodyCon .content .question10,
+#bodyCon .content .question11,
+#bodyCon .content .question12,
+#bodyCon .content .question13,
+#bodyCon .content .question14,
+#bodyCon .content .question15{
+    margin-top: 40px;
+}
+
+
+#bodyCon .content .question3 .answer .boxModal{
+    width: 500px;
+    height: 290px;
+    background-image: url("../images/boxModal.jpg");
+    background-repeat: no-repeat;
+}
+
+/*footer的信息设置*/
+#footer{
+    clear: both;
+    width: 98%;
+    height: 60px;
+    background-color: #eeeeee;
+    position: relative;
+    top:20px;
+}
+
+#footer .footerInfo{
+    width: 378px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#footer .footerInfo a{
+    color: #000000;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#footer .footerInfo a:hover{
+    color: #15fff2;
+}

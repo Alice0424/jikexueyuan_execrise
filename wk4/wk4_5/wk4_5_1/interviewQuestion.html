@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML&CSS面试题</title>
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--你自己的样式文件 -->
+    <link href="style/interviewQuestion.css" rel="stylesheet">
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="outer">
+    <div class="jumbotron header">
+        <div class="headerLeft">
+            <h1>HTML&CSS前端面试题</h1>
+            <span>答案在点击小电脑图标后显示</span>
+        </div>
+        <div class="headerRight"></div>
+    </div>
+    <!--内容部分-->
+    <div id="bodyCon">
+        <div class="navCon">
+            <ul class="nav nav-list navStyle">
+                <li><a href="#question1">Doctype是什么？</a></li>
+                <li><a href="#question2">块级元素和行内元素各有那些？</a></li>
+                <li><a href="#question3">盒子模型</a></li>
+                <li><a href="#question4">导入CSS的方式</a></li>
+                <li><a href="#question5">CSS选择符有哪些</a></li>
+                <li><a href="#question6">前端主要分为哪三层</a></li>
+                <li><a href="#question7">CSS的基本语句构成</a></li>
+                <li><a href="#question8">主流浏览器的内核</a></li>
+                <li><a href="#question9">浏览器兼容问题</a></li>
+                <li><a href="#question10">居中一个浮动元素</a></li>
+                <li><a href="#question11">管理CSS文件、JS图片</a></li>
+                <li><a href="#question12">对WEB标准以及W3C的理解与认识</a></li>
+                <li><a href="#question13">xhtml和html区别</a></li>
+                <li><a href="#question14">&ltimg&gt标签上title与alt属性</a></li>
+                <li><a href="#question15">清除浮动</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <!--第一个问题-->
+            <div class="question1" id="question1">
+                <h3>1、Doctype是什么？如何触发严格模式和混杂模式？区分它们有何意义？</h3>
+                <div>
+                    <img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <p>Doctype是document type的缩写，用来说明所用的XHTML和HTML的版本。</p>
+                        <p><b>XHTML提供了三种DTD声明，分别是:</b></p>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr class="success">
+                                <td>类型</td>
+                                <td>完整声明</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="info">
+                                <td>过渡的</td>
+                                <td>&lt!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-tranisitional.dtd"&gt</td>
+                            </tr>
+                            <tr class="info">
+                                <td>严格的</td>
+                                <td>&ltDOCTYPE html PUBLIC "-W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt</td>
+                            </tr>
+                            <tr class="info">
+                                <td>框架的</td>
+                                <td>&lt!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!--<p><b>XHTML提供了三种DTD声明，分别是:/b></p>-->
+                        <!--<p class="text-danger">1、过渡的：&lt!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-tranisitional.dtd"&gt</p>-->
+                        <!--<p class="text-danger">2、严格的：&ltDOCTYPE html PUBLIC "-W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt</p>-->
+                        <!--<p class="text-danger">2、严格的：&lt!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt</p>-->
+                    </div>
+                </div>
+            </div>
+            <!--第二个问题，块级元素和行内元素各有那些？-->
+            <div class="question2" id="question2">
+                <h3>2、块级元素和行内元素各有那些？</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <p>行内元素，会在同一行内。</p>
+                        <p>块级元素会各占一行。</p>
+                        <p>行内元素主要有：sapn、a、b、img、br、button、strong、textarea、select</p>
+                        <p>块级元素主要有：div、ul、li、p、fieldset、form、h1-h6、hr、table、tr、td</p>
+                    </div>
+                </div>
+            </div>
+            <!--第三个问题盒子模型-->
+            <div class="question3" id="question3">
+                <h3>3、盒子模型</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <p>每个盒子都有：边界、边框、填充、内容四个属性</p>
+                        <div class="boxModal"></div>
+                    </div>
+                </div>
+            </div>
+            <!--第四个问题CSS引入方式-->
+            <div class="question4" id="question4">
+                <h3>4、导入CSS的方式</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <ol style="list-style-type: disc">
+                            <li>行内试：行内式是在标记的style属性中设定CSS样式。</li>
+                            <li>嵌入式：嵌入式是将CSS样式集中写在网页的&lthead&gt&lt/head&gt标签对的&ltstyle&gt&lt/style&gt>标签对中。</li>
+                            <li>链接式：例如：@import"mystyle.css"; 此处要注意.css文件的路径。</li>
+                            <li>导入式：例如：&ltlink href="mystyle.css" rel="stylesheet" type="text/css"/&gt</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!--第五个CSS选择符有哪些-->
+            <div class="question5" id="question5">
+                <h3>5、CSS选择符有哪些</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <p>CSS选择符主要有一下十种：</p>
+                        <ol style="list-style-type: square">
+                            <li>通配选择符：*{margin:0px}</li>
+                            <li>类型选择符：a{text-decoration:none;}</li>
+                            <li>属性选择符：input[type="button"]{padding:5px}</li>
+                            <li>包含选择符：div .code a{text-decoration:none}</li>
+                            <li>子对象选择符：ul .test>li{font-size:14px}</li>
+                            <li>ID选择符：#test{color:red}</li>
+                            <li>类选择符：.test{color:red}</li>
+                            <li>选择符分组：body,ul,li{margin:0px;}</li>
+                            <li>伪类及伪对象选择符：div:first-letter{font-size:16px;}</li>
+                            <li>相邻选择符：li+li{font-weight:bold;}</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!--第六个问题，前端主要分为哪三层，分别是什么？作用是什么？-->
+            <div class="question6" id="question6">
+                <h3>6、前端主要分为哪三层，分别是什么？作用是什么？</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <ol>
+                            <li>结构层：由HTML或XHTML之类的标记语言负责创建，仅负责语义的表达。解决了“内容是什么”的问题。</li>
+                            <li>表现层：由CSS负责创建，解决了页面“如何显示内容”的问题</li>
+                            <li>行为层：由脚本决定。解决了页面上“内容应该如何对事件做出反应”的问题</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!--第七个问题CSS的基本语句构成是什么？-->
+            <div class="question7" id="question7">
+                <h3>7、CSS的基本语句构成是什么？</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                       <p>选择符{属性1：值1；属性2：值2；...}</p>
+                    </div>
+                </div>
+            </div>
+            <!--第八个问题主流浏览器的内核是什么-->
+            <div class="question8" id="question8">
+                <h3>8、主流浏览器的内核是什么？</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                       <ol style="list-style-type: circle">
+                           <li>IE:trident内核</li>
+                           <li>Mozilla Firefox:Gecko内核</li>
+                           <li>Chrome、Safari：webkit内核</li>
+                           <li>Opera：Presto内核</li>
+                       </ol>
+                    </div>
+                </div>
+            </div>
+            <!--第九个问题经常遇到的浏览器兼容问题有哪些？如何解决？-->
+            <div class="question9" id="question9">
+                <h3>9、经常遇到的浏览器兼容问题有哪些？如何解决？</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                       <ol style="list-style-type:upper-roman">
+                           <li>浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。</li>
+                           <li>IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。解决方案是在float的标签样式控制中加入 display:inline;将其转化为行内属性。</li>
+                           <li>在ie6，ie7中元素高度超出自己设置高度。原因是IE8以前的浏览器中会给元素设置默认的行高的高度导致的。解决方案是加上overflow:hidden或设置line-height为更小的高度。</li>
+                           <li>min-height在IE6下不起作用。解决方案是添加 height:auto !important;height:xxpx;其中xx就是min-height设置的值。</li>
+                           <li>透明性IE用filter:Alpha(Opacity=60)，而其他主流浏览器用 opacity:0.6;</li>
+                           <li>a(有href属性)标签嵌套下的img标签，在IE下会带有边框。解决办法是加上a img{border:none;}样式。</li>
+                           <li>父子标签间用margin的问题，表现在有时除IE(6/7)外的浏览器子标签margin转移到了父标签上，IE6&7下没有转移。解决办法就是父子标签间的间隔建议用padding，兄弟标签间用margin。</li>
+                           <li>Opera：Presto内核</li>
+                       </ol>
+                    </div>
+                </div>
+            </div>
+            <!--第十个问题如何居中一个浮动元素-->
+            <div class="question10" id="question10">
+                <h3>10、如何居中一个浮动元素？</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                       <p>父元素和子元素同时左浮动，然后父元素相对左移动50%，再然后子元素相对右移动50%，或者子元素相对左移动-50%也就可以了。</p>
+                    </div>
+                </div>
+            </div>
+            <!--第十一个问题如何管理CSS文件、JS图片？-->
+            <div class="question11" id="question11">
+                <h3>11、如何管理CSS文件、JS图片？</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <ol style="list-style-type: upper-alpha">
+                            <li>对各个项目中CSS，JS里的稳定的通用代码进行提取，形成公共文件，然后利用CDN等资源进行缓存，减轻服务器压力。</li>
+                            <li>去掉JS、CSS里的冗余代码，对代码进行精减。</li>
+                            <li>对JS、CSS进行压缩合并，减少请求次数。</li>
+                            <li>对页面上的小图标，背景等图片进行合并，减少请求次数。</li>
+                            <li>JS、CSS、图片均用版本控制工具进行管理，方便修改与恢复。</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!--第十二个问题对WEB标准以及W3C的理解与认识-->
+            <div class="question12" id="question12">
+                <h3>12、对WEB标准以及W3C的理解与认识</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <p>
+                            标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性；
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--第十三个问题xhtml和html有什么区别-->
+            <div class="question13" id="question13">
+                <h3>13、xhtml和html有什么区别</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <p>
+                            HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言<br/>
+                            最主要的不同：<br/>
+                            XHTML 元素必须被正确地嵌套。<br/>
+                            XHTML 元素必须被关闭。<br/>
+                            标签名必须用小写字母。<br/>
+                            XHTML 文档必须拥有根元素。 <br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--第十四个问题<img>标签上title与alt属性的区别是什么？-->
+            <div class="question14" id="question14">
+                <h3>14、&ltimg&gt标签上title与alt属性的区别是什么？</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <p>
+                            Alt 当图片不显示是 用文字代表。<br/>
+                            Title 为该属性提供信息
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="question15" id="question15">
+                <h3>15、清除浮动的几种方式，各自的优缺点</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <ol>
+                            <li>使用空标签清除浮动 clear:both（理论上能清楚任何标签,增加无意义的标签）</li>
+                            <li>使用overflow:auto（空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE）</li>
+                            <li>使用afert伪元素清除浮动(用于非IE浏览器)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!--第十六个问题DIV设置浮动后无法撑开外部DIV-->
+            <div class="question16" id="question16">
+                <h3>16、DIV设置浮动后无法撑开外部DIV</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <p>当DIV1里面嵌套有一个DIV2，当DIV2设置了浮动，那么DIV1是无法被撑开的，也就是说DIV2在这里相当于浮在了页面上方，跟DIV1不在同一个层面，导致了DIV2无法把DIV1给撑开</p>
+                        <ul>
+                            <li>在浮动结束的容器后面加上这段代码<br/>
+                                <textarea style="width: 300px"><div style=”clear:both;”></div></textarea>
+                            </li>
+                            <li>在外层DIV，也就是这里的DIV1的CSS里面加入以下CSS代码<br>
+                                <textarea style="width: 300px">overflow: auto;</textarea>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--第十七个问题如何在网页上显示html代码-->
+            <div class="question17" id="question17">
+                <h3>17、如何在网页上显示html代码</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <p>放到&lttextarea&gt</p>
+                    </div>
+                </div>
+            </div>
+            <!--第十八个问题background-size：contain-->
+            <div class="question18" id="question18">
+                <h3>18、background-size：contain</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <p> background-size的contain特定值会保持图像本身的宽高比例，将图片缩放到宽度或高度正好适应定义背景的区域。</p>
+                    </div>
+                </div>
+            </div>
+            <!--第十九个问题div的大小和position absolute有关系么-->
+            <div class="question19" id="question19">
+                <h3>19、div的大小和position absolute有关系么</h3>
+                <div><img src="images/compute1.png" title="答案">
+                    <div class="answer">
+                        <p> position:absolute是相对于position:relative，你可以给一个大的div加上position:relative这个属性，然后里面的div加position:absolute这个属性之后就会相对于这个大的div浮动，如果父级div都没有position:relative这个属性它就会相对与body浮动</p>
+                        <p>给父级加一个voerflow:hidden的属性就不会超过了，不然还是会超出去的</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerInfo">
+            <a href="#">法律声明</a>
+            |
+            <a href="#">联系我们</a>
+            |
+            <a href="#">友情链接</a>
+            |
+            <a href="#">网站地图</a>
+        </div>
+    </div>
+
+    <!--第十六个问题DIV设置浮动后无法撑开外部DIV-->
+    <!--第十七个问题如何在网页上显示html代码-->
+</div>
+</body>
+</html>
