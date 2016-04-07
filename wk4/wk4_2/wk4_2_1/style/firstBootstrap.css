@@ -1,0 +1,245 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    background: #000000;
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+#header .headerInfo .img, .hos-title {
+    float: left;
+}
+
+#header .headerInfo .hos-title {
+    margin: 20px 0 0 0;
+}
+
+#header .loginOut {
+    position: absolute;
+    right: 0;
+    margin: 20px 5px 0 0;
+}
+
+#header .loginOut a {
+    color: #ffffff;
+}
+
+#header .loginOut a:hover {
+    color: #1dffdc;
+}
+
+#content {
+    background-color: #ffffff;
+    border: 1px solid #999999;
+}
+
+#content .row {
+    /*delete*/
+    /*background: #64212a;*/
+    /*height: 100px;*/
+}
+
+#content .row .btnSelf {
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#content .row .btnSelf:hover {
+    background-color: #3385ff;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+
+    #footer{
+        background-color: #000000;
+        margin-bottom: 0;
+    }
+    #footer .footerInfo{
+        width: 80%;
+        height: 50px;
+        margin: 0 auto;
+        background-color: #000000;
+    }
+
+    #footer .footerInfo a {
+        color: #ffffff;
+        font-size: 4px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    #content .row .btnSelf {
+        width: 36px;
+        font-size: 12px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #content .row .col-xs-2 {
+        padding: 0px;
+    }
+}
+
+#content .contentConRight {
+    width: 100%;
+    height: 800px;
+    background-color: #245269;
+}
+
+#contentOfficeInfo,
+#contentOfficeExpert {
+    display: none;
+}
+
+#contentGeneralInfo p {
+    font-size: 21px;
+    text-indent: 40px;
+    line-height: 40px;
+}
+
+/*////////////////////科室信息//////////////////////////*/
+/*初始的时候课室信息不显示*/
+/*课室信息*/
+#contentOfficeInfo .ks-tile,
+#contentOfficeExpert .ks-tile {
+    width: 100%;
+    /*height: 50px;*/
+    line-height: 50px;
+    clear: both;
+    font-family: 微软雅黑, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #000000;
+}
+
+/*课室信息下面所有的div*/
+#contentOfficeInfo .row div {
+    /*height: 400px;*/
+}
+
+/*课室信息中所有的a标签*/
+#contentOfficeInfo .row a {
+    /*height: 130px;*/
+    display: block;
+    color: #7277A4;
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-decoration: none;
+}
+
+#contentOfficeInfo .row a span {
+    /*padding-top: 70px;*/
+    line-height: 30px;
+    text-align: center;
+    display: block;
+}
+
+#contentOfficeInfo .row img {
+    margin: 0 auto;
+}
+
+/*///////////////////////////*/
+
+/*专家信息*/
+#contentOfficeExpert .row .divExpert img,
+#contentOfficeExpert .row .divExpert div {
+    float: left;
+}
+
+#contentOfficeExpert .row .divExpert {
+    margin-bottom: 20px;
+}
+
+#contentTime {
+    background-color: #ffffff;
+    display: none;
+}
+
+#contentTime .timeContainer {
+    width: 98%;
+    overflow-x:auto;
+}
+
+#contentTime .timeContainer table thead tr td, tbody tr td {
+    text-align: center;
+}
+
+#contentTime .timeContainer table {
+    margin-top: 40px;
+}
+
+#contentTime .timeContainer table thead tr .tb-title {
+    padding-top: 30px;
+    background-color: #719F00;
+}
+
+#contentTime .timeContainer table thead tr .tb-week {
+    background-color: #719F00;
+}
+
+#contentTime .timeContainer table tbody tr .tb-day {
+    background-color: #ff74ec;
+}
+
+/*分割线<hr>*/
+.cutoffLine {
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px){
+    #footer {
+        height: 60px;
+        background-color: #000000;
+        margin-top: 5px;
+    }
+
+    #footer .footerInfo {
+        width: 25%;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    #footer .footerInfo a {
+        color: #ffffff;
+        font-size: 14px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+}
+
+#footer .footerInfo a:hover {
+    color: #15fff2;
+}
+
+@media screen and (min-width: 599px) and (max-width: 1200px){
+    #footer {
+        height: 60px;
+        background-color: #000000;
+        margin-top: 5px;
+    }
+
+    #footer .footerInfo {
+        width: 30%;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    #footer .footerInfo a {
+        color: #ffffff;
+        font-size: 14px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+}
+
+#footer .footerInfo a:hover {
+    color: #15fff2;
+}
+
