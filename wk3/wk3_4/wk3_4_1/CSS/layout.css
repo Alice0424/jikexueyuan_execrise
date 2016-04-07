@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    /*background-color: #BBBB00;*/
+}
+
+header .outer{
+    width: 85%;
+    height: 100%;
+    /*background-color: #ffed33;*/
+    position: relative;
+    left: 50%;
+    margin-left: -42.5%;
+    text-align: center;
+    border: 1px solid #bc8f8f;
+    margin-top: 2px;
+}
+
+header .outer h1{
+    margin-top: 50px;
+}
+
+.outer{
+    width: 100%;
+    /*height: 700px;*/
+    /*background-color: #999999;*/
+    overflow: hidden;
+}
+
+/*中间部分的双飞翼布局*/
+.outer .content,.roles,.series{
+    min-height: 30px;
+    float: left;
+}
+
+.outer .content{
+    /*background-color: #ff6600;*/
+    width: 100%;
+}
+
+.outer .content .content_wrap{
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 1px solid #bc8f8f;
+    margin-top: 20px;
+}
+
+.outer .roles{
+    width: 25%;
+    /*background-color: #c1dc5d;*/
+    margin-left: -100%;
+}
+
+.outer .series{
+    width: 25%;
+    /*background-color: #4791ff;*/
+    margin-left: -25%;
+}
+
+.outer .roles,.series{
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+
+/*对中间内容的设置*/
+
+.outer .content .content_wrap{
+    padding: 3% 5% 0 5%;
+}
+
+.outer .content .content_wrap span{
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.roles .roles_content{
+    width: 60%;
+    /*background-color: #fba4ff;*/
+    height:600px;
+    margin-left: 30%;
+    padding-top: 4%;
+    padding-left: 2%;
+    border: 1px solid #bc8f8f;
+    margin-top: 20px;
+}
+
+.series .series_content{
+    width: 60%;
+    /*background-color: #fba4ff;*/
+    height:600px;
+    padding-top: 4%;
+    padding-left: 2%;
+    margin-left: 10%;
+    border: 1px solid #bc8f8f;
+    margin-top: 20px;
+}
