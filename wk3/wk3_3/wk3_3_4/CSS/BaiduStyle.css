@@ -1,0 +1,260 @@
+﻿body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.frame{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    /*background-color: #73d6ff;*/
+
+    height: 130px;
+
+    /**margin-top:19px;*/
+}
+
+/*对菜单栏布局做处理*/
+.headerMenu{
+    height: 130px;
+    width: 540px;
+    _height:130px;
+    *height:130px;/*IE5*/
+    /*background-color: #01ffda;*/
+    position: relative;
+    right: 0;
+    top:0px;
+    left: 65%;
+    margin: 19px 0 5px 0;
+}
+
+/*对包裹a标签的div设置大小*/
+.menuLink{
+    float: left;
+    width: 50px;
+    /*background-color: #bc8f8f;*/
+    margin-right: 5px;
+    text-align: center;
+}
+/*对a标签设置大小*/
+.menuLink a{
+    font-size: 13px;
+    color:#000;
+    font-family: simsun;
+}
+
+ .menuLink a:hover{
+    color: #0f10ff;
+}
+
+.menuLink ul{
+    border:1px solid #000000;
+    width: 70px;
+    height: 100px;
+    list-style-type: none;
+    margin:5px 0 0 0;
+    padding: 0;
+    margin-top: 5px;
+    display: none;
+}
+
+.menuLink ul li{
+    line-height: 24px;
+    font-size: 13px;
+}
+
+.menuLink:hover>ul{
+    display: block;
+}
+
+.menuLink ul li:hover{
+    background-color: #38f;
+}
+
+#aMore{
+    background-color: #3385ff;
+    text-decoration: none;
+    display:inline-block;
+    width: 70px;
+    height: 20px;
+    padding-top: 2px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.menuSetting{
+    width: 76px;
+    margin-left: -18px;
+    _margin-top:-2px;
+    *margin-top:-2px;
+    *height: 200px;
+    _height:100px
+}
+
+.content{
+    height: 200px;
+    _height:200px;
+    *height:200px;/*IE5*/
+
+    width: 620px;
+    *width:620px;
+    _width:620px;
+
+    /*background-color: #d8d8d8;*/
+    position: relative;
+    left: 30%;
+}
+
+/*:root .content{*/
+    /*margin-top: 100px;*/
+/*}*/
+
+.baiduPic{
+    height: 150px;
+    _height: 129px;
+    text-align: center;
+    /*background-color: #ff2497;*/
+}
+
+.imgBaidu
+{
+    width: 270px;
+    height: 129px;
+}
+
+.input-submit{
+     width: 620px;
+     height: 33px;
+ }
+
+form .input,.submit{
+    float: left;
+}
+
+/*对输入框做一些样式处理*/
+form .input{
+    width:500px;
+    height: 30px;
+    _height:34px;
+    outline: none;
+    padding-left: 4px;
+}
+
+/*对提交按钮做一些处理*/
+form .submit{
+    height: 34px;
+    /**height:35px;*/
+    /*height:38px\9;*/
+    /*_height:35px;*/
+    width: 100px;
+    margin-left: 0px;
+    background-color: #3385ff;
+    border: 0px;
+    _margin-right；-3px;
+    *border:0px;
+    cursor:pointer;
+    color:#FFFFFF;
+}
+
+.footer{
+    height: 60px;
+    width: 680px;
+    *widht:690px;
+    position: relative;
+    left: 30%;
+    /*margin-left: -330px;*/
+    margin-top:200px;
+    _margin-top:200px;
+    /*background-color: #c1dc5d;*/
+}
+
+/*底部的CSS样式的处理*/
+.qrcode-image,.qrcode-text,.qrcode-image1,.qrcode-text,.ftConw,.icon{
+    width: 60px;
+    height: 60px;
+    float:left;
+}
+
+.qrcode-image{
+    background-image: url("../images/shoujibaidu.png");
+}
+
+.qrcode-image1{
+    background: url("../images/baidunuomi.png") 0 0 no-repeat;
+    margin-left: 33px;
+}
+
+.qrcode-text{
+    margin-left: 12px;
+}
+
+.qrcode-text p {
+    color: #000000;
+    font-weight: bold;
+    font-size: 5px;
+    color:#4c4c4c;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.qrcode-text span{
+    color: #0000FF;
+    font-size: 12px;
+}
+
+.ftConw{
+    width:306px;
+    *width:306px;
+    margin-left: 33px;
+    /*background-color: darkolivegreen;*/
+    height: 60px;
+    float: left;
+}
+
+.ftConw a{
+    color:#272727;
+    font-size: 12px;
+}
+
+.cp{
+    color:#272727;
+    font-size: 12px;
+}
+
+.lh{
+    margin: 10px 0 5px 0;
+}
+
+.icon{
+    width: 20px;
+    height: 22px;
+    margin-top: 31px;
+    *margin-top:37px;
+    background-image: url("../images/icon.png");
+    _background-image:url("../images/icon.png");
+    /*background-color: #bc8f8f;*/
+    margin-left: 0px;
+}
+
+.cp a{
+    margin-left: 0px;
+}
+
+
+/*input[type=submit]:hover{*/
+/*background-color: #3338ff;*/
+/*}*/
+
+/*input[type=text]:hover{*/
+/*border-color: #c6c5b4;*/
+/*}*/
+
+/*input[type=text]:focus{*/
+/*border-color: #3385ff;*/
+/*border:1px solid #3385ff;*/
+/*}*/
+
