@@ -1,0 +1,3659 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>极客学院</title>
+    <link rel="stylesheet" type="text/css" href="css/jikexueyuan.css">
+</head>
+<body>
+<!--极客学院logo,input输入框,"登录","注册"，首页，职业课程，就业课程，极客社区，极客+-->
+<div id="header">
+    <div class="header-top clearFloat">
+        <img src="images/title.png">
+        <input type="text" placeholder="搜索课程、问答或wiki" id="searchTxt" name="searchTxt">
+
+        <div class="search-btn"></div>
+        <div class="search-hot" id="search-hot">
+            <a href="#"><span>Android</span></a>
+            <a href="#"><span>ios</span></a>
+            <a href="#"><span>HTML5</span></a>
+        </div>
+        <div class="loginbox">
+            <span class="my-massage2">&nbsp;</span>
+            <em>|</em>
+            <a href="http://passport.jikexueyuan.com/connect/qq">
+                <span>QQ登录</span>
+            </a>
+            <em>|</em>
+            <span>
+                <a href="http://passport.jikexueyuan.com/sso/login">登录</a>
+            </span>
+            <em>|</em>
+            <span>
+                <a href="http://passport.jikexueyuan.com/sso/reg_phone">注册</a>
+            </span>
+        </div>
+    </div>
+    <div class="split-line-up"></div>
+    <div class="split-line-down"></div>
+    <!--极客学院页面中头部菜单的设置“首页”、“职业课程”，“就业课程”，“极客社区”，“极客+”-->
+    <div id="head-nav">
+        <!--”首页“，职业课程，”极客社区“，”极客+“-->
+        <ul class="head-nav-overview clearFloat">
+            <li id="li-firstPage" class="headNav"><a href="#">首页</a></li>
+            <li id="li-professionCourse" class="headNav"><a href="#">职业课程</a></li>
+            <li id="li-jobCourse" class="headNav"><a href="#">就业课程</a></li>
+            <li id="li-geek" class="headNav"><a href="#">极客社区</a></li>
+            <li id="li-geekPlus" class="headNav"><a href="#">极客+</a></li>
+        </ul>
+        <!--"VIP会员"，”求课程“，”APP下载“-->
+        <div class="head-nav-others">
+            <a href=""><span class="vip">VIP</span></a>
+            <span class="vip-info info">VIP会员</span>
+            <span class="img info distance"><img src="images/star-icon_c593bc1.png"><a href="#">求课程</a></span>
+            <span class="img info distance"><img src="images/download.png"><a href="#"> APP下载</a></span>
+        </div>
+        <!--hover头部菜单“首页”后显示的下来菜单项-->
+        <div id="head-sub-menu" class="clearFloat">
+            <ul></ul>
+            <ul id="ul-firstPage" class="headSubPage">
+                <li><a href="#">课程库</a></li>
+                <li><a href="#">知识体系图</a></li>
+                <li><a href="#">职业路径图</a></li>
+                <li><a href="#">系列课程</a></li>
+            </ul>
+            <ul id="ul-jobCourse" class="headSubPage">
+                <li><a href="#">web前端开发</a></li>
+                <li><a href="#">Android开发</a></li>
+                <li><a href="#">Javaweb开发</a></li>
+            </ul>
+            <ul id="ul-geek" class="headSubPage">
+                <li><a href="#">Wiki</a></li>
+                <li><a href="#">技术问答</a></li>
+                <li><a href="#">社群</a></li>
+                <li><a href="#">资源分享</a></li>
+            </ul>
+            <ul id="ul-geekPlus" class="headSubPage">
+                <li><a href="#">高校合作</a></li>
+                <li><a href="#">极客人才联盟</a></li>
+                <li><a href="#">布道师招募</a></li>
+                <li><a href="#">实战教练招募</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header-content clearFloat">
+    <div class="header-content-left">
+        <!--移动开发，前端开发，后端开发，基础知识，云计算&大数据，智能硬件&物联网，数据库，认证考试，企业IT,设计&产品&测试-->
+        <div class="head-vMenu clearFloat">
+            <ul>
+                <li><a href="#" class="changeColor">移动开发</a>
+
+                    <div class="sub-contain">
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">应用开发</a></dt>
+                            <dd>
+                                <span><a href="#">Android</a>|<a href="#">IOS</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">游戏开发</a></dt>
+                            <dd>
+                                <span><a href="#">Cocos</a>|</span>
+                                <span><a href="#">Unity3D</a>|</span>
+                                <span><a href="#">SpriteKit 2D</a>|</span>
+                                <span><a href="#">Unread</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">常用框架</a></dt>
+                            <dd>
+                                <span><a href="#">Cordova</a>|</span>
+                                <span><a href="#">React Native</a></span>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li><a href="#" class="changeColor">前端开发</a>
+
+                    <div class="sub-contain">
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">前端基础</a></dt>
+                            <dd>
+                                <span><a href="#">HTML</a>|</span>
+                                <span><a href="#">CSS</a>|</span>
+                                <span><a href="#">Javascript</a>|</span>
+                                <span><a href="#">HTML5</a>|</span>
+                                <span><a href="#">CSS3</a>|</span>
+                                <span><a href="#">技术前瞻</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">前端进阶</a></dt>
+                            <dd>
+                                <span><a href="#">Typescript</a>|</span>
+                                <span><a href="#">前端安全</a>|</span>
+                                <span><a href="#">项目实战</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">前端框架</a></dt>
+                            <dd>
+                                <span><a href="#">jQuery</a>|</span>
+                                <span><a href="#">jQuery UI</a>|</span>
+                                <span><a href="#">jQuery Mobile</a>|</span>
+                                <span><a href="#">AngularJS</a>|</span>
+                                <span><a href="#">ReactJS</a></span>
+                                <span><a href="#">Bootstrap</a>|</span>
+                                <span><a href="#">React Native</a>|</span>
+                                <span><a href="#">Backbone</a>|</span>
+                                <span><a href="#">Three.js</a>|</span>
+                                <span><a href="#">MooTools</a></span>
+                                <span><a href="#">Compass</a></span>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li><a href="#" class="changeColor">后端开发</a>
+
+                    <div class="sub-contain">
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">Python</a></dt>
+                            <dd>
+                                <span><a href="#">Python 基础</a>|</span>
+                                <span><a href="#">web2py</a>|</span>
+                                <span><a href="#">Django</a>|</span>
+                                <span><a href="#">Flask</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">PHP</a></dt>
+                            <dd>
+                                <span><a href="#">PHP基础</a>|</span>
+                                <span><a href="#">YIT</a>|</span>
+                                <span><a href="#">ThinkPHP</a>|</span>
+                                <span><a href="#">Laravel</a>|</span>
+                                <span><a href="#">WordPress</a>|</span>
+                                <span><a href="#">Phalcon</a></span>
+                                <span><a href="#">Apache</a>|</span>
+                                <span><a href="#">Facebook Hack</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">Node.js</a></dt>
+                            <dd>
+                                <span><a href="#">Node.js基础</a>|</span>
+                                <span><a href="#">express</a>|</span>
+                                <span><a href="#">Meteor</a>|</span>
+                                <span><a href="#">Hexo</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">J2EE</a></dt>
+                            <dd>
+                                <span><a href="#">JSP</a>|</span>
+                                <span><a href="#">Maven</a>|</span>
+                                <span><a href="#">Spring</a>|</span>
+                                <span><a href="#">SpringMVC</a>|</span>
+                                <span><a href="#">Structs</a>|</span>
+                                <span><a href="#">MyBatis</a></span>
+                                <span><a href="#">Hibernate</a>|</span>
+                                <span><a href="#">Lucene</a>|</span>
+                                <span><a href="#">常用框架</a>|</span>
+                                <span><a href="#">项目实战</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">Ruby</a></dt>
+                            <dd>
+                                <span><a href="#">Ruby基础</a>|</span>
+                                <span><a href="#">Ruby on Rails</a>|</span>
+                                <span><a href="#">Grape</a>|</span>
+                                <span><a href="#">Ruby进阶</a>|</span>
+                                <span><a href="#">RubyMine</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">Go</a></dt>
+                            <dd>
+                                <span><a href="#">Go基础</a>|</span>
+                                <span><a href="#">beego</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">Erlang</a></dt>
+                            <dd>
+                                <span><a href="#">Erlang基础</a></span>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li><a href="#" class="changeColor">基础知识</a>
+
+                    <div class="sub-contain">
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">基础语言</a></dt>
+                            <dd>
+                                <span><a href="#">C</a>|</span>
+                                <span><a href="#">C++</a>|</span>
+                                <span><a href="#">Objective-C</a>|</span>
+                                <span><a href="#">Swift</a>|</span>
+                                <span><a href="#">C#</a>|</span>
+                                <span><a href="#">Java</a>|</span>
+                                <span><a href="#">Perl</a>|</span>
+                                <span><a href="#">Shell</a>|</span>
+                                <span><a href="#">Qt</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">计算机基础</a></dt>
+                            <dd>
+                                <span><a href="#">计算机组成原理</a>|</span>
+                                <span><a href="#">网络工程</a>|</span>
+                                <span><a href="#">Word</a>|</span>
+                                <span><a href="#">Excel</a>|</span>
+                                <span><a href="#">PowerPoint</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">开发基础</a></dt>
+                            <dd>
+                                <span><a href="#">算法基础</a>|</span>
+                                <span><a href="#">数据结构</a>|</span>
+                                <span><a href="#">设计模式</a>|</span>
+                                <span><a href="#">软件工程</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">开发工具</a></dt>
+                            <dd>
+                                <span><a href="#">Git/Github</a>|</span>
+                                <span><a href="#">SVN</a>|</span>
+                                <span><a href="#">VI</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">开放标准</a></dt>
+                            <dd>
+                                <span><a href="#">OpenCL</a>|</span>
+                                <span><a href="#">OpenXml</a>|</span>
+                                <span><a href="#">OpenGL/GLES</a></span>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li><a href="#" class="changeColor">云计算&大数据</a>
+
+                    <div class="sub-contain">
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">云计算</a></dt>
+                            <dd>
+                                <span><a href="#">OpenStack</a>|</span>
+                                <span><a href="#">Docker+</a>|</span>
+                                <span><a href="#">CloudStack</a>|</span>
+                                <span><a href="#">Windows Azure</a>|</span>
+                                <span><a href="#">IaaS</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">大数据</a></dt>
+                            <dd>
+                                <span><a href="#">Hadoop</a>|</span>
+                                <span><a href="#">Storm</a>|</span>
+                                <span><a href="#">Hive</a>|</span>
+                                <span><a href="#">Kafka</a>|</span>
+                                <span><a href="#">Spark</a>|</span>
+                                <span><a href="#">信息检索</a>|</span>
+                                <span><a href="#">数据分析</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">虚拟化</a></dt>
+                            <dd>
+                                <span><a href="#">VMware</a></span>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li><a href="#" class="changeColor">智能硬件&物联网</a>
+
+                    <div class="sub-contain">
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">硬件结构</a></dt>
+                            <dd>
+                                <span><a href="#">C51</a>|</span>
+                                <span><a href="#">ARM</a>|</span>
+                                <span><a href="#">Keil</a>|</span>
+                                <span><a href="#">Cortex-M</a>|</span>
+                                <span><a href="#">Cortex-A</a>|</span>
+                                <span><a href="#">AVR</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">物联网操作系统</a></dt>
+                            <dd>
+                                <span><a href="#">RTOS</a>|</span>
+                                <span><a href="#">Android Wear</a>|</span>
+                                <span><a href="#">Apple Watchkit</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">开源硬件平台</a></dt>
+                            <dd>
+                                <span><a href="#">Arduino</a>|</span>
+                                <span><a href="#">树莓派</a>|</span>
+                                <span><a href="#">mbed</a>|</span>
+                                <span><a href="#">Gokit</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">通信链接技术</a></dt>
+                            <dd>
+                                <span><a href="#">无线WiFi</a>|</span>
+                                <span><a href="#">移动通信</a>|</span>
+                                <span><a href="#">蓝牙</a>|</span>
+                                <span><a href="#">NFC</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">信息感知处理技术</a></dt>
+                            <dd>
+                                <span><a href="#">传感器</a>|</span>
+                                <span><a href="#">数据挖掘</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">人机交互技术</a></dt>
+                            <dd>
+                                <span><a href="#">语言识别</a>|</span>
+                                <span><a href="#">人脸识别</a>|</span>
+                                <span><a href="#">手势识别</a></span>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li><a href="#" class="changeColor">数据库</a>
+
+                    <div class="sub-contain">
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">SQL</a></dt>
+                            <dd>
+                                <span><a href="#">MySQL</a>|</span>
+                                <span><a href="#">SQL Server</a>|</span>
+                                <span><a href="#">Oracle</a>|</span>
+                                <span><a href="#">SQLite</a>|</span>
+                                <span><a href="#">PostgreSQL</a>|</span>
+                                <span><a href="#">DB2</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">NoSQL</a></dt>
+                            <dd>
+                                <span><a href="#">Cassandra</a>|</span>
+                                <span><a href="#">Redis</a>|</span>
+                                <span><a href="#">MongoDB</a></span>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li><a href="#" class="changeColor">认证考试</a>
+
+                    <div class="sub-contain">
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">计算机等级考试</a></dt>
+                            <dd>
+                                <span><a href="#">一级</a>|</span>
+                                <span><a href="#">二级C</a>|</span>
+                                <span><a href="#">二级Java</a>|</span>
+                                <span><a href="#">二级C++</a>|</span>
+                                <span><a href="#">网络工程师</a>|</span>
+                                <span><a href="#">数据库工程师</a></span>
+                                <span><a href="#">信息安全工程师</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">企业认证</a></dt>
+                            <dd>
+                                <span><a href="#">思科认证</a>|</span>
+                                <span><a href="#">Oracle认证</a>|</span>
+                                <span><a href="#">Linux认证</a>|</span>
+                                <span><a href="#">ARM认证</a></span>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li><a href="#" class="changeColor">企业 IT</a>
+
+                    <div class="sub-contain">
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">运维管理</a></dt>
+                            <dd>
+                                <span><a href="#">Shell</a>|</span>
+                                <span><a href="#">自动化运维</a>|</span>
+                                <span><a href="#">Nginx</a>|</span>
+                                <span><a href="#">Apache</a>|</span>
+                                <span><a href="#">运维监控</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">操作系统</a></dt>
+                            <dd>
+                                <span><a href="#">Linux</a>|</span>
+                                <span><a href="#">Windows</a>|</span>
+                                <span><a href="#">Max Os</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">企业服务</a></dt>
+                            <dd>
+                                <span><a href="#">B2C</a></span>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li><a href="#" class="changeColor">设计&产品&测试</a>
+
+                    <div class="sub-contain">
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">设计基础</a></dt>
+                            <dd>
+                                <span><a href="#">Photoshop</a>|</span>
+                                <span><a href="#">Flash</a>|</span>
+                                <span><a href="#">Illustrator</a>|</span>
+                                <span><a href="#">Sketch</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">游戏设计</a></dt>
+                            <dd>
+                                <span><a href="#">界面设计</a>|</span>
+                                <span><a href="#">角色设计</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">产品经理</a></dt>
+                            <dd>
+                                <span><a href="#">需求分析</a>|</span>
+                                <span><a href="#">Axure</a>|</span>
+                                <span><a href="#">项目实战</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">视觉设计</a></dt>
+                            <dd>
+                                <span><a href="#">应用UI设计</a>|</span>
+                                <span><a href="#">网页UI设计</a>|</span>
+                                <span><a href="#">设计理论</a>|</span>
+                                <span><a href="#">图形设计</a></span>
+                            </dd>
+                        </dl>
+                        <dl class="head-vMenu-sub">
+                            <dt><a href="#">测试工具</a></dt>
+                            <dd>
+                                <span><a href="#">自动化测试</a></span>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="float:left;">
+        <div class="head-row2-content clearFloat" id="row2-container1">
+            <div class="img-con clearFloat" id="img-con">
+                <div class="iconContain1" id="iconContain1">
+
+                </div>
+                <div class="iconContain2" id="iconContain2">
+                    <a href="#"><img src="images/img1.jpg" id="images1" name="move-img" class="move-img"></a>
+                    <a href="#"><img src="images/img2.jpg" id="images2" name="move-img" class="move-img"></a>
+                    <a href="#"><img src="images/img3.jpg" id="images3" name="move-img" class="move-img"></a>
+                    <a href="#"><img src="images/img4.jpg" id="images4" name="move-img" class="move-img"></a>
+                    <a href="#"><img src="images/img5.jpg" id="images5" name="move-img" class="move-img"></a>
+                    <a href="#"><img src="images/img6.jpg" id="images6" name="move-img" class="move-img"></a>
+                </div>
+                <div class="iconContain3" id="iconContain3">
+
+                </div>
+            </div>
+            <div class="arrow-left" id="arrow-left">
+            </div>
+            <div class="arrow-right" id="arrow-right">
+            </div>
+        </div>
+        <!--"极客学院就业班"、-->
+        <div class="main-course" id="main-course">
+            <div id="course-outer">
+                <div id="course-outer1"></div>
+                <div id="course-outer2">
+                    <a href="#" class="lession-item">
+                        <img class="lession-icon" src="images/android.png">
+
+                        <p class="lession-title">Android开发工程师</p>
+
+                        <p class="intro">挑战月薪2万的工作机会</p>
+                    </a>
+                    <a href="#" class="lession-item">
+                        <img class="lession-icon" src="images/java.jpg">
+
+                        <p class="lession-title">JavaWeb开发工程师</p>
+
+                        <p class="intro">Java人才4个月极速进阶</p>
+                    </a>
+                    <a href="#" class="lession-item">
+                        <img class="lession-icon" src="images/job.jpg">
+
+                        <p class="lession-title">极客学院就业班</p>
+
+                        <p class="intro">0基础 | 4个月 | 100%保就业</p>
+                    </a>
+                    <a href="#" class="lession-item">
+                        <img class="lession-icon" src="images/ios.png">
+
+                        <p class="lession-title">极客学院就业班</p>
+
+                        <p class="intro">0基础 | 4个月 | 100%保就业</p>
+                    </a>
+                </div>
+                <div id="course-outer3"></div>
+            </div>
+            <div class="arrow-left course-left" id="course-arrow-left">
+            </div>
+            <div class="arrow-right course-right" id="course-arrow-right">
+            </div>
+        </div>
+    </div>
+    <!--快讯信息-->
+    <div id="head-row2-right">
+        <!--头部信息中右边的第一列信息-->
+        <div class="news">
+            <span>快讯</span>
+            <ul>
+                <li><a href="#" class="font-red">极客周刊　立即订阅</a></li>
+                <li><a href="#">PHP大神成长手册 不学后悔</a></li>
+                <li><a href="#" class="font-red">Hot！实战教练PK榜火热出炉</a></li>
+                <li><a href="#" class="font-red">[限免]Python基础 全系列限免</a></li>
+            </ul>
+        </div>
+        <!--头部信息中右边的第列列信息，其中包含登录和注册链接-->
+        <div class="login">
+            <img src="images/default.gif">
+
+            <div class="login-details">
+                <div class="hello">
+                <span class="word">Hi! 你好
+                    <p class="sentence">
+                        欢迎来到极客学院
+                    </p>
+                </span>
+                </div>
+                <div class="loginBtn">
+                    <a href="#" class="loginBtn-login">登录</a>
+                    <a href="#" class="regedit">注册</a>
+                </div>
+            </div>
+        </div>
+        <!--第三列，最主要信息，放置一些推荐信息-->
+        <div class="header-recommend" id="header-recommend">
+            <ul class="header-recommend-up clearFloat" id="header-recommend-up">
+                <li class="li-question recommendMainMenu" id="li-question">
+                    <a href="#">
+                        <span class="icon question"></span>
+                        <span class="tile">问答</span>
+                        <span class="angle-bottom"></span>
+                    </a>
+                </li>
+                <li class="li-wiki recommendMainMenu" id="li-wiki">
+                    <a href="#">
+                        <span class="icon wiki"></span>
+                        <span class="tile">wiki</span>
+                        <span class="angle-bottom"></span>
+                    </a>
+                </li>
+                <li class="li-course recommendMainMenu" id="li-course">
+                    <a href="#">
+                        <span class="icon course"></span>
+                        <span class="tile">课程</span>
+                        <span class="angle-bottom"></span>
+                    </a>
+                </li>
+                <li class="li-association recommendMainMenu" id="li-association">
+                    <a href="#">
+                        <span class="icon association"></span>
+                        <span class="tile">社群</span>
+                        <span class="angle-bottom"></span>
+                    </a>
+                </li>
+                <li class="li-download recommendMainMenu">
+                    <a href="#">
+                        <span class="icon download"></span>
+                        <span class="tile span-hover">下载</span>
+                        <span class="angle-bottom"></span>
+                    </a>
+                </li>
+                <li class="li-knowleage recommendMainMenu">
+                    <a href="#">
+                        <span class="icon knowleage"></span>
+                        <span class="tile span-hover">知识</span>
+                        <span class="angle-bottom"></span>
+                    </a>
+                </li>
+                <li class="li-profession recommendMainMenu">
+                    <a href="#">
+                        <span class="icon profession"></span>
+                        <span class="tile span-hover">职业</span>
+                        <span class="angle-bottom"></span>
+                    </a>
+                </li>
+                <li class="li-vip recommendMainMenu">
+                    <a href="#">
+                        <span class="icon vip"></span>
+                        <span class="tile span-hover">VIP</span>
+                        <span class="angle-bottom"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-recommend-detail" id="header-recommend-detail">
+            <ul class="header-recommend-down clearFloat" id="header-recommend-down">
+                <li class="recommend-down question recommendSubMenu" id="li-ques-hover">
+                    <span>问答</span>
+                    <ul class="ul-question recommendSubMenuDetail" id="ul-question">
+                        <li>
+                            <a href="#">
+                                <img src="images/smallHtml.png">
+                                <span class="tile">
+                                【问答技巧】怎样提问才能让我的问题更快速被解答？
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/smallB.png">
+                                <span class="tile">
+                                Bootstrap 最新版 V4 中文文档
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/smallShare.png">
+                                <span class="tile">
+                                【老师分享】对LPS的Manacher算法感兴趣的同学请
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/smallGame.png">
+                                <span class="tile">build_native.py时报错</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/smallmobile.png">
+                                <span class="tile">超级菜鸟想成为怎么成长？</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="recommend-down wiki recommendSubMenu" id="li-wiki-hover">
+                    <span>wiki</span>
+                    <ul id="ul-wiki" class="clearFloat recommendSubMenuDetail">
+                        <li>
+                            <a href="#">
+                                <img src="images/ios.jpg">
+
+                                <p class="tile" title="iOS人机交互指南">iOS人机交互指南</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/stuct.jpg">
+
+                                <p class="tile" title="Struts 2 教程">Struts 2 教程</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/php.jpg">
+
+                                <p class="tile" title="PHP 新手指南">PHP 新手指南</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="recommend-down course recommendSubMenu" id="li-course-hover">
+                    <span class="course">课程</span>
+                    <ul id="ul-lessions" class="clearFloat recommendSubMenuDetail">
+                        <li>
+                            <a href="#">
+                                <img src="images/html.png">
+
+                                <p>HTML5开发</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/android.png">
+
+                                <p>Android</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/Cocos2d-x.png">
+
+                                <p>Cocos2d-x游戏开发</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/java.jpg">
+
+                                <p>Java语言</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="recommend-down association recommendSubMenu" id="li-association-hover">
+                    <span>社群</span>
+                    <ul id="ul-association" class="recommendSubMenuDetail">
+                        <li>
+                            <img src="images/androidblack.png">
+                            <span>Android工程师</span>
+                            <a href="#">+ 加入</a>
+                        </li>
+                        <li>
+                            <img src="images/web.png">
+                            <span>Web大前端工程师</span>
+                            <a href="#">+ 加入</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--移动开发，前端开发，后端开发，基础知识，云计算&大数据，智能硬件&物联网，数据库，认证考试，企业IT,设计&产品&测试-->
+
+<div id="main-body">
+    <div class="hot-lessions" id="main-body-nav">
+        <ul class="hot-lessions-nav clearFloat">
+            <li class="hot-recommend hotLessionMainMenu">热门推荐</li>
+            <li class="new-course hotLessionMainMenu">最新课程</li>
+            <li class="free-course hotLessionMainMenu">免费课程</li>
+            <li class="project-exe hotLessionMainMenu">项目实战</li>
+            <li class="global-first hotLessionMainMenu">全球首发</li>
+            <li class="coop-company hotLessionMainMenu">企业合作</li>
+        </ul>
+    </div>
+
+    <!--"热门推荐" "最新课程" "免费课程" "项目实战" "全球首发" "企业合作"-->
+    <div class="six-lessions" id="six-lessions">
+        <div class="hot-recommend-lession hot-recommend-lession1">
+            <ul class="cf">
+                <li class="one one-one showPlay" id="one">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-recommend-1.jpg">
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                CSS3 实现 3D 立方体旋转和图形挤压变形动画特效
+                            </a>
+                        <p>
+
+                        <p class="info-detail">
+                            本课程讲解，使用 CSS3，完成 3D 立方体旋转和图形挤压变形动画特效，能够熟练运用 CSS3中，有关 3D 空间的相关属性，实现立体动画效果，并能理解和掌握 CSS3 中
+                            filter 属性，在项目中的运用。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one two showPlay" id="two">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-lession-2.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                字符串的初级处理
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程着重介绍算法和字符串这种数据结构，首先介绍学习算法的方法，接着讲解和字符串相关的基本操作，最后介绍了字符串中查找的方法。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one three showPlay" id="three">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-recommend-3.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                iOS 设计模式——享元
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要讲解 iOS 设计模式中的享元模式，并通过一个实例来说明如何使用享元模式。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one four showPlay" id="four">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-recommend-4.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                ZooKeeper 运维
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程讲解 ZooKeeper，4字命令，JMX 和监控平台搭建和使用。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one five showPlay" id="five">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-lession-5.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Spring4+SpringMVC4+Hibernate4 框架的整合
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要讲解 Spring4 和 SpringMVC 和 Hibernate4 框架的整合与开发。
+                            本课程主要讲解 Spring4 和 SpringMVC 和 Hibernate4 框架的整合与开发。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one six showPlay" id="six">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-lession-6.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                使用 jQuery 制作京东网的焦点图
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要学习 JavaScript 的函数，会用到定时器setInterval，并且可以使用到 jQuery 的mouseover 鼠标事件及 click 点击事件。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one seven showPlay" id="seven">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-lession-7.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                使用 jQuery 制作京东网的焦点图
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要学习 JavaScript 的函数，会用到定时器setInterval，并且可以使用到 jQuery 的mouseover 鼠标事件及 click 点击事件。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one eight showPlay" id="eight">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-lession-8.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                使用 jQuery 制作京东网的焦点图
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要学习 JavaScript 的函数，会用到定时器setInterval，并且可以使用到 jQuery 的mouseover 鼠标事件及 click 点击事件。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="hot-recommend-lession hot-recommend-lession2">
+            <ul class="cf">
+                <li class="one showPlay" id="one-one">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/2-1.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                CSS3 实现 3D 立方体旋转和图形挤压变形动画特效
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程讲解，使用 CSS3，完成 3D 立方体旋转和图形挤压变形动画特效，能够熟练运用 CSS3中，有关 3D 空间的相关属性，实现立体动画效果，并能理解和掌握 CSS3 中
+                            filter 属性，在项目中的运用。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="one-two">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/2-2.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Drawable 综述及 Shape 类型精讲
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程先综合讲述 Drawablet 体系，然后详细介绍如何使用5种 Shape 子类，最后示例各种 Shape 子类的实现效果。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="one-three">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/2-3.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                iOS 设计模式——享元
+                            </a>
+
+                        </p>
+
+                        <p class="info-detail">
+                            本课程主要讲解 iOS 设计模式中的享元模式，并通过一个实例来说明如何使用享元模式。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="one-four">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/2-4.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                ZooKeeper 运维
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程讲解 ZooKeeper，4字命令，JMX 和监控平台搭建和使用。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="one-five">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-lession-5.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Spring4+SpringMVC4+Hibernate4 框架的整合
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要讲解 Spring4 和 SpringMVC 和 Hibernate4 框架的整合与开发。
+                            本课程主要讲解 Spring4 和 SpringMVC 和 Hibernate4 框架的整合与开发。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="one-six">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/5-1.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                使用 jQuery 制作京东网的焦点图
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要学习 JavaScript 的函数，会用到定时器setInterval，并且可以使用到 jQuery 的mouseover 鼠标事件及 click 点击事件。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="one-seven">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-lession-7.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                使用 jQuery 制作京东网的焦点图
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要学习 JavaScript 的函数，会用到定时器setInterval，并且可以使用到 jQuery 的mouseover 鼠标事件及 click 点击事件。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="one-eight">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-lession-8.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                使用 jQuery 制作京东网的焦点图
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要学习 JavaScript 的函数，会用到定时器setInterval，并且可以使用到 jQuery 的mouseover 鼠标事件及 click 点击事件。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="hot-recommend-lession hot-recommend-lession3">
+            <ul class="cf">
+                <li class="one showPlay" id="two-one">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/3-1.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                FileMaker 14 高级教学（五）逻辑解决方案：脚本篇（上）
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本章作为脚本的上篇主要从基本模块入手，介绍怎样快速新建脚本，脚本的一些相关工具以及怎样自定义菜单。在下篇中我们将继续深入的讲解脚本的其它相关知识点。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="two-two">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/3-2.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                字符串的初级处理
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本课程着重介绍算法和字符串这种数据结构，首先介绍学习算法的方法，接着讲解和字符串相关的基本操作，最后介绍了字符串中查找的方法。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="two-three">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/2-3.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Drawable 综述及 Shape 类型精讲
+                            </a>
+
+                        </p>
+
+                        <p class="info-detail">
+                            本课程先综合讲述 Drawablet 体系，然后详细介绍如何使用5种 Shape 子类，最后示例各种 Shape 子类的实现效果。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="two-four">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/4-4.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                FileMaker 14 高级教学（四）逻辑解决方案：函数篇（下）
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本章节将延续上一章的内容，继续介绍其它五种函数的定义和用法。配合上下篇的学习，我们将充分了解函数的应用实例并学会新建自定义函数。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="two-five">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/4-5.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                iOS 支付功能概述
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本课程主要对 iOS 中常用的几种支付方案进行概述讲解，包括微信支付、支付宝支付、银联支付SDK、Web 支付、IAP、Apple Pay。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="two-six">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/3-6.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                使用 jQuery 制作京东网的焦点图
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要学习 JavaScript 的函数，会用到定时器setInterval，并且可以使用到 jQuery 的mouseover 鼠标事件及 click 点击事件。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="two-seven">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/3-7.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Compass 初识
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            课程主要围绕“为什么需要学习 Compass？”和“如何快速上手 Compass？”两个问题展开，通过讲解 Compass 的概念、特性，让学习者了解为何学习
+                            Compass，通过讲解.
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="two-eight">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-lession-8.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Python 初级项目：远程操控电脑(三)
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本课程主要会继初级项目第二节课通过实战项目来总结一下 Python 初级阶段的基础知识，让学员学会实战开发通过 Python 远程控制电脑的项目的最后一部分。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="hot-recommend-lession hot-recommend-lession4">
+            <ul class="cf">
+                <li class="one showPlay" id="four-one">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/4-1.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Android 项目开发实战：图案解锁
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程讲解在
+                            Android上实现一个自定义的图案解锁用户控件，并利用这个自定义控件为应用添加图案解锁功能。该应用可以允许用户设置自己的解锁图案，然后就可以使用该图案进行解锁。应用使用自定义
+                            View实现基本点的显示与切换，使用 Canvas 实现界面的绘制。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="four-two">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/4-2.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Android 项目开发实战：语音播报计算器
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程带领大家一起完成一款带语音播报功能的计算器，并且有历史记录等扩展功能，包括下滑结果显示框出现历史记录，以及滑动删除等。除此之外，它还可以合计历史结果值。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="four-three">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/4-3.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                iOS实战项目开发:团购之导航栏搜索城市功能
+                            </a>
+
+                        </p>
+
+                        <p class="info-detail">
+                            本节课将进一步优化导航栏的 UI 界面，运用 plist 文件读取解析，及字典转模型等方法，实现搜索城市及定位的界面及功能。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="four-four">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/4-4.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                FileMaker 14 高级教学（四）逻辑解决方案：函数篇（下）
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本章节将延续上一章的内容，继续介绍其它五种函数的定义和用法。配合上下篇的学习，我们将充分了解函数的应用实例并学会新建自定义函数。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="four-five">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/4-5.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                iOS 支付功能概述
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本课程主要对 iOS 中常用的几种支付方案进行概述讲解，包括微信支付、支付宝支付、银联支付SDK、Web 支付、IAP、Apple Pay。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="four-six">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/3-6.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                使用 jQuery 制作京东网的焦点图
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要学习 JavaScript 的函数，会用到定时器setInterval，并且可以使用到 jQuery 的mouseover 鼠标事件及 click 点击事件。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="four-seven">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/3-7.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Compass 初识
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            课程主要围绕“为什么需要学习 Compass？”和“如何快速上手 Compass？”两个问题展开，通过讲解 Compass 的概念、特性，让学习者了解为何学习
+                            Compass，通过讲解.
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="four-eight">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-lession-8.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Python 初级项目：远程操控电脑(三)
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本课程主要会继初级项目第二节课通过实战项目来总结一下 Python 初级阶段的基础知识，让学员学会实战开发通过 Python 远程控制电脑的项目的最后一部分。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="hot-recommend-lession hot-recommend-lession5">
+            <ul class="cf">
+                <li class="one showPlay" id="five-one">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/4-1.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Google IO 2015 大揭秘
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            今天凌晨 Google IO 2015 大会举行，在大会上 Google 推出了包括 Android M、Android Studio 1.3、Android Wear、Brillo
+                            在内的很多新的好玩的东西，我在第一时间录制这个视频和大家分享认知。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="five-two">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/5-2.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                WatchKit 的界面对象
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课介绍 WatchKit 中的界面对象，也就是 UI 元素部分，包括界面对象的概念以及 WatchKit 中的界面对象，如标签、表、上下文菜单等。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="five-three">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/5-3.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                WatchKit 的 Glance 和通知界面（下）
+                            </a>
+
+                        </p>
+
+                        <p class="info-detail">
+                            本课是 WatchKit 的概览和通知界面课程的下半部分课程，主要讲解了为通知界面添加按钮的方法、通知类目的概念以及静态界面、动态界面的样式和界面指南。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="five-four">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/4-4.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                FileMaker 14 高级教学（四）逻辑解决方案：函数篇（下）
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本章节将延续上一章的内容，继续介绍其它五种函数的定义和用法。配合上下篇的学习，我们将充分了解函数的应用实例并学会新建自定义函数。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="five-five">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/4-5.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                iOS 支付功能概述
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本课程主要对 iOS 中常用的几种支付方案进行概述讲解，包括微信支付、支付宝支付、银联支付SDK、Web 支付、IAP、Apple Pay。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="five-six">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/5-6.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                使用 jQuery 制作京东网的焦点图
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要学习 JavaScript 的函数，会用到定时器setInterval，并且可以使用到 jQuery 的mouseover 鼠标事件及 click 点击事件。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="five-seven">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/5-7.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Compass 初识
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            课程主要围绕“为什么需要学习 Compass？”和“如何快速上手 Compass？”两个问题展开，通过讲解 Compass 的概念、特性，让学习者了解为何学习
+                            Compass，通过讲解.
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one showPlay" id="five-eight">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/hot-lession-8.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Python 初级项目：远程操控电脑(三)
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本课程主要会继初级项目第二节课通过实战项目来总结一下 Python 初级阶段的基础知识，让学员学会实战开发通过 Python 远程控制电脑的项目的最后一部分。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="hot-recommend-lession hot-recommend-lession6">
+            <ul class="cf">
+                <li class="one" id="six-one">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/6-1.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Google IO 2015 大揭秘
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            今天凌晨 Google IO 2015 大会举行，在大会上 Google 推出了包括 Android M、Android Studio 1.3、Android Wear、Brillo
+                            在内的很多新的好玩的东西，我在第一时间录制这个视频和大家分享认知。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one" id="six-two">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/6-2.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                WatchKit 的界面对象
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课介绍 WatchKit 中的界面对象，也就是 UI 元素部分，包括界面对象的概念以及 WatchKit 中的界面对象，如标签、表、上下文菜单等。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one" id="six-three">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/6-3.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                WatchKit 的 Glance 和通知界面（下）
+                            </a>
+
+                        </p>
+
+                        <p class="info-detail">
+                            本课是 WatchKit 的概览和通知界面课程的下半部分课程，主要讲解了为通知界面添加按钮的方法、通知类目的概念以及静态界面、动态界面的样式和界面指南。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one" id="six-four">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/6-4.jpg">
+
+                            <div class="lession-play">
+                                <!--<i class="play-icon"></i>-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                FileMaker 14 高级教学（四）逻辑解决方案：函数篇（下）
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本章节将延续上一章的内容，继续介绍其它五种函数的定义和用法。配合上下篇的学习，我们将充分了解函数的应用实例并学会新建自定义函数。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one" id="six-five">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/6-5.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                iOS 支付功能概述
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本课程主要对 iOS 中常用的几种支付方案进行概述讲解，包括微信支付、支付宝支付、银联支付SDK、Web 支付、IAP、Apple Pay。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one" id="six-six">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/6-6.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                使用 jQuery 制作京东网的焦点图
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+                            本课程主要学习 JavaScript 的函数，会用到定时器setInterval，并且可以使用到 jQuery 的mouseover 鼠标事件及 click 点击事件。
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one" id="six-seven">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/6-7.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Compass 初识
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            课程主要围绕“为什么需要学习 Compass？”和“如何快速上手 Compass？”两个问题展开，通过讲解 Compass 的概念、特性，让学习者了解为何学习
+                            Compass，通过讲解.
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="one" id="six-eight">
+                    <div class="lession-box">
+                        <a href="#">
+                            <img src="images/6-8.jpg">
+
+                            <div class="lession-play">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lession-info">
+                        <p class="info-title">
+                            <a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+                                Python 初级项目：远程操控电脑(三)
+                            </a>
+
+                        <p>
+
+                        <p class="info-detail">
+
+                            本课程主要会继初级项目第二节课通过实战项目来总结一下 Python 初级阶段的基础知识，让学员学会实战开发通过 Python 远程控制电脑的项目的最后一部分。
+
+                        </p>
+
+                        <div class="timeandicon">
+                            <div class="timeandicon-left">
+                                <dl>
+                                    <dd class="dd-time">
+                                        <i class="time-icon"></i>
+                                        <span>4课时 48分钟</span>
+                                    </dd>
+                                    <dd class="dd-middle">
+                                        <i class="dd-middle-icon"></i>
+                                        <span>中级</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="timeandicon-right">
+                                <span>2543人学习</span>
+                                <img src="images/webbase.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--"热门推荐" "最新课程" "免费课程" "项目实战" "全球首发" "企业合作"-->
+    <!--职业路径图-->
+    <div id="profession-route">
+        <div class="title">
+            <strong><a href="#">职业路径图</a></strong>
+            <i class="question" id="pr-question">?</i>
+                <span class="way-infor" id="pr-way-info">
+                    <i></i>
+                    更系统的职业学习路径
+                </span>
+
+            <div class="more">
+                <a>更多>></a>
+            </div>
+        </div>
+        <div id="profession-route-detail">
+            <ul>
+                <li class="one">
+                    <a href="#">
+                        <img src="images/pr-1.png">
+
+                        <h2>WEB大前端工程师</h2>
+
+                        <p>月薪15k-30k</p>
+
+                        <p>Web开发的未来趋势</p>
+                        <button>立即学习</button>
+                    </a>
+                </li>
+                <li class="two">
+                    <a href="#">
+                        <img src="images/pr-2.png">
+
+                        <h2>Android工程师</h2>
+
+                        <p>月薪5k-30k</p>
+
+                        <p>最火爆的职业 人才缺口大</p>
+                        <button>立即学习</button>
+                    </a>
+                </li>
+                <li class="three">
+                    <a href="#">
+                        <img src="images/pr-3.png">
+
+                        <h2>iOS开发工程师</h2>
+
+                        <p>月薪6k-30k</p>
+
+                        <p>企业必争的人才资源</p>
+                        <button>立即学习</button>
+                    </a>
+                </li>
+                <li class="four">
+                    <a href="#">
+                        <img src="images/pr-4.png">
+
+                        <h2>JavaWeb工程师</h2>
+
+                        <p>月薪6k-35k</p>
+
+                        <p>就业面最广的职业方向</p>
+                        <button>立即学习</button>
+                    </a>
+                </li>
+                <li class="five">
+                    <a href="#">
+                        <img src="images/pr-5.png">
+
+                        <h2>PHP工程师</h2>
+
+                        <p>月薪5k-35k</p>
+
+                        <p>最好的开发语言 没有之一</p>
+                        <button>立即学习</button>
+                    </a>
+                </li>
+
+                <li class="six">
+                    <a href="#">
+                        <img src="images/pr-6.png">
+
+                        <h2>Unity3D工程师</h2>
+
+                        <p>月薪15k-30k</p>
+
+                        <p>Web开发的未来趋势</p>
+                        <button>立即学习</button>
+                    </a>
+                </li>
+                <li class="seven">
+                    <a href="#">
+                        <img src="images/pr-2.png">
+
+                        <h2>ASP.NET工程师</h2>
+
+                        <p>月薪5k-30k</p>
+
+                        <p>微软强力推行的开发语言</p>
+                        <button>立即学习</button>
+                    </a>
+                </li>
+                <li class="eight">
+                    <a href="#">
+                        <img src="images/pr-8.png">
+
+                        <h2>Cocos2d工程师</h2>
+
+                        <p>月薪7k-30k</p>
+
+                        <p>最流行跨平台手机游戏开发</p>
+                        <button>立即学习</button>
+                    </a>
+                </li>
+                <li class="nine">
+                    <a href="#">
+                        <img src="images/pr-9.png">
+
+                        <h2>大数据工程师</h2>
+
+                        <p>月薪8K-40K</p>
+
+                        <p>目前最稀缺的职业方向</p>
+                        <button>立即学习</button>
+                    </a>
+                </li>
+                <li class="ten">
+                    <a href="#">
+                        <img src="images/pr-10.png">
+
+                        <h2>运维工程师</h2>
+
+                        <p>月薪6k-30k</p>
+
+                        <p>最能折腾的职业岗位</p>
+                        <button>立即学习</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--职业路径图-->
+    <!--知识体系图-->
+    <div id="knowledge-route">
+        <div class="title">
+            <strong><a href="#">知识体系图</a></strong>
+            <i class="question" id="kr-question">?</i>
+                <span class="way-infor" id="kr-way-info">
+                    <i></i>
+                    更快速找到你需要的课程
+                </span>
+            <div class="more">
+                <a href="#">更多>></a>
+            </div>
+        </div>
+        <div id="knowledge-route-detail">
+            <div class="course-outer">
+                <div class="course course-one">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-1.png">
+
+                            <h2>Android</h2>
+                            <span>90门课程</span>
+                        </div>
+                        <div class="back back-one" id="back-one">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-two">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-2.png">
+
+                            <h2>HTML5开发</h2>
+                            <span>116门课程</span>
+                        </div>
+                        <div class="back" id="back-two">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-three">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-3.png">
+                            <h2>Java语言</h2>
+                            <span>45门课程</span>
+                        </div>
+                        <div class="back" id="back-three">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-four">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-4.png">
+                            <h2>PHP语言</h2>
+                            <span>23门课程</span>
+                        </div>
+                        <div class="back" id="back-four">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-five">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-5.jpg">
+                            <h2>JavaWeb</h2>
+                            <span>64门课程</span>
+                        </div>
+                        <div class="back" id="back-five">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-six">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-6.png">
+                            <h2>iOS开发</h2>
+                            <span>51门课程</span>
+                        </div>
+                        <div class="back" id="back-six">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-seven">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-7.png">
+                            <h2>Asp.Net</h2>
+                            <span>61门课程</span>
+                        </div>
+                        <div class="back" id="back-seven">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-eight">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-8.png">
+                            <h2>C语言</h2>
+                            <span>17门课程</span>
+                        </div>
+                        <div class="back" id="back-eight">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-nine">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-9.png">
+                            <h2>Python</h2>
+                            <span>59门课程</span>
+                        </div>
+                        <div class="back" id="back-nine">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-ten">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-10.png">
+                            <h2>Unity3D</h2>
+                            <span>45门课程</span>
+                        </div>
+                        <div class="back" id="back-ten">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-11">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-11.png">
+                            <h2>Swift语言</h2>
+                            <span>11门课程</span>
+                        </div>
+                        <div class="back" id="back-11">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-12">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-12.png">
+                            <h2>C#</h2>
+                            <span>30门课程</span>
+                        </div>
+                        <div class="back" id="back-12">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-13">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-13.png">
+                            <h2>Bootstrap</h2>
+                            <span>11门课程</span>
+                        </div>
+                        <div class="back" id="back-13">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-14">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-14.png">
+                            <h2>Cocos2d-x游戏开发</h2>
+                            <span>109门课程</span>
+                        </div>
+                        <div class="back" id="back-14">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-15">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-15.jpg">
+                            <h2>计算机一级</h2>
+                            <span>7门课程</span>
+                        </div>
+                        <div class="back" id="back-15">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-16">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-16.jpg">
+                            <h2>计算机二级</h2>
+                            <span>25门课程</span>
+                        </div>
+                        <div class="back" id="back-16">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-17">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-17.png">
+                            <h2>GUI</h2>
+                            <span>40门课程</span>
+                        </div>
+                        <div class="back" id="back-17">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-18">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-18.png">
+                            <h2>WatchKit开发</h2>
+                            <span>5门课程</span>
+                        </div>
+                        <div class="back" id="back-18">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-19">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-19.png">
+                            <h2>Docker</h2>
+                            <span>9门课程</span>
+                        </div>
+                        <div class="back" id="back-19">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-20">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-20.png">
+                            <h2>Egret</h2>
+                            <span>7门课程</span>
+                        </div>
+                        <div class="back" id="back-20">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-21">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-21.png">
+                            <h2>Arduino</h2>
+                            <span>14门课程</span>
+                        </div>
+                        <div class="back" id="back-21">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course-outer">
+                <div class="course course-22">
+                    <a href="">
+                        <div class="front">
+                            <img src="images/c-22.png">
+                            <h2>Android UiAutomator</h2>
+                            <span>20门课程</span>
+                        </div>
+                        <div class="back" id="back-22">
+                            <strong>799540人已学习</strong>
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--知识体系图-->
+    <!--精品课程系列-->
+    <div id="boutique-course" class="clearFlow">
+        <div class="title">
+            <strong>
+                <a href="">
+                    精品系列课程
+                </a>
+            </strong>
+            <i class="question" id="bc-question">?</i>
+            <span class="way-infor" id="bc-way-infor">
+                <i></i>
+                更相关的课程，更有序的学习
+            </span>
+
+            <div class="more"><a href="#">更多<<</a></div>
+        </div>
+        <div id="boutiques">
+            <div id="boutique-java" class="boutique-lession">
+                <h2>Java设计模式</h2>
+                <img src="images/boutique-1.jpg">
+
+                <div class="other">
+                    <span class="lesson-count">24门</span>
+                    <span class="learn-count">69542人学习</span>
+                    <span class="greenbtn">收藏</span>
+                </div>
+                <div class="hover-image">
+                    <a href="#"><img src="images/te-1.jpg"></a>
+                    <a href="#"><span class="name">hexter</span></a>
+
+                    <div class="text">
+                        <a href="#"><span class="infor">按照一个模式一个课程的方式讲解23种设计模式。每个模式讲3-4节课，从模拟项目设计引入设计模式设计方案，并有详细示例代码和效果演示。</span></a>
+                    </div>
+                    <a class="learn">马上学习</a>
+                </div>
+            </div>
+            <div id="boutique-ruby" class="boutique-lession">
+                <h2>Java设计模式</h2>
+                <img src="images/boutique-1.jpg">
+
+                <div class="other">
+                    <span class="lesson-count">24门</span>
+                    <span class="learn-count">69542人学习</span>
+                    <span class="greenbtn">收藏</span>
+                </div>
+                <div class="hover-image">
+                    <a href="#"><img src="images/te-1.jpg"></a>
+                    <a href="#"><span class="name">hexter</span></a>
+
+                    <div class="text">
+                        <a href="#"><span class="infor">按照一个模式一个课程的方式讲解23种设计模式。每个模式讲3-4节课，从模拟项目设计引入设计模式设计方案，并有详细示例代码和效果演示。</span></a>
+                    </div>
+                    <a class="learn">马上学习</a>
+                </div>
+            </div>
+            <div id="boutique-Axure" class="boutique-lession">
+                <h2>Java设计模式</h2>
+                <img src="images/boutique-1.jpg">
+
+                <div class="other">
+                    <span class="lesson-count">24门</span>
+                    <span class="learn-count">69542人学习</span>
+                    <span class="greenbtn">收藏</span>
+                </div>
+                <div class="hover-image">
+                    <a href="#"><img src="images/te-1.jpg"></a>
+                    <a href="#"><span class="name">hexter</span></a>
+
+                    <div class="text">
+                        <a href="#"><span class="infor">按照一个模式一个课程的方式讲解23种设计模式。每个模式讲3-4节课，从模拟项目设计引入设计模式设计方案，并有详细示例代码和效果演示。</span></a>
+                    </div>
+                    <a class="learn">马上学习</a>
+                </div>
+            </div>
+            <div id="boutique-Python" class="boutique-lession">
+                <h2>Java设计模式</h2>
+                <img src="images/boutique-1.jpg">
+
+                <div class="other">
+                    <span class="lesson-count">24门</span>
+                    <span class="learn-count">69542人学习</span>
+                    <span class="greenbtn">收藏</span>
+                </div>
+                <div class="hover-image">
+                    <a href="#"><img src="images/te-1.jpg"></a>
+                    <a href="#"><span class="name">hexter</span></a>
+
+                    <div class="text">
+                        <a href="#"><span class="infor">按照一个模式一个课程的方式讲解23种设计模式。每个模式讲3-4节课，从模拟项目设计引入设计模式设计方案，并有详细示例代码和效果演示。</span></a>
+                    </div>
+                    <a class="learn">马上学习</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--精品课程系列-->
+    <!--Wiki-->
+    <div id="wiki">
+        <div class="title">
+            <strong>
+                <a href="">
+                    Wiki
+                </a>
+            </strong>
+            <i class="question" id="wiki-question">?</i>
+            <span class="way-infor" id="wiki-way-infor">
+                <i></i>
+                IT技术图文教程库 程序员的藏经阁
+            </span>
+
+            <div class="more"><a href="#">更多<<</a></div>
+        </div>
+        <div id="wiki-infors">
+            <div class="wiki-info">
+                <h2>推荐</h2>
+
+                <div class="wiki-info-left">
+                    <a href="#">
+                        <i class="look"></i>
+                        <img src="images/wiki-1.jpg">
+                    </a>
+                </div>
+                <div class="wiki-info-right">
+                    <a href="#">
+                        <i class="look"></i>
+                        <img src="images/wiki-2.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="wiki-info">
+                <h2>推荐</h2>
+
+                <div class="wiki-info-left">
+                    <a href="#">
+                        <i class="look"></i>
+                        <img src="images/wiki-1.jpg">
+                    </a>
+                </div>
+                <div class="wiki-info-right">
+                    <a href="#">
+                        <i class="look"></i>
+                        <img src="images/wiki-2.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="wiki-info">
+                <h2>推荐</h2>
+
+                <div class="wiki-info-left">
+                    <a href="#">
+                        <i class="look"></i>
+                        <img src="images/wiki-1.jpg">
+                    </a>
+                </div>
+                <div class="wiki-info-right">
+                    <a href="#">
+                        <i class="look"></i>
+                        <img src="images/wiki-2.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Wiki-->
+    <!--企业合作-->
+    <div id="co-company">
+        <div class="title">
+            <strong>
+                战略合作企业
+            </strong>
+
+            <div class="more"><a href="#">更多<<</a></div>
+        </div>
+        <div class="companys">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/microsoft.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/tengxun.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/chukong.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="images/qual.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/amdojpg.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/keda.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--企业合作-->
+</div>
+
+<div id="bottom">
+    <div class="bottom-center">
+        <ul class="ul-outer">
+            <li class="li-outer">
+                <h2><a href="">极客学院</a></h2>
+                <ul>
+                    <li>·<a href="">职业课程库</a></li>
+                    <li>·<a href="">知识体系图</a></li>
+                    <li>·<a href="">职业路径图</a></li>
+                    <li>·<a href="">企业课程</a></li>
+                    <li>·<a href="">资源下载</a></li>
+                    <li>·<a href="">课程标签</a></li>
+                </ul>
+            </li>
+            <li class="li-outer">
+                <h2><a href="">网站服务</a></h2>
+                <ul>
+                    <li>·<a href="">课程需求</a></li>
+                    <li>·<a href="">免费体验VIP</a></li>
+                    <li>·<a href="">黑板报</a></li>
+                    <li>·<a href="">网站地址</a></li>
+                </ul>
+            </li>
+            <li class="li-outer">
+                <h2><a href="">帮助中心</a></h2>
+                <ul>
+                    <li>·<a href="">技术问答</a></li>
+                    <li>·<a href="">VIP权益</a></li>
+                    <li>·<a href="">常见问题</a></li>
+                    <li>·<a href="">服务欠款</a></li>
+                    <li>·<a href="">版权声明</a></li>
+                    <li>·<a href="">免费声明</a></li>
+                </ul>
+            </li>
+            <li class="li-outer">
+                <h2><a href="">交流合作</a></h2>
+                <ul>
+                    <li>·<a href="">关于我们</a></li>
+                    <li>·<a href="">联系我们</a></li>
+                    <li>·<a href="">社会招聘</a></li>
+                    <li>·<a href="">布道师招募</a></li>
+                    <li>·<a href="">合作咨询</a></li>
+                    <li>·<a href="">友情链接</a></li>
+                    <li>·<a href="">实战教练招募</a></li>
+                </ul>
+            </li>
+            <li class="li-outer-other">
+                <strong class="jktxt">极客学院，编程是一种信仰！</strong>
+                <div class="app-download">
+                    <a target="_blank" href="#">
+                        <img src="http://s1.jikexueyuan.com/common/images/iphone_ecb3977.png" width="21">
+                        <div>
+                            <strong>手机客户端</strong>
+                            <p>离线缓存 随时学习</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="div-icons">
+                    <a href="#" class="bottom-icons"></a>
+                    <a href="#" class="bottom-icons tieba-icon"></a>
+                    <a href="#" class="bottom-icons wechat"></a>
+                </div>
+                <div class="connect">
+                    <div class="kefu"></div>
+                    <div class="infor">
+                        <h5>联系我们</h5>
+                        <p>工作日9:00-21:00在线</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="fix-divs">
+    <div class="goto-top" id="back-to-top"></div>
+    <a class="a-phone">
+        <span class="phone"></span>
+        <img src="images/phone-di.png" class="phone-img">
+    </a>
+    <a><span class="investigation"></span></a>
+    <a class="a-service">
+        <span class="service"></span>
+        <div class="div-sevice">
+            <p>在线客服</p>
+            <p>工作日9:00-21:00在线</p>
+        </div>
+    </a>
+</div>
+
+<script src="js/three-jQuery/sea.js"></script>
+<script>
+    seajs.config({
+        base: "./js/",
+        alias: {
+            "jquery": "jquery/jquery/1.10.1/jquery.js"
+        }
+    });
+    seajs.use("./js/main");
+</script>
+</body>
+</html>
