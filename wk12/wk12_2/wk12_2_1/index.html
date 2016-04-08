@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web前端面试题</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/BackToTop.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Web前端面试题</h1>
+    </div>
+    <div class="line"></div>
+    <div class="main clearFloat">
+        <ul class="nav">
+        	<!-- HTML -->
+            <li>
+                <h3>HTML</h3>
+                <ul class="nav-sub">
+                	<!-- 第一题 -->
+                    <li>
+                        <a href="#question1" title="html5\CSS3有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？">1.html5\CSS3有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？
+                		</a>
+                    </li>
+                    <!-- 第二题 -->
+                    <li>
+                        <a href="#question2" title="Doctype作用？标准模式与兼容模式各有什么区别?">
+                    		2.Doctype作用？标准模式与兼容模式各有什么区别?
+                    	</a>
+                    </li>
+                    <!-- 第三题 -->
+                    <li>
+                        <a href="#question3" title="你真的了解HTML吗？–雅虎面试题">
+                    		3.你真的了解HTML吗？–雅虎面试题ss
+                    	</a>
+                    </li>
+                    <!-- 第四题 -->
+                    <li>
+                        <a href="#question4" title="HTML5 为什么只需要写 <!DOCTYPE HTML>？">
+                    	4.HTML5 为什么只需要写 &lt;!DOCTYPE HTML&gt;？
+                    	</a>
+                    </li>
+                    <!-- 第五题 -->
+                    <li>
+                    	<a href="#question5" title="行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？">
+                    		5.行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？
+                    	</a>
+                    </li>
+                    <!-- 第六题 -->
+                    <li>
+                    	<a href="#question6" title="页面导入样式时，使用link和@import有什么区别？">
+                    		6.页面导入样式时，使用link和@import有什么区别？
+                    	</a>
+                    </li>
+                    <!-- 第七题 -->
+                    <li>
+                    	<a href="question7" title=""></a>
+                    </li>
+                </ul>
+            </li>
+            <!-- CSS -->
+            <li>
+                <h3>CSS</h3>               
+                <ul class="nav-sub">
+                <!-- CSS 第一题 -->
+                    <li>
+                        <a href="#question21" title="介绍一下CSS的盒子模型？">
+		                	1.介绍一下CSS的盒子模型？
+		                </a>		                
+                    </li>
+                    <!-- CSS 第二题 -->
+                    <li>
+                    	<a href="#question22" title="CSS选择符有哪些？哪些属性可以继承？">
+		                	2.CSS选择符有哪些？哪些属性可以继承？
+		                </a>
+                    </li>
+                    <!-- CSS 第三题 -->
+                    <li>
+                    	<a href="#question23" title="CSS优先级算法如何计算？ * 优先级就近原则，同权重情况下样式定义最近者为准;">
+                    		3.CSS优先级算法如何计算？ * 优先级就近原则，同权重情况下样式定义最近者为准;
+                    	</a>
+                    </li>
+                    <!-- CSS 第四题 -->
+                    <li>
+                    	<a href="#question24" title="CSS 伪类">
+                    		4.CSS 伪类
+                    	</a>
+                    </li>
+                    <!-- CSS 第五题 -->
+                    <li>
+                    	<a href="#question25" title="如何居中div？如何居中一个浮动元素？如何让绝对定位的div居中？">
+                    		5.如何居中div？如何居中一个浮动元素？如何让绝对定位的div居中？
+                    	</a>
+                    </li>
+                    <!-- CSS 第六题 -->
+                    <li>
+                    	<a href="#question26" title="display有哪些值？说明他们的作用。">
+                    		6.display有哪些值？说明他们的作用。
+                    	</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Javascript -->
+            <li>
+                <h3>Javascript</h3>
+                <ul class="nav-sub">
+                <!-- Javascript 第一题 -->
+                    <li>
+                        <a href="#question31" title="JavaScirpt作用域">
+		                	1.JavaScirpt作用域
+		                </a>
+                    </li>
+                    <!-- Javascript 第二题 -->
+                    <li>
+                        <a href="#question32" title="创建“native”方法">
+		                	2.创建“native”方法
+		                </a>
+                    </li>
+                    <!-- Javascript 第三题 -->
+                    <li>
+                        <a href="#question33" title="Javascript预编译">
+		                	3.Javascript预编译
+		                </a>
+                    </li>
+                    <!-- Javascript 第四题 -->
+                    <li>
+                    	<a href="#question34" title="请描述一下cookie,sessionStorage,localStorage的区别">
+                    		4.请描述一下cookie,sessionStorage,localStorage的区别
+                    	</a>
+                    </li>
+                    <!-- Javascript 第五题 -->
+					<li>
+						<a href="#question35" title="介绍js的基本数据类型">
+							5.介绍js的基本数据类型
+						</a>
+					</li>
+					<!-- Javascript 第六题 -->
+					<li>
+						<a href="#question36" title="闭包">
+							6.闭包
+						</a>
+					</li>
+                </ul>
+            </li>
+            <!-- 浏览器兼容 -->
+            <li>
+                <h3>浏览器兼容</h3>
+                <ul class="nav-sub">
+                <!-- 浏览器兼容 第一题 -->
+                    <li>
+                        <a href="#question41" title="当float和margin同时使用时，IE6的双倍边距BUG如何解决？">
+		                	4.当float和margin同时使用时，IE6的双倍边距BUG如何解决？
+		                </a>
+                    </li>
+                    <!-- 浏览器兼容 第二题 -->
+                    <li>
+                    	<a href="#question42" title="浏览器的内核分别是什么？">
+                    		2.浏览器的内核分别是什么？
+                    	</a>
+                    </li>
+                    <!-- 浏览器兼容 第三题 -->
+                    <li>
+                    	<a href="#question43" title="常见的兼容性问题？">
+                    		3.常见的兼容性问题？
+                    	</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- 其他 五-->
+            <li>
+                <h3>其他</h3>
+                <ul class="nav-sub">
+                <!-- 其他 第一题 -->
+                    <li>
+                        <a href="#question51" title="Node.js的使用场景">
+		                	1.Node.js的使用场景
+		                </a>
+                    </li>
+                    <!-- 其他 第二题 -->
+                    <li>
+                    	<a href="#question52" title="前端组件化与组件生态？">
+                    		2.前端组件化与组件生态？
+                    	</a>
+                    </li>
+                    <!-- 其他 第三题 -->
+                    <li>
+                    	<a href="#question53" title="前端统计">
+                    		3.前端统计
+                    	</a>
+                    </li>
+                    <!-- 其他 第四题 -->
+                    <li>
+                    	<a href="#question54" title="什么是AJAX？">
+                    		4.什么是AJAX？
+                    	</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- 其他 六 -->
+            <li>
+                <h3>Git</h3>
+                <ul class="nav-sub">
+                <!-- Git 第一题 六-->
+                    <li>
+                        <a href="#question61" title="1.Git是什么？">
+                            1.Git是什么？
+                        </a>
+                    </li>
+                    <!-- Git 第二题 六 -->
+                    <li>
+                        <a href="#question62" title="SVN和Git的最主要区别？">
+                            2.SVN和Git的最主要区别？
+                        </a>
+                    </li>
+                    <!-- Git 第四题 六 -->
+                    <li>
+                        <a href="#question64" title="使用版本控制系统应该注意的问题">
+                            4.使用版本控制系统应该注意的问题
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="content">
+        	<h1>HTML</h1>
+            <!-- 题一 -->
+            <div class="box">
+                <h2 id="question1">1.html5\CSS3有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？</h2>
+                <div class="answer">
+                    <h4>主要增加关于图像，位置，存储，多任务</h4>
+                    <p>绘图canvas:用于媒介回放video和audio元素</p>
+                    <p>本地离线存储localStorage长期的存储数据，浏览器关闭后数据不会丢失。 sessionStorage的数据在浏览器关闭后自动删除
+                    </p>
+                    <p>语义化更好的内容标签比如article,footer,header,nav,section</p>
+                    <h4>移除的元素:</h4>
+                    <p> 纯表现的元素：basefont，big，center，font, s，strike，tt，u；</p>
+                    <p> 对可用性产生负面影响的元素：frame，frameset，noframes；</p>
+                </div>
+            </div>
+            <!-- 题二 -->
+            <div class="box">
+                <h2 id="question2">2.Doctype作用？标准模式与兼容模式各有什么区别?</h2>
+                <div class="answer">
+                    <p>
+                        (1)&lt;DOCTYPE&gt;声明位于文档中的最前面，处于&lt;html&gt;标签之前，告知浏览器的解析器，用什么文档类型、规范来解析这个文档。
+                    </p>
+                    <p>
+                        区别：严格模式是浏览器根据规范去显示页面；混杂模式是以一种向后兼容的方式去显示 意义：决定浏览器如何渲染网站（浏览器使用那种规范去解析网页） 触发：浏览器根据doctype是否存在和使用的是那种dtd来决定
+                    </p>
+                </div>
+            </div>
+            <!-- 题三 -->
+            <div class="box">
+                <h2 id="question3">3.你真的了解HTML吗？–雅虎面试题</h2>
+                <div class="answer">
+                    <h4>有这么一段HTML，请挑毛病：</h4>
+                    <textarea cols="80" rows="5">
+                        <P>&nbsp;&nbsp;哥写的不是HTML，是寂寞。
+                            <br>
+                            <br>&nbsp;&nbsp;我说：
+                            <br>不要迷恋哥，哥只是一个传说
+                    </textarea>
+                    <p>考点1：html和 xhtml的区别 这行代码在html 4.01 strict下是完全正确的，在xhtml 1.0 strict下是错误一堆的。所以明显是一个考点。在xhtml下所有标签是闭合的，p,br需要闭合, 标签不允许大写，P要小写。同时nbsp和br必须包含在容器里。html下这些都不是错。p在html里是可选闭合标签，是可以不用闭合的。
+                    </p>
+                    <p>
+                        考点2：考样式分离 用nbsp控制缩进是不合理的。应该用CSS干这事。所以应该删掉nbsp
+                    </p>
+                    <p>
+                        考点3：合理使用标签 br是强制折行标签，p是段落。原题用连续的br制造两个段落的效果，效果是达到了，但显然用的不合理，段落间距后期无法再控制。正确的做法是用两个p表现两个段落。“我说”后面是正常的文字折行用br是合理的。
+                    </p>
+                </div>
+            </div>
+            <!-- 题四 -->
+            <div class="box">
+                <h2 id="question4">4.HTML5 为什么只需要写 <!DOCTYPE HTML>？</h2>
+                <div class="answer">
+                    <p>
+                        HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为（让浏览器按照它们应该的方式来运行）； 而HTML4.01基于SGML,所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。
+                    </p>
+                </div>
+            <!-- 题五 -->
+            <div class="box">
+                <h2 id="question5">5.行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h2>
+                <div class="answer">
+                    <p>
+                        (1).行内元素有：a,b,span,img,input,select,strong
+                    </p>
+                    <p>
+                    	(2).块级元素有：p,div,ul,ol,li,dt,dd,h1-h4
+                    </p>
+                    <p>
+                    	(3).空元素有:br,hr,img,input,link,meta,area,base,col,command,embed,keyan,param,source,track,wbr
+                    </p>
+                </div>
+            </div>
+            <!-- 题六 -->
+            <div class="box">
+                <h2 id="question6">6.页面导入样式时，使用link和@import有什么区别？</h2>
+                <div class="answer">
+                    <p>
+                        (1).link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;
+                    </p>
+                    <p>
+                    	(2).页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
+                    </p>
+                    <p>
+                    	(3).import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;
+                    </p>
+                </div>
+            </div>
+            <h1>CSS</h1>
+            <!-- CSS 第一题 -->
+            <div class="box">
+                <h2 id="question21">1.介绍一下CSS的盒子模型？</h2>
+                <div class="answer">
+                    <p>
+                        （1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;
+                    </p>
+                    <p>
+                    	（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
+                    </p>
+                    <img src="images/IE_box.jpg">
+                    <img src="images/box.jpg">
+                </div>
+            </div>
+            <!-- CSS 第二题 -->
+            <div class="box">
+                <h2 id="question22">2.CSS选择符有哪些？哪些属性可以继承？</h2>
+                <div class="answer">
+                    <p>
+                        1.id选择器（ # myid）
+                    </p>
+                    <p>
+                    	2.类选择器（.myclassname）
+                    </p>
+                    <p>3.标签选择器（div, h1, p）</p>
+                    <p>4.相邻选择器（h1 + p）</p>
+                    <p>5.子选择器（ul > li）</p>
+                    <p>6.后代选择器（li a）</p>
+                    <p>7.通配符选择器（ * ）</p>
+                    <p>8.属性选择器（a[rel = "external"]）</p>
+                    <p> 9.伪类选择器（a: hover, li: nth - child）</p>
+                    <p>可继承的样式： font-size font-family color, UL LI DL DD DT;</p>
+                    <p>不可继承的样式：border padding margin width height ;</p>
+                </div>
+            </div>
+            <!-- CSS 第三题 -->
+            <div class="box">
+                <h2 id="question23">3.CSS优先级算法如何计算？ * 优先级就近原则，同权重情况下样式定义最近者为准;</h2>
+                <div class="answer">
+                    <p>
+                         载入样式以最后载入的定位为准;
+                    </p>
+                    优先级为:
+                    <p>
+                    	!important >  id > class > tag important 比 内联优先级高
+                    </p>                   
+                </div>
+            </div>
+             <!-- CSS 第四题 -->
+            <div class="box">
+                <h2 id="question24">4.CSS <a href="https://segmentfault.com/a/1190000000484493" target="_blank">伪类</a></h2>
+                <div class="answer">
+                    <ul>
+                    	<li>CSS 伪类用于向某些选择器添加特殊的效果。</li>
+                    	<li>CSS 伪元素用于将特殊的效果添加到某些选择器。</li>
+                    	<h3>伪类种类</h3>
+                    	<img src="images/weilei1.jpg">
+                    	<h4>伪元素种类</h4>
+                    	<img src="images/weilei12.jpg">
+                    	<h4>CSS3新增伪类</h4>
+                    	<ul>
+                    		<li> p:first-of-type 选择属于其父元素的首个 p元素的每个 p 元素。</li>
+                    		<li>
+                    			p:last-of-type  选择属于其父元素的最后 p 元素的每个 p元素。
+                    		</li>
+                    		<li>
+                    			 p:only-of-type  选择属于其父元素唯一的 p 元素的每个 p 元素。
+                    		</li>
+                    		<li>
+                    			p:only-child    选择属于其父元素的唯一子元素的每个 p 元素。
+                    		</li>
+                    		<li>
+                    			p:nth-child(2)  选择属于其父元素的第二个子元素的每个 p 元素。
+                    		</li>
+                    		<li>
+                    			:enabled        :disabled 控制表单控件的禁用状态。
+                    		</li>
+                    		<li>
+                    			:checked        单选框或复选框被选中。
+                    		</li>
+                    	</ul>
+                    </ul>                 
+                </div>
+            </div>
+             <!-- CSS 第五题 -->
+            <div class="box">
+                <h2 id="question25">5.如何居中div？如何居中一个浮动元素？如何让绝对定位的div居中？</h2>
+                <div class="answer">
+                    <h4>给div设置一个宽度，然后添加margin:0 auto属性</h4>     
+                    <textarea rows="5" cols="60">
+div{
+width:200px;
+margin:0 auto;
+}
+                    </textarea>   
+                    <h4>居中一个浮动元素</h4>   
+                     <textarea rows="10" cols="60">
+.div {
+      width:500px ; height:300px;//高度可以不设
+      margin: -150px 0 0 -250px;
+      position:relative;         //相对定位
+      background-color:pink;     //方便看效果
+      left:50%;
+      top:50%;
+ }
+                    </textarea>    
+                    <h4>
+                    	让绝对定位的div居中
+                    </h4>
+                    <textarea rows="10" cols="60">
+  position: absolute;
+  width: 1200px;
+  background: none;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+                    </textarea>
+                </div>
+            </div>
+            <!-- CSS 第六题 -->
+            <div class="box">
+                <h2 id="question26">6.display有哪些值？说明他们的作用。</h2>
+                <div class="answer">
+                    <ul>
+                    	<li> block 象块类型元素一样显示。</li>
+                    	<li>inline-block 象行内元素一样显示，但其内容象块类型元素一样显示。</li>
+                   		<li>list-item 象块类型元素一样显示，并添加样式列表标记。</li>
+                    </ul>                 
+                </div>
+            </div>
+            <h1>Javascript</h1>
+            <!-- Javascript 第一题 -->
+            <div class="box">
+                <h2 id="question31">1.JavaScirpt作用域</h2>
+                <div class="answer">
+                    <textarea rows="6" cols="60">
+(function(){ 
+	var a = b =5; 
+})(); 
+console.log(b);
+                    </textarea>
+                    <br> 上面代码的输入结果为？
+                    <br> 答案：
+                    <br> 5
+                    <br> 这个问题考查的要点是两个不同的作用域，'a'被var声明成了一个局部变量，但是'b'实际上没有被定义，所以它是一个全局变量。
+                    <br> 这个问题还牵扯到另个一个比较重要的问题，就是strict mode，如果你选择了strict mode，上面的代码就会报Uncaught ReferenceError，因为b没有被定义，它可以帮你检查出代码的一些问题
+                    <textarea rows="6" cols="60">
+(function(){ 
+	'use strict'; 
+	var a = window.b =5; 
+})(); 
+console.log(b);
+                    </textarea>
+                </div>
+            </div>
+            <!-- Javascript 第二题 -->
+            <div class="box">
+                <h2 id="question32">2.创建“native”方法</h2>
+                <div class="answer">
+                    写一个重复打印字符串对象的方法，输入一个整数，这个整数代表重复打印的字数，比如：
+                    <textarea rows="2" cols="60">
+                        console.log('hello'.repeatify(3));
+                    </textarea>
+                    <br> 这样会打印出hellohellohello。
+                    <br> 其中一种方法的实现是：
+                    <br>
+                    <textarea rows="10" cols=80>
+String.prototype.repeatify =String.prototype.repeatify ||function(times){ 
+	var str =''; 
+	for(var i =0; i< times; i++){ 
+		str +=this; 
+	} 
+	return str; 
+}; 
+					</textarea>
+                </div>
+            </div>
+            <!-- Javascript 第三题 -->
+            <div class="box">
+                <h2 id="question33">3.Javascript预编译</h2>
+                <div class="answer">
+                    下面代码的输出结果
+                    <br>
+                    <textarea rows="10" cols=80>
+function test(){ 
+	console.log(a); 
+	console.log(foo()); 
+	var a =1; 
+	function foo(){ 
+	return2; 
+	} 
+} 
+test();
+                    </textarea>
+                    <br> 答案：undefined和2。
+                </div>
+            </div>
+            <!-- Javascript 第四题 -->
+            <div class="box">
+                <h2 id="question34">4.请描述一下cookie,sessionStorage,localStorage的区别</h2>
+                <div class="answer">
+                    <p>cookie在浏览器和服务器间来回传递，sessionStorage和localStorage并不会</p>
+                    <p>sessionStorage和localStorage的存储空间更大</p>
+                    <p>sessionStorage和localStorage各自独立的存储空间</p>
+                </div>
+            </div>
+            <!-- Javascript 第五题 -->
+            <div class="box">
+                <h2 id="question35">5.介绍js的基本数据类型</h2>
+                <div class="answer">
+                    number,string,boolean,object,undefined
+                </div>
+            </div>
+            <!-- Javascript 第六题 三 -->
+            <div class="box">
+                <h2 id="question36">6.闭包</h2>
+                <div class="answer">
+                    <p>
+                        Javascript允许使用内部函数---即函数定义和函数表达式位于另一个函数的函数体内。而且，这些内部函数可以访问它们所在的外部函数中声明的所有局部变量、参数和声明的其他内部函数。当其中一个这样的内部函数在包含它们的外部函数之外被调用时，就会形成闭包。
+                    </p>
+                </div>
+            </div>
+            <h1>浏览器兼容</h1>
+            <!-- 浏览器兼容 第一题 -->
+            <div class="box">
+                <h2 id="question41">4.当float和margin同时使用时，IE6的双倍边距BUG如何解决？</h2>
+                <div class="answer">
+                    display：inline；或者margin-right:-3px;
+                </div>
+            </div>
+            <!-- 浏览器兼容 第二题  四-->
+            <div class="box">
+                <h2 id="question42">2.浏览器的内核分别是什么？</h2>
+                <div class="answer">
+                    <p>IE浏览器的内核是Triden</p>
+                    <p>Mozilla FireFox浏览器的内核是Gecko</p>
+                    <p>Opera浏览器的内核是Presto</p>
+                    <p>Safari浏览器的内核是Webkit</p>
+                    <p>Chrome浏览器的内核是Webkit</p>
+                </div>
+            </div>
+            <!-- 浏览器兼容 第三题 -->
+            <div class="box">
+                <h2 id="question43">8.常见的兼容性问题？</h2>
+                <div class="answer">
+                    <p>png24位浏览器在IE6上出现背景，解决方案是做成PNG8</p>
+                    <p>浏览器默认的margin和padding不同。解决方案是加一个全局的设置*{margin:0;padding:0}</p>
+                    <p>IE双边距bug;块属性标签float后，又有横向的margin情况，在IE6显示margin比设置的大。</p>
+                    <p>\9---IE6、7、8识别</p>
+                    <p>+---IE6,7识别</p>
+                    <p>_---IE6识别</p>
+                </div>
+            </div>
+            <h1>其他</h1>
+            <!-- 其他 第一题 五 -->
+            <div class="box">
+                <h2 id="question51">1.Node.js的使用场景</h2>
+                <div class="answer">
+                    高并发、聊天、实时消息推送
+                </div>
+            </div>
+            <!-- 其他 第二题 五 -->
+            <div class="box">
+                <h2 id="question52">2.前端组件化与组件生态？</h2>
+                <div class="answer">
+                    由于前段面向的是界面设计，所以在模块化智商还有组件化开发模型需要提供，此外，项目中一些可复用的模块或组件应该有一定的复用渠道，这部分称之为生态。
+                </div>
+            </div>
+            <!-- 其他 第三题 五 -->
+            <div class="box">
+                <h2 id="question53">3.前端统计</h2>
+                <div class="answer">
+                    前端统计包括性能统计、访问统计、用户行为统计、错误统计、安全监控等。
+                </div>
+            </div>
+            <!-- 其他 第四题 五 -->
+            <div class="box">
+                <h2 id="question54">4.什么是AJAX？</h2>
+                <div class="answer">
+                    <p>
+                        Ajax这个概念的最早提出者Jesse James Garrett认为:Ajax是Asynchronous JavaScript and XML的缩写。Ajax并不是一门新的语言或技术,它实际上是几项技术按一定的方式组合在一在同共的协作中发挥各自的作用,它包括: 　　·使用XHTML和CSS标准化呈现; 　　·使用DOM实现动态显示和交互; 　　·使用XML和XSLT进行数据交换与处理; 　　·使用XMLHttpRequest进行异步数据读取; 　　·最后用JavaScript绑定和处理所有数据; 　　Ajax的工作原理相当于在用户和服务器之间加了—个中间层,使用户操作与服务器响应异步化。并不是所有的用户请求都提交给服务器,像—些数据验证和数据处理等都交给Ajax引擎自己来做,只有确定需要从服务器读取新数据时再由Ajax引擎代为向服务器提交请求。
+                    </p>
+                </div>
+            </div>
+            <h1>Git</h1>
+            <!-- Git 第一题 六 -->
+            <div class="box">
+                <h2 id="question61">1.Git是什么？</h2>
+                <div class="answer">
+                    <p>
+                        Git是目前世界上最先进的分布式版本控制系统。
+                    </p>
+                </div>
+            </div>
+            <!-- Git 第二题 六 -->
+            <div class="box">
+                <h2 id="question62">2.SVN和Git的最主要区别？</h2>
+                <div class="answer">
+                    <p>
+                        SVN是集中式版本控制系统，版本库是集中放在中央服务器的，而干活的时候，用的都是自己的电脑，所以首先要从中央服务器哪里得到最新的版本，然后干活，干完后，需要把自己做完的活推送到中央服务器。集中式版本控制系统是必须联网才能工作，如果在局域网还可以，带宽够大，速度够快，如果在互联网下，如果网速慢的话，就纳闷了。
+                    </p>
+                    <p>
+                        Git是分布式版本控制系统，那么它就没有中央服务器的，每个人的电脑就是一个完整的版本库，这样，工作的时候就不需要联网了，因为版本都是在自己的电脑上。既然每个人的电脑都有一个完整的版本库，那多个人如何协作呢？比如说自己在电脑上改了文件A，其他人也在电脑上改了文件A，这时，你们两之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。
+                    </p>
+                    <ul class="ul-style">
+                        <li>Git是分布式的SCM，SVN是集中式的</li>
+                        <li>Git每个历史版本存储完整的文件，SVN存储文件差异</li>
+                        <li>Git可离线完成大部分操作，SVN则相反</li>
+                        <li>Git有更优雅的分支和合并实现</li>
+                        <li>Git有更强的撤销修改和修改版本历史的能力</li>
+                        <li>Git速度更快，效率更高</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Git 第三题 六 -->
+            <div class="box">
+                <h2 id="question63">3.Git的安装和简单配置？</h2>
+                <div class="answer">
+                    <ul class="ul-style">
+                        <li>Git的安装<p>git-scm.com</p></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Git 第四题 六 -->
+            <div class="box">
+                <h2 id="question64">4.使用版本控制系统应该注意的问题</h2>
+                <div class="answer">
+                    <p>
+                        首先这里再明确一下，所有的版本控制系统，其实只能跟踪文本文件的改动，比如TXT文件，网页，所有的程序代码等等，Git也不例外。版本控制系统可以告诉你每次的改动，比如在第5行加了一个单词“Linux”，在第8行删了一个单词“Windows”。而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件的变化，只能把二进制文件每次改动串起来，也就是只知道图片从100KB改成了120KB，但到底改了啥，版本控制系统不知道，也没法知道。
+                    </p>
+                    <p>
+                        不幸的是，Microsoft的Word格式是二进制格式，因此，版本控制系统是没法跟踪Word文件的改动的，前面我们举的例子只是为了演示，如果要真正使用版本控制系统，就要以纯文本方式编写文件。
+                    </p>
+                    <p>
+                        因为文本是有编码的，比如中文有常用的GBK编码，日文有Shift_JIS编码，如果没有历史遗留问题，强烈建议使用标准的UTF-8编码，所有语言使用同一种编码，既没有冲突，又被所有平台所支持
+                    </p>
+                    <h2 class="red">
+                        使用Windows的童鞋要特别注意：
+                    </h2>
+                    <p>
+                        千万不要使用Windows自带的记事本编辑任何文本文件。原因是Microsoft开发记事本的团队使用了一个非常弱智的行为来保存UTF-8编码的文件，他们自作聪明地在每个文件开头添加了0xefbbbf（十六进制）的字符，你会遇到很多不可思议的问题，比如，网页第一行可能会显示一个“?”，明明正确的程序一编译就报语法错误，等等，都是由记事本的弱智行为带来的。建议你下载Notepad++代替记事本，不但功能强大，而且免费！记得把Notepad++的默认编码设置为UTF-8 without BOM即可：
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line"></div>
+    <div class="footer">
+    	web前端面试题 2016
+    </div>
+    <div id="backToTop">
+        <span class="info">回到顶部</span>
+        <span class="icon"></span>
+    </div>
+<script type="text/javascript" src="./js/three/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="./js/BackToTop.js"></script>
+</body>
+
+</html>

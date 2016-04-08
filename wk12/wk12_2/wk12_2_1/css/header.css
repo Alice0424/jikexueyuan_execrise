@@ -1,0 +1,49 @@
+body{
+	margin:0;
+	padding:0;
+	font-size: 12px;
+	font-family: 'Verdana', "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", 'Helvetica', 'arial', '\5b8b\4f53', 'sans-serif';
+	background:lightblue;
+}
+
+.clearFloat:after{
+	overflow: hidden;
+	display: block;
+	clear:both;
+	content:"";
+}
+
+ul,li{
+	list-style: none;
+}
+
+h1,
+h3,
+ul,
+li{
+	margin:0;
+	padding:0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.header{
+	width:1000px;
+	margin:0 auto;
+	
+	padding: 20px 0;
+}
+
+.header h1{
+	text-align: center;
+}
+
+
+.line{
+	width: 1000px;
+	height: 2px;
+	background: #ccc;
+	margin:0 auto;
+}
