@@ -1,0 +1,137 @@
+@import 'variable.less';
+@import 'common.less';
+@import 'mixin.less';
+.header{
+	.settingLayOut(@basicWidth,@headerHeight,0px,@basicBgColor);
+	box-sizing: border-box;
+	padding-top:38px;
+	padding-bottom: 5px;
+	text-align: center;	
+	.split-line{		
+		.settingLayOut(@basicWidth*4/5,12px,5px,@darkBlue);
+	}
+}
+
+.main-container{
+	.settingLayOut(@basicWidth,auto,0px,@basicBgColor);
+	.split-line{
+		.settingLayOut(100%,12px,0px,@lightYellow);
+	}
+	.main-content{
+		width: 100%;
+		.content-left,
+		.content-right{
+			float: left;
+		}		
+		.content-left{
+			width: @basicWidth/3*1;
+			
+			height: 130px;
+			box-sizing: border-box;
+			padding-top:20px;
+			.bus-no{
+				background-color: @green;
+				color:@white;
+				text-align: center;
+				margin: 0 auto;
+				width: 90px; 
+			    height: 40px; 
+			    background: red; 
+			    border-top-right-radius: 25px;
+			    border-top-left-radius: 25px;
+			    border-bottom-right-radius: 25px;
+			    border-bottom-left-radius: 25px;
+			    padding-top: 10px;
+			    box-sizing: border-box;
+			    margin-bottom: 5px;
+			}		
+			p{
+				font-size: 10px;
+				text-align: center;
+			}
+		}
+		.content-right{
+			height: 130px;
+			width: @basicWidth/3*2;	
+			.bus-info{
+				position:relative;
+				height: 27px;
+				background-color: @darkBlue;
+				h2{
+					color:@white;
+				}
+				span{
+					font-size: 6px;
+					position:absolute;
+					color:@white;
+				}
+				span.first-time{
+					left:160px;
+					top:0px;
+				}
+				span.last-time{
+					left:160px;
+					top:13px;
+				}
+			}
+			.direction{
+				position: relative;
+				.direction-layout(@width:100px,@bgColor:#ff0000){
+					width: @width;
+					height: 5px;
+					background-color: @bgColor;
+					margin-top:3px;
+				}
+				.direction-left,
+				.direction-right,
+				.direction-arrow,
+				h2.info{
+					float:left;
+					color:@red;
+					
+				}
+				h2.info{
+					    margin-top: -3px;
+    					font-size: 14px;
+				}
+				.direction-left{
+					.direction-layout;
+				}
+				.direction-right{
+					.direction-layout(114px,@red);
+				}
+				.direction-arrow{
+					width: 0;
+				    height: 0;
+				    border-top: 10px solid transparent;
+				    border-left: 20px solid red;
+				    position: absolute;
+				    top: -2px;
+    				left: 235px;
+				}
+			}
+			.bus-no-info{
+				ul{
+					li{
+						float: left;
+						width: 15px;
+						font-size: 8px;
+						height: 90px;
+						background-color: green;
+						text-align: center;
+						padding-top:5px;
+						box-sizing: border-box;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer{
+	.settingLayOut(@basicWidth,auto,0px,@basicBgColor);
+	box-sizing: border-box;
+	padding:10px 20px 30px 20px;
+	color:@red;
+	font-weight: bold;
+}
