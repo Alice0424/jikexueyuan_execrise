@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>百度新闻</title>
+	<link rel="stylesheet" href="stylesheets/basic.css">
+	<link rel="stylesheet" href="stylesheets/newsbaidu.css">
+	<link rel="stylesheet" href="stylesheets/ImageSwitch.css">
+</head>
+<body>
+	<!-- 新闻网址头部的设置 -->
+	<div class="header">
+		<div class="header-logo clearFloat">
+			<div class="logo float"></div>
+			<div class="login float"></div>
+			<div class="search right"></div>
+			<div class="DB right"><a href="tododata.html" title="对数据库新闻数据进行增删改查">DB</a></div>
+		</div>
+		<!-- 新闻的分类 -->
+		<div class="news-category">
+			<ul class="clearFloat">
+				<li value="recommend"><a href="#">推荐</a></li>
+				<li value="baijia"><a href="#">百家</a></li>
+				<li value="entertainment"><a href="#">娱乐</a></li>
+				<li value="social"><a href="#">社会</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+    	<div class="news clearFloat news-news">
+    		<!-- 图片的轮播 -->
+    		<div class="imgOuter" id="imgOuter">
+	        	<div class="imgContainer clearFloat" id="imgContainer">
+	            	<div class="imgs" id="imgs-left"></div>
+	            	<div class="imgs" id="imgs-middle">
+	                <a href="#"><img src="images/switch1.jpg"></a>
+	                <a href="#"><img src="images/switch2.jpg"></a>
+	                <a href="#"><img src="images/switch3.jpg"></a>
+	            </div>
+	            <div class="imgs" id="imgs-right"></div>
+	        </div>
+    	</div>
+    		<!-- <div class="row clearFloat">
+    			<img src="images/news1-1.jpg">
+    			<div class="rowRight">
+    				<p>TestTestTestTest 学习NodeJS移动端开发</p>
+    				<p class="content">Web大前端工程师就业班五期03班</p>    				
+    			</div>
+    			<div class="rowBottom">
+    				<span class="time">时间</span>
+    				<span class="from">来源</span>
+    			</div>
+    		</div> -->
+    	</div>
+    	<div class="news clearFloat news-baijia">
+    	</div>
+    	<div class="news clearFloat news-entertainment">
+    	</div>
+    	<div class="news clearFloat news-socail">	
+    	</div>
+	</div>
+	<!-- 继续加载 -->
+	<div id="contiuneLoad">继续加载</div>	
+	<!-- 页脚部分显示 -->
+	<div class="footer">
+		<ul class="clearFloat">
+			<li><span></span><a href="#">意见反馈</a></li>
+			<li><span></span><a href="#">应用推荐</a></li>
+			<li><span></span><a href="#">客户端</a></li>
+		</ul>
+	</div>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<script src=js/newsbaidu.js></script>
+<script src="js/three-jQuery/sea.js"></script>
+<script>
+    seajs.config({
+        base:"./js/",
+        alias:{
+            "jquery":"jquery/jquery/1.10.1/jquery.js"
+        }
+    });
+
+    seajs.use("./js/main");
+</script>
+</body>
+</html>

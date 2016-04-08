@@ -1,0 +1,19 @@
+.imgOuter{
+    width:100%;
+    overflow-x: hidden;
+    overflow-y:hidden;
+}
+
+.imgContainer{
+    width:2000%;
+}
+
+.imgs a{
+    float:left;
+    width:5.5%;
+}
+
+.imgs a img{
+    width:100%;
+    height: auto;
+}

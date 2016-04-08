@@ -1,0 +1,183 @@
+body{
+	margin:0;
+	padding:0;
+	background-color:#ccc;
+	min-width: 800px;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+.line{
+	border: 1px solid #999;
+}
+
+//新闻管理系统头部样式的设置
+div.header{
+	width:100%;
+	position:relative;
+}
+
+div.header h2{
+	text-align: center;
+	margin:20px 0;
+}
+
+/*//新闻管理系统新闻信息显示部分*/
+.content-container{
+	width:100%;
+	margin-top:10px;
+}
+
+/*//导航栏的设置*/
+.nav{
+	font-size:10px;
+	width:95px;
+	box-sizing: border-box;
+	/*background-color:lightgreen;*/
+	position:absolute;
+	left: 10px;	
+}
+
+/*具体的新闻信息显示部分*/
+.main-content{
+	width:100%;
+	padding-left:135px;
+	/*background-color: lightblue;*/
+}
+
+.nav ul{
+	border:1px solid #ccc;
+	box-shadow: 2px 2px 4px 0 #999;
+}
+
+.nav ul>li{
+	padding:4px;
+	border-top:1px solid #999;
+	text-align: center;
+	height: 34px;
+	line-height: 34px;
+	font-size:14px;
+	cursor:pointer;
+}
+
+.nav ul>li:hover{
+	background: #999;
+}
+
+#insert form p{
+	margin-bottom: 20px;
+}
+
+input[type="text"]{
+	padding:3px;
+	margin-left:3px;
+	width: 60%;
+
+}
+
+textarea{
+	width: 60%;
+}
+
+span.align-top{
+	vertical-align: top;
+}
+
+input[type="submit"]{
+	padding:3px 10px;
+	margin-left:80px;
+	border:none;
+	cursor:pointer;
+}
+
+input[type="submit"]:hover{
+	background-color:#999;
+}
+
+span#status{
+	margin-left: 5px;
+}
+
+#insert{
+    /*display:none;*/
+}
+
+#show{
+	display: none;
+}
+
+#show h3{
+	margin-bottom: 20px;
+}
+
+.show-data table{
+    width:80%;
+    border:1px solid #999;
+    box-sizing: border-box;
+    font-size:12px;
+}
+
+.show-data table th{
+    padding:5px;
+    border-right:1px solid #999;
+}
+
+.show-data table td{
+	padding:5px;
+	border-right:1px solid #999;
+	border-top:1px solid #999;
+}
+
+.show-data table th:first-child,
+.show-data table td:first-child{
+	/*width: 100px;*/
+}
+
+.show-data table th:nth-child(2),
+.show-data table td:nth-child(2){
+	/*width: 50px;*/
+}
+
+.show-data table th:nth-child(3),
+.show-data table td:nth-child(3){
+	/*width: 200px;*/
+}
+
+.show-data table td:nth-child(5n){
+	border-right:none;
+}
+
+.show-data table th:last-child{
+    border-right:none;
+}
+
+.show-data img{
+	width:100px;
+	background-size:contain;
+}
+
+.show-data input{
+	width:100%;
+	border:none;
+}
+
+input[type="text"]:after{
+		content:"*";
+		color:#ff0000;
+		width: 200px;
+		height: 200px;
+		background: red;
+	}
+
+#contiuneLoad{
+	padding:10px 20px;
+	background: #999;
+	cursor:pointer;
+	width: 200px;
+	text-align: center;
+	margin:10px auto;
+	margin-bottom: 0px;
+}
