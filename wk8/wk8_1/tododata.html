@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>To do data</title>
+	<link rel="stylesheet" href="css/basic.css">
+	<link rel="stylesheet" href="css/tododata.css">
+</head>
+<body>
+	<div class="content-container clearFloat">
+		<div class="nav float">
+			<ul>
+				<li class="test">增加新闻信息</li>
+				<li class="test">显示新闻信息</li>
+			</ul>
+		</div>
+		<div class="main-content float">
+			<div class="line"></div>
+			<div class="container" id="insert">
+				<h3>插入数据：</h3>
+				<form id="insert-data">
+					<p><span>上传新闻类型：</span>
+						推荐<input type="radio" name='newstype' value='new2' class='newsType' checked="">
+						百家<input type="radio" name='newstype' value='baijia' class='newsType'>
+					</p>
+					<p><span>新闻标题：</span><input class="need" type="text" name="newstitle" placeholder="新闻标题" required=""></p>
+					<p><span>新闻图片：</span><input type="text" name="newsimg" placeholder="新闻图片地址" required=""></p>
+					<p>
+						<span class="align-top">新闻内容：</span>
+						<textarea class="align-top" name="newscontent" id="" cols="24" rows="10" placeholder="新闻内容,可以为空"></textarea>
+					</p>
+					<p><span>新闻来源：</span><input type="text" name='newsfrom' placeholder="新闻来源：网易新闻" required=""></p>
+					<p><span>新闻时间：</span><input id="date" type="date" name='newstime' placeholder="新闻发生时间" required=""></p>
+					<input type="submit" id='submit-data'><span id="status"></span>
+				</form>
+			</div>
+			<div class="container show-data" id="show">
+				<h3>显示信息</h3>			
+				<table>
+					<tr>
+                        <th>新闻标题</th>
+                        <th>新闻图片</th>
+                        <th>新闻内容</th>
+                        <th>新闻来源</th>
+                        <th>新闻时间</th>                        
+                    </tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<script src='js/tododata.js'></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+.nav{
+	font-size:10px;
+	width:12%;
+	box-sizing: border-box;
+}
+
+.nav ul{
+	border:1px solid #ccc;
+	box-shadow: 2px 2px 4px 0 #999;
+}
+
+.nav ul>li{
+	padding:4px;
+	border-top:1px solid #ccc;
+	background-color:#ccc;
+	cursor:pointer;
+}
+
+.nav ul>li:hover{
+	background: #999;
+}
+
+.main-content{
+    	width:85%;
+    	padding:10px 5px;
+    	box-sizing: border-box;
+    	margin-left:1px;
+    	box-shadow:2px 2px 4px 0 #999;
+    	background-color:#ccc;
+    	font-size: 12px;
+}
+
+.main-content p{
+	padding:6px 4px;
+}
+
+.align-top{
+	vertical-align: top;
+}
+
+input[type="text"]{
+	/*width: 300px;*/
+	padding:3px;
+	margin-left:3px;
+}
+
+textarea{
+	margin-left:-8px;
+}
+
+input[type="submit"]{
+	padding:3px 10px;
+	margin-left:80px;
+	border:none;
+	cursor:pointer;
+}
+
+input[type="submit"]:hover{
+	background-color:#999;
+}
+
+span#status{
+	margin-left: 5px;
+}
+
+.line{
+	border: 1px solid #999;
+}
+
+.container{
+	padding-bottom: 10px;
+}
+
+/*显示新闻信息    */
+
+#insert{
+    /*display:none;*/
+}
+
+#show{
+	display: none;
+}
+
+.show-data table{
+    width:100%;
+    border:1px solid #999;
+    box-sizing: border-box;
+    font-size:12px;
+}
+
+.show-data table th{
+    padding:5px;
+    border-right:1px solid #999;
+}
+
+.show-data table td{
+	padding:5px;
+	border-right:1px solid #999;
+	border-top:1px solid #999;
+}
+
+.show-data table th:first-child,
+.show-data table td:first-child{
+	/*width: 100px;*/
+}
+
+.show-data table th:nth-child(2),
+.show-data table td:nth-child(2){
+	/*width: 50px;*/
+}
+
+.show-data table th:nth-child(3),
+.show-data table td:nth-child(3){
+	/*width: 200px;*/
+}
+
+.show-data table td:nth-child(5n){
+	border-right:none;
+}
+
+.show-data table th:last-child{
+    border-right:none;
+}
+
+.show-data img{
+	width:100px;
+	background-size:contain;
+}
+
+.show-data input{
+	width:100%;
+	border:none;
+}
+
+input[type="text"]:after{
+		content:"*";
+		color:#ff0000;
+		width: 200px;
+		height: 200px;
+		background: red;
+	}
+
+@media screen and (max-width: 350px){
+	.show-data img{
+		width:50px;
+		background-size:contain;
+	}
+
+	input[type="text"]:after{
+		content:"*";
+		color:#ff0000;
+		width: 200px;
+		height: 200px;
+		background: red;
+	}
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px){
+	.main-content{
+    	width:85%;
+    	
+    	font-size: 16px;
+	}
+
+	input[type="text"]{
+	width: 80%;
+	padding:3px;
+	margin-left:3px;
+	}
+
+	textarea{
+		width:80%;
+	}
+}
+
+
+

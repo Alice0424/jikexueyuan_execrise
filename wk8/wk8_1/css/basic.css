@@ -1,0 +1,43 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+ul,li,p{
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+
+.float{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.clearFloat:after{
+	content:"";
+	clear:both;
+	display: block;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 759px){
+	body {
+        /*background-color:lightgreen;*/
+        max-width: 760px;
+    }
+}
+
+@media screen and (max-width: 760px) {	
+	body {
+        /*background-color:lightblue;*/
+        max-width: 760px;
+    }
+}
+
+/*.container{
+	background-color:red;
+}*/
