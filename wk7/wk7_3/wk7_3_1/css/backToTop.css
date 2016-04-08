@@ -1,0 +1,42 @@
+/*回到顶部*/
+#backToTop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 40px;
+    left: 90%;
+    text-align: center;
+    /*padding: 3px 0;*/
+    background-color: #fafafa;
+    border: 1px solid #e3e3e3;
+    display: none;
+    cursor: pointer;
+}
+
+#backToTop:hover span.info {
+    display: block;
+}
+
+#backToTop span.info {
+    z-index: 12;
+    background-color: #ebebeb;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#backToTop span.icon {
+    background-image: url("../images/gototop.png");
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    margin-left: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+}
